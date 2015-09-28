@@ -10,7 +10,7 @@ A driver *package* is the collection of files used to install a driver. The pack
 
 A driver package is a separate project which collects output from one or more projects, such as driver projects. The driver package's project, when built, then produces the driver package which Visual Studio uses to deploy the driver.
 
-![Visual Studio Solution Explorer Driver Package Project](Images/VsSlnExplorer.png)
+![Visual Studio Solution Explorer Driver Package Project](images/VsSlnExplorer.png)
 
 **Note**  
 
