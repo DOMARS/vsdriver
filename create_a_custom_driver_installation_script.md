@@ -5,15 +5,15 @@ If your deployment scenario requires more than installing the driver package on 
 
 ### <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
--   Driver package that is test signed and ready to install. You must first create and build your driver and then create a driver package for installation. For more information, see [Building a Driver](building_a_driver.htm) and [Creating a Driver Package](creating_a_driver_package.htm).
--   Test computers that are configured and provisioned for deployment. See [How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.htm).
+-   Driver package that is test signed and ready to install. You must first create and build your driver and then create a driver package for installation. For more information, see [Building a Driver](building_a_driver.md) and [Creating a Driver Package](creating_a_driver_package.md).
+-   Test computers that are configured and provisioned for deployment. See [How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.md).
 
 Instructions
 ------------
 
 ### <span id="To_run_your_own_custom_command_scripts_upon_installation"></span><span id="to_run_your_own_custom_command_scripts_upon_installation"></span><span id="TO_RUN_YOUR_OWN_CUSTOM_COMMAND_SCRIPTS_UPON_INSTALLATION"></span>Step 1: To run your own custom command scripts upon installation
 
-From the project property pages for your driver package, you can configure whether you want to automatically deploy a driver package on a test computer. You can also run a custom installation script from these pages. You can choose to deploy the driver automatically whenever you build the driver solution in each configuration. For more information about deployment, see [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.htm) and [Deployment Properties for Driver Projects](deployment_properties_for_driver_projects.htm).
+From the project property pages for your driver package, you can configure whether you want to automatically deploy a driver package on a test computer. You can also run a custom installation script from these pages. You can choose to deploy the driver automatically whenever you build the driver solution in each configuration. For more information about deployment, see [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md) and [Deployment Properties for Driver Projects](deployment_properties_for_driver_projects.md).
 
 1.  Open the property pages for your driver package project. Right-click the driver project in Solution Explorer and select **Properties**.
 
@@ -28,11 +28,11 @@ From the project property pages for your driver package, you can configure wheth
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.htm)
-[Deployment Properties for Driver Projects](deployment_properties_for_driver_projects.htm)
-[How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.htm)
-[Building a Driver](building_a_driver.htm)
-[Creating a Driver Package](creating_a_driver_package.htm)
+[Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
+[Deployment Properties for Driver Projects](deployment_properties_for_driver_projects.md)
+[How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.md)
+[Building a Driver](building_a_driver.md)
+[Creating a Driver Package](creating_a_driver_package.md)
  
 
  

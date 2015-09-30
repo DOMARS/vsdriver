@@ -33,9 +33,9 @@ Use these steps to convert the projects in a driver solution.
 
     Build the solution again. At this point, the only errors are from the ApiValidator tool, which checks if the driver calls any non-universal functionality. Replace any calls to non-universal DDIs with calls to universal DDIs.
 
-    For more information about ApiValidator, see [Validating Universal Windows drivers](validating_universal_drivers.htm).
+    For more information about ApiValidator, see [Validating Universal Windows drivers](validating_universal_drivers.md).
 
-    To learn how to determine the target platform for a given DDI, see [Target platform on MSDN driver reference pages](windows_10_editions_for_universal_drivers.htm).
+    To learn how to determine the target platform for a given DDI, see [Target platform on MSDN driver reference pages](windows_10_editions_for_universal_drivers.md).
 
  
 

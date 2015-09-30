@@ -78,7 +78,7 @@ For more information about the framework verifier, see [Using the Framework's Ve
 
 [Kernel-Mode Driver Framework](kmdf.portal)
 [Driver Verifier](devtest.driver_verifier)
-[Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.htm)
+[Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
  
 
  

@@ -1,7 +1,7 @@
 <span id="vsdriver.troubleshooting_the_device_fundamental_tests"></span>Troubleshooting the Device Fundamentals tests using the WDK
 ===================================================================================================================================
 
-This topic provides suggestions for fixing problems you might encounter when you use the WDK to run the [Device Fundamentals Tests](devtest.device_fundamentals_tests). For information about the tests and testing, see [How to select and configure the Device Fundamentals tests](how_to_select_and_configure_the_device_fundamental_tests.htm), [How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.htm), and [How to test a driver at runtime from a Command Prompt](how_to_test_a_driver_at_runtime_from_a_command_prompt.htm).
+This topic provides suggestions for fixing problems you might encounter when you use the WDK to run the [Device Fundamentals Tests](devtest.device_fundamentals_tests). For information about the tests and testing, see [How to select and configure the Device Fundamentals tests](how_to_select_and_configure_the_device_fundamental_tests.md), [How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.md), and [How to test a driver at runtime from a Command Prompt](how_to_test_a_driver_at_runtime_from_a_command_prompt.md).
 
 **Note**  For information about troubleshooting the Device.Fundamentals tests using the HCK, see [Troubleshooting Device Fundamentals Reliability Testing by using the Windows HCK](%20http://go.microsoft.com/fwlink/p/?linkid=288941).
 
@@ -24,7 +24,7 @@ This topic provides suggestions for fixing problems you might encounter when you
 
 The test fails or fails to run. For some device types there are specific requirements for running the Device Fundamentals tests. These are the same requirements you need to follow when you use the [Windows Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/?linkid=254893).
 
-Before you run the following [Device Fundamental tests](how_to_select_and_configure_the_device_fundamental_tests.htm), the devices on the test computer must be configured according to the requirements described for the specific device types.
+Before you run the following [Device Fundamental tests](how_to_select_and_configure_the_device_fundamental_tests.md), the devices on the test computer must be configured according to the requirements described for the specific device types.
 
 -   PCI Root Port Surprise Remove Test (PCI devices only)
 -   Device Path Exerciser Test (Certification)
@@ -225,7 +225,7 @@ To help debug this test failure, you should determine how the reference count of
     0: kd> ba w 4 849e9648+4 
     ```
 
-    -   If the reference count of the PDO is equal to 0 before starting the test, it is likely that running the test is what is causing the reference count of the PDO to be greater than zero at the time the test performs the surprise remove of the device. This usually is an indication of the presence of a handle leak(s). Run the **PNP Surprise Remove Device test** from a Command Prompt window or from Visual Studio to reproduce the failure to capture the info needed to troubleshoot the problem. Please see [PnP Tests (Device Fundamentals)](devtest.pnp_tests__device_fundamentals_) and [How to select and configure the Device Fundamentals tests](how_to_select_and_configure_the_device_fundamental_tests.htm) for how to run the **PNP Surprise Remove Device test** from Visual Studio.
+    -   If the reference count of the PDO is equal to 0 before starting the test, it is likely that running the test is what is causing the reference count of the PDO to be greater than zero at the time the test performs the surprise remove of the device. This usually is an indication of the presence of a handle leak(s). Run the **PNP Surprise Remove Device test** from a Command Prompt window or from Visual Studio to reproduce the failure to capture the info needed to troubleshoot the problem. Please see [PnP Tests (Device Fundamentals)](devtest.pnp_tests__device_fundamentals_) and [How to select and configure the Device Fundamentals tests](how_to_select_and_configure_the_device_fundamental_tests.md) for how to run the **PNP Surprise Remove Device test** from Visual Studio.
 
     **Note**  If you set the *DoConcurrentIO* parameter to "TRUE" it causes the test to open hundreds of file handles to the PDO. It is recommended to reproduce this failure with this parameter set to "False" for the purpose of debugging this test failure.
 
@@ -302,9 +302,9 @@ Device queue is not busy.
 -----------------------------------------------
 
 [Device Fundamentals Tests](devtest.device_fundamentals_tests)
-[How to How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.htm)
-[How to How to test a driver at runtime from a Command Prompt](how_to_test_a_driver_at_runtime_from_a_command_prompt.htm)
-[How to select and configure the Device Fundamentals tests](how_to_select_and_configure_the_device_fundamental_tests.htm)
+[How to How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.md)
+[How to How to test a driver at runtime from a Command Prompt](how_to_test_a_driver_at_runtime_from_a_command_prompt.md)
+[How to select and configure the Device Fundamentals tests](how_to_select_and_configure_the_device_fundamental_tests.md)
 [Provided WDTF Simple I/O plug-ins](dtf.provided_wdtf_simpleio_plug-ins)
 [Troubleshooting Device Fundamentals Reliability Testing by using the Windows HCK](%20http://go.microsoft.com/fwlink/p/?linkid=288941)
  

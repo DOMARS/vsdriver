@@ -3,7 +3,7 @@
 
 The WDK provides device testing components that enable you to test a driver on a test computer on your network. You can use these components outside of Visual Studio by copying and installing the necessary files. You can use these components to run the same collection of device driver tests that are available in Visual Studio to test the features and functions of your driver.
 
-Starting in WDK 8.1, you can copy and run the HCK Test Suites on test computers using command scripts. See [How to run the HCK Test Suites in WDK 8.1](run_the_hck_test_suites_in_the_wdk.htm).
+Starting in WDK 8.1, you can copy and run the HCK Test Suites on test computers using command scripts. See [How to run the HCK Test Suites in WDK 8.1](run_the_hck_test_suites_in_the_wdk.md).
 
 ### <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
@@ -48,7 +48,7 @@ Te.exe /name:"*PNPSurpriseRemoveAndRestartDevice" Devfund_PnPDTest.dll /P:"DQ=De
 
 [Device Fundamentals Tests](devtest.device_fundamentals_tests)
 [Device Fundamentals Test Parameters](how_to_select_and_configure_the_device_fundamental_tests.htm#DevFund_Params)
-[How to run the HCK Test Suites in WDK 8.1](run_the_hck_test_suites_in_the_wdk.htm)
+[How to run the HCK Test Suites in WDK 8.1](run_the_hck_test_suites_in_the_wdk.md)
 [Test Authoring and Execution Framework (TAEF)](taef.test_authoring_and_execution_framework__taef_)
 [Te.exe Command Options](taef.te_exe_command_line_parameters)
  

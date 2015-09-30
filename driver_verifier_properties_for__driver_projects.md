@@ -126,9 +126,9 @@ There are four options that require you to first enable [I/O Verification](devte
 -----------------------------------------------
 
 [Driver Verifier](devtest.driver_verifier)
-[How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.htm)
+[How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.md)
 [Setting Up Kernel-Mode Debugging in Visual Studio](debugger.setting_up_kernel-mode_debugging_in_visual_studio)
-[Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.htm)
+[Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
  
 
  

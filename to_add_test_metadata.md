@@ -5,7 +5,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
 
 ### <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
--   The source code for a driver test written by using one of the Driver Test templates. For information, see [How to write a driver test using a Driver Test template](how_to_write_a_driver_test_.htm).
+-   The source code for a driver test written by using one of the Driver Test templates. For information, see [How to write a driver test using a Driver Test template](how_to_write_a_driver_test_.md).
 
 ### <span id="To_add_test_metadata_attributes"></span><span id="to_add_test_metadata_attributes"></span><span id="TO_ADD_TEST_METADATA_ATTRIBUTES"></span>To add test metadata attributes
 
@@ -368,7 +368,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[How to write a driver test using a Driver Test template](how_to_write_a_driver_test_.htm)
+[How to write a driver test using a Driver Test template](how_to_write_a_driver_test_.md)
  
 
  

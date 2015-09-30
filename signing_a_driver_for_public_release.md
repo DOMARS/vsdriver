@@ -85,7 +85,7 @@ Suppose you want to build and sign a driver package that will run on Windows 7 
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Signing a Driver](signing_a_driver.htm)
+[Signing a Driver](signing_a_driver.md)
 [Windows Hardware Certification](http://go.microsoft.com/fwlink/p/?LinkID=248337)
 [Hardware Dashboard Services](http://go.microsoft.com/fwlink/p/?LinkID=248336)
 [Driver Signing Requirements for Windows](http://go.microsoft.com/fwlink/p/?linkid=617515)

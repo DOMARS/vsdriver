@@ -111,7 +111,7 @@ If you are [writing drivers for different versions of Windows](wdkgetstart.platf
 -----------------------------------------------
 
 [Writing drivers for different versions of Windows](wdkgetstart.platforms_and_driver_versions)
-[Building a Driver](building_a_driver.htm)
+[Building a Driver](building_a_driver.md)
  
 
  

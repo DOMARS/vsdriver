@@ -21,7 +21,7 @@ A Universal Windows driver is a kernel-mode or user-mode driver binary that inst
 
 A Universal Windows driver calls only device driver interfaces (DDIs) that are part of UWP. These DDIs are marked as **Universal** on the corresponding MSDN reference pages.
 
-To determine if your existing driver calls any interfaces outside of UWP, recompile your driver as a Universal Windows driver. The compiler displays [ApiValidator errors](validating_universal_drivers.htm) if the driver calls interfaces that are not part of UWP. In some cases, you can replace these calls with alternate DDIs that are listed on the MSDN reference pages for the desktop-only DDI. If you cannot find a suitable replacement, please submit [feedback](http://go.microsoft.com/fwlink/p/?linkid=529549).
+To determine if your existing driver calls any interfaces outside of UWP, recompile your driver as a Universal Windows driver. The compiler displays [ApiValidator errors](validating_universal_drivers.md) if the driver calls interfaces that are not part of UWP. In some cases, you can replace these calls with alternate DDIs that are listed on the MSDN reference pages for the desktop-only DDI. If you cannot find a suitable replacement, please submit [feedback](http://go.microsoft.com/fwlink/p/?linkid=529549).
 
 In other cases, you may have to code a workaround if there is not a suitable replacement. If you need to, write a new Universal Windows driver starting from the driver templates in the unified WDK.
 
@@ -67,7 +67,7 @@ In contrast, existing user-mode drivers may require modification to compile as U
 
 4.  You can now build the solution. Visual Studio links against the required libraries and generates a .cat file, an .inf file, and a driver binary.
 
-For information about the configuration settings you can use in Visual Studio when building your driver, see [Building a Driver with the WDK](building_a_driver.htm).
+For information about the configuration settings you can use in Visual Studio when building your driver, see [Building a Driver with the WDK](building_a_driver.md).
 
 <span id="Installing_a_Universal_Windows_driver"></span><span id="installing_a_universal_windows_driver"></span><span id="INSTALLING_A_UNIVERSAL_WINDOWS_DRIVER"></span>Installing a Universal Windows driver
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -183,8 +183,8 @@ All existing kernel mode debug transports continue to work on Windows 10 for de
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Building a Driver with the WDK](building_a_driver.htm)
-[Windows 10 Editions for Universal Windows drivers](windows_10_editions_for_universal_drivers.htm)
+[Building a Driver with the WDK](building_a_driver.md)
+[Windows 10 Editions for Universal Windows drivers](windows_10_editions_for_universal_drivers.md)
 [Write a Universal Windows driver (UMDF 2) based on a template](wdkgetstart.writing_a_umdf_driver_based_on_a_template)
 [Write a universal Hello World driver (KMDF)](wdkgetstart.writing_a_very_small_kmdf__driver)
 [Write a Universal Windows driver (KMDF) based on a template](wdkgetstart.writing_a_kmdf_driver_based_on_a_template)

@@ -1,14 +1,14 @@
 <span id="vsdriver.deployment_properties_for_driver_projects"></span>Deployment Properties for Driver Package Projects
 ======================================================================================================================
 
-You can configure the automatic deployment of a driver package on a remote test computer in each configuration of your project. From the project property pages for your driver, you have additional control over how you want to deploy your driver for testing. You can choose to deploy the driver automatically whenever you build the driver solution in each configuration. For more information about deployment, see [Provision a computer for driver deployment and testing (WDK 8.1)](wdkgetstart.provision_a_target_computer_wdk_8_1) and [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.htm).
+You can configure the automatic deployment of a driver package on a remote test computer in each configuration of your project. From the project property pages for your driver, you have additional control over how you want to deploy your driver for testing. You can choose to deploy the driver automatically whenever you build the driver solution in each configuration. For more information about deployment, see [Provision a computer for driver deployment and testing (WDK 8.1)](wdkgetstart.provision_a_target_computer_wdk_8_1) and [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md).
 
 <span id="Setting_deployment_properties_for_driver_package_projects"></span><span id="setting_deployment_properties_for_driver_package_projects"></span><span id="SETTING_DEPLOYMENT_PROPERTIES_FOR_DRIVER_PACKAGE_PROJECTS"></span>Setting deployment properties for driver package projects
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 1.  Open the property pages for your driver package. Right-click the driver package project in Solution Explorer and select **Properties**.
 
-    **Note**  If your driver solution does not have a driver package project, you need to add one. See [Creating a Driver Package](creating_a_driver_package.htm). The deployment properties are only available if you have a driver package.
+    **Note**  If your driver solution does not have a driver package project, you need to add one. See [Creating a Driver Package](creating_a_driver_package.md). The deployment properties are only available if you have a driver package.
 
      
 
@@ -30,7 +30,7 @@ To ensure that you are testing the latest version of the driver, select **Remove
 <span id="Target_computer_name"></span><span id="target_computer_name"></span><span id="TARGET_COMPUTER_NAME"></span>Target computer name
 -----------------------------------------------------------------------------------------------------------------------------------------
 
-You can choose the target computer to use for deployment and testing. If you have already configured your test computers, you can select one from this list. If you have not configured a test computer, you can configure one using the **Browse** button. For more information about configuring a test computer, see [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.htm). Make sure that the project configuration and platform match the target architecture of your test system. A common deployment error occurs when you attempt to install an x86 (Win32) driver on a system running an x64 version of Windows. When you configure the test computer, you can also run a kernel-mode debugger. For more information, see [Setting Up Kernel-Mode Debugging in Visual Studio](debugger.setting_up_kernel-mode_debugging_in_visual_studio).
+You can choose the target computer to use for deployment and testing. If you have already configured your test computers, you can select one from this list. If you have not configured a test computer, you can configure one using the **Browse** button. For more information about configuring a test computer, see [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md). Make sure that the project configuration and platform match the target architecture of your test system. A common deployment error occurs when you attempt to install an x86 (Win32) driver on a system running an x64 version of Windows. When you configure the test computer, you can also run a kernel-mode debugger. For more information, see [Setting Up Kernel-Mode Debugging in Visual Studio](debugger.setting_up_kernel-mode_debugging_in_visual_studio).
 
 <span id="Driver_installation_options"></span><span id="driver_installation_options"></span><span id="DRIVER_INSTALLATION_OPTIONS"></span>Driver installation options
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -53,8 +53,8 @@ You can use the **Additional Files** box to specify custom installation scripts 
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.htm)
-[How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.htm)
+[Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
+[How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.md)
 [Setting Up Kernel-Mode Debugging in Visual Studio](debugger.setting_up_kernel-mode_debugging_in_visual_studio)
  
 

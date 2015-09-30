@@ -13,7 +13,7 @@ The WDK provides templates that create starter code for a Windows Driver test pr
 3.  Select **Windows Driver Test in C++**.
 4.  Provide a name for your driver test project and a location (or use the default).
 5.  From the **Windows Driver Test** dialog box, select the test cases that you want to include or choose an empty (blank) driver test. For more information about the test cases, see [Windows Driver test cases](#windows_driver_test_cases).
-6.  Add the required test metadata. For more information, see [How to add test metadata](to_add_test_metadata.htm).
+6.  Add the required test metadata. For more information, see [How to add test metadata](to_add_test_metadata.md).
 7.  Build your driver test.
 
 <span id="To_customize_a_driver_test_using_the_Driver_Test_template_for_C_"></span><span id="to_customize_a_driver_test_using_the_driver_test_template_for_c_"></span><span id="TO_CUSTOMIZE_A_DRIVER_TEST_USING_THE_DRIVER_TEST_TEMPLATE_FOR_C_"></span>To customize a driver test using the Driver Test template for C\#
@@ -24,7 +24,7 @@ The WDK provides templates that create starter code for a Windows Driver test pr
 3.  Select **Windows Driver Test in C\#**.
 4.  Provide a name for your driver test project and a location (or use the default).
 5.  From the **Windows Driver Test** dialog box, select the test cases that you want to include or choose an empty (blank) driver test. For information about the test cases, see [Windows Driver test cases](#windows_driver_test_cases).
-6.  Add the required test metadata. For more information, see [How to add test metadata](to_add_test_metadata.htm).
+6.  Add the required test metadata. For more information, see [How to add test metadata](to_add_test_metadata.md).
 7.  Build your driver test.
 
 <span id="To_customize_a_driver_test_using_the_Driver_Test_template_for_Script"></span><span id="to_customize_a_driver_test_using_the_driver_test_template_for_script"></span><span id="TO_CUSTOMIZE_A_DRIVER_TEST_USING_THE_DRIVER_TEST_TEMPLATE_FOR_SCRIPT"></span>To customize a driver test using the Driver Test template for Script
@@ -35,7 +35,7 @@ The WDK provides templates that create starter code for a Windows Driver test pr
 3.  Select **Windows Driver Test Script**.
 4.  Provide a name for your driver test project and a location (or use the default).
 5.  From the **Windows Driver Test** dialog box, select the test cases that you want to include or choose an empty (blank) driver test. For information about the test cases, see [Windows Driver test cases](#windows_driver_test_cases).
-6.  Add the required test metadata. For more information, see [How to add test metadata](to_add_test_metadata.htm).
+6.  Add the required test metadata. For more information, see [How to add test metadata](to_add_test_metadata.md).
 7.  Build your driver test.
 
 <span id="Making_the_driver_tests_you_create_available_for_deployment_on_test_computers"></span><span id="making_the_driver_tests_you_create_available_for_deployment_on_test_computers"></span><span id="MAKING_THE_DRIVER_TESTS_YOU_CREATE_AVAILABLE_FOR_DEPLOYMENT_ON_TEST_COMPUTERS"></span>Making the driver tests you create available for deployment on test computers
@@ -114,7 +114,7 @@ The WDK provides starter code for a Windows Driver test project in C++, C\#, and
 
 [Test Authoring and Execution Framework](taef.test_authoring_and_execution_framework__taef_)
 [Windows Driver Testing Framework](dtf.portal)
-[How to add test metadata](to_add_test_metadata.htm)
+[How to add test metadata](to_add_test_metadata.md)
  
 
  

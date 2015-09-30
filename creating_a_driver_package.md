@@ -53,7 +53,7 @@ See the "Toaster Sample Driver" sample for an example of a single solution that 
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Signing a Driver](signing_a_driver.htm)
+[Signing a Driver](signing_a_driver.md)
  
 
  

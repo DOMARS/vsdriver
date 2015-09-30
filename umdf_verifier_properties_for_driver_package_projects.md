@@ -3,7 +3,7 @@
 
 Sets the properties for the UMDF Verifier on a test computer. You can use these settings when you build and deploy a driver to a test computer.
 
-For information about deployment, see [Provision a computer for driver deployment and testing (WDK 8.1)](wdkgetstart.provision_a_target_computer_wdk_8_1) and [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.htm)
+For information about deployment, see [Provision a computer for driver deployment and testing (WDK 8.1)](wdkgetstart.provision_a_target_computer_wdk_8_1) and [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
 
 For information about debugging UMDF drivers, see [How to Enable Debugging of a UMDF Driver](umdf.enabling_a_debugger) and [WDF Verifier Control Application](devtest.wdf_verifier_control_application).
 
@@ -89,7 +89,7 @@ For information about debugging UMDF drivers, see [How to Enable Debugging of a 
 
 [User-Mode Driver Framework](umdf.portal)
 [Driver Verifier](devtest.driver_verifier)
-[Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.htm)
+[Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
  
 
  

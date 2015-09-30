@@ -5,9 +5,9 @@ You can use Visual Studio to deploy and install a driver package on a test compu
 
 ### <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
--   A driver package that is ready to install. You must first create and build your driver and then create a driver package for installation. For more information, see [Building a Driver](building_a_driver.htm) and [Creating a Driver Package](creating_a_driver_package.htm).
+-   A driver package that is ready to install. You must first create and build your driver and then create a driver package for installation. For more information, see [Building a Driver](building_a_driver.md) and [Creating a Driver Package](creating_a_driver_package.md).
 -   If you have not already done so, follow the instructions to [Provision a computer for driver deployment and testing (WDK 8.1)](wdkgetstart.provision_a_target_computer_wdk_8_1).
--   After you have configured and provisioned a test computer, you can use Visual Studio to deploy drivers, schedule tests, and debug drivers on the test computer. For information about deployment and about how you can deploy a driver automatically at build time, see [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.htm).
+-   After you have configured and provisioned a test computer, you can use Visual Studio to deploy drivers, schedule tests, and debug drivers on the test computer. For information about deployment and about how you can deploy a driver automatically at build time, see [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md).
 
 Instructions
 ------------
@@ -18,7 +18,7 @@ After you have configured and provisioned a test computer, you can configure the
 
 1.  Open the property pages for your driver project. Right-click the driver project in Solution Explorer and select **Properties**.
 2.  In the property pages for the driver, click **Configuration Properties**, click **Driver Install**, and then click **Deployment**.
-3.  Select the **Enable deployment** option. For more information, see [Deployment Properties for Driver Projects](deployment_properties_for_driver_projects.htm).
+3.  Select the **Enable deployment** option. For more information, see [Deployment Properties for Driver Projects](deployment_properties_for_driver_projects.md).
 4.  Select the test computer you have configured as the **Remote Computer**.
 5.  Under **Driver Installation Options**, click **Install and Verify**, and then select the **Default Driver Installation Task**.
 
@@ -26,8 +26,8 @@ After you have configured and provisioned a test computer, you can configure the
 -----------------------------------------------
 
 [Provision a computer for driver deployment and testing (WDK 8.1)](wdkgetstart.provision_a_target_computer_wdk_8_1)
-[Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.htm)
-[Testing a Driver](testing_a_driver.htm)
+[Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
+[Testing a Driver](testing_a_driver.md)
  
 
  

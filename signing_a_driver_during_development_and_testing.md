@@ -40,8 +40,8 @@ To share the signing certificate, follow these steps.
 -----------------------------------------------
 
 [Writing Your First Driver](wdkgetstart.writing_your_first_driver)
-[Building a Driver](building_a_driver.htm)
-[Developing, Testing, and Deploying Drivers](visual_studio_driver_development_environment.htm)
+[Building a Driver](building_a_driver.md)
+[Developing, Testing, and Deploying Drivers](visual_studio_driver_development_environment.md)
  
 
  

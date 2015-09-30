@@ -17,7 +17,7 @@ You can use any edition of Microsoft Visual Studio 2015, including Microsoft Vi
 -   Windows 8.1
 -   Windows 7
 
-**Important**  Starting in Windows Driver Kit (WDK) 8, MSBuild replaced the Windows Build Utility (Build.exe) that was used in previous versions of the WDK. The WDK now uses the same compiler and build tools that you use to build Visual Studio projects. Driver projects that were built with previous versions of the WDK must be converted to work in the Visual Studio environment. You can run a conversion utility from the command line, or you can convert an existing driver by creating new Visual Studio project from existing sources. For more information, see [Creating a Driver From Existing Source Files](creating_a_driver_from_existing_source_files.htm) and [WDK and the Visual Studio build environment](devtest.wdk_and_visual_studio_build_environment).
+**Important**  Starting in Windows Driver Kit (WDK) 8, MSBuild replaced the Windows Build Utility (Build.exe) that was used in previous versions of the WDK. The WDK now uses the same compiler and build tools that you use to build Visual Studio projects. Driver projects that were built with previous versions of the WDK must be converted to work in the Visual Studio environment. You can run a conversion utility from the command line, or you can convert an existing driver by creating new Visual Studio project from existing sources. For more information, see [Creating a Driver From Existing Source Files](creating_a_driver_from_existing_source_files.md) and [WDK and the Visual Studio build environment](devtest.wdk_and_visual_studio_build_environment).
 
  
 
@@ -142,14 +142,14 @@ The following tip can help you to troubleshoot problems when you use the WDK and
 -----------------------------------------------
 
 [Building in Visual Studio](%20http://go.microsoft.com/fwlink/p/?linkid=227872)
-[Building Drivers for Different Versions of Windows](building_drivers_for_different_versions_of_windows.htm)
-[Using the Microsoft C Runtime with User-Mode Drivers and Desktop Apps](using_the_microsoft_c_runtime_with_user_mode_drivers_and_apps.htm)
+[Building Drivers for Different Versions of Windows](building_drivers_for_different_versions_of_windows.md)
+[Using the Microsoft C Runtime with User-Mode Drivers and Desktop Apps](using_the_microsoft_c_runtime_with_user_mode_drivers_and_apps.md)
 [ProjectUpgradeTool](devtest.projectupgradetool)
 [MSBuild](%20http://go.microsoft.com/fwlink/p/?linkid=262804)
-[Creating a Driver From Existing Source Files](creating_a_driver_from_existing_source_files.htm)
+[Creating a Driver From Existing Source Files](creating_a_driver_from_existing_source_files.md)
 [WDK and the Visual Studio build environment](devtest.wdk_and_visual_studio_build_environment)
-[Signing a Driver](signing_a_driver.htm)
-[Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.htm)
+[Signing a Driver](signing_a_driver.md)
+[Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
  
 
  

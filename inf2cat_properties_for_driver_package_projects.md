@@ -10,7 +10,7 @@ Sets the properties for the [**Inf2Cat**](devtest.inf2cat) tool. The **Inf2Cat**
 2.  In the property pages for the driver package, click **Configuration Properties** and then click **Inf2Cat**.
 3.  Select the **Run Inf2Cat** option. This option runs the [**Inf2Cat**](devtest.inf2cat) tool on any INF files in the project (for example, .inf, .inx, or .inv files).
 
-If the driver package is installed by using an INF file, use the Inf2Cat tool to create the catalog file. Inf2Cat validates that files referenced in the INF file are present in the package. To add files to the package, use the property pages for the package project and driver project. See [Creating a Driver Package](creating_a_driver_package.htm) for more information.
+If the driver package is installed by using an INF file, use the Inf2Cat tool to create the catalog file. Inf2Cat validates that files referenced in the INF file are present in the package. To add files to the package, use the property pages for the package project and driver project. See [Creating a Driver Package](creating_a_driver_package.md) for more information.
 
 <table>
 <colgroup>
@@ -77,8 +77,8 @@ For information about property pages and projects, see the [WDK and Visual Studi
 
 [Creating a Catalog File for a PnP Driver Package](devinst.creating_a_catalog_file_for_a_pnp_driver_package)
 [**Inf2Cat**](devtest.inf2cat)
-[Creating a Driver Package](creating_a_driver_package.htm)
-[Signing a Driver](signing_a_driver.htm)
+[Creating a Driver Package](creating_a_driver_package.md)
+[Signing a Driver](signing_a_driver.md)
 [Using Inf2Cat to Create a Catalog File](devinst.using_inf2cat_to_create_a_catalog_file)
 [WDK and Visual Studio build environment](devtest.wdk_and_visual_studio_build_environment)
  

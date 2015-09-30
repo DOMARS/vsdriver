@@ -11,8 +11,8 @@ In order to sign a driver, a certificate is required. You can create your own ce
 
 This section describes how to use Visual Studio to sign a driver package.
 
--   [Signing a Driver During Development and Testing](signing_a_driver_during_development_and_testing.htm)
--   [Signing a Driver for Public Release](signing_a_driver_for_public_release.htm)
+-   [Signing a Driver During Development and Testing](signing_a_driver_during_development_and_testing.md)
+-   [Signing a Driver for Public Release](signing_a_driver_for_public_release.md)
 
  
 
