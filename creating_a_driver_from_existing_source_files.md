@@ -1,7 +1,7 @@
 <span id="vsdriver.creating_a_driver_from_existing_source_files"></span>Creating a Driver From Existing Source Files
 ====================================================================================================================
 
-The WDK is integrated with Microsoft Visual Studio, and uses the same compiler and build tools that you use to build Visual Studio solutions and projects. [MSBuild](%20http://go.microsoft.com/fwlink/p/?linkid=262804) replaces the Windows Build Utility (Build.exe) that was used in versions of the WDK prior to Windows Driver Kit (WDK) 8.
+The WDK is integrated with Microsoft Visual Studio, and uses the same compiler and build tools that you use to build Visual Studio solutions and projects. [MSBuild](http://go.microsoft.com/fwlink/p/?linkid=262804) replaces the Windows Build Utility (Build.exe) that was used in versions of the WDK prior to Windows Driver Kit (WDK) 8.
 
 To convert a driver that was created with a previous version of the WDK, create a new Windows driver solution in Visual Studio using one of the provided Windows driver templates. If you start with a template for your driver model, the structure of the project will be in place and the correct platform tool set will be selected. You can then add your source files to the solution. For information about selecting templates, see [Creating a New Device Function Driver](creating_a_new_driver.md), [Creating a New Filter Driver](creating_a_new_filter_driver.md), or [Creating a New Software Driver](creating_a_new_software_driver.md).
 
@@ -10,8 +10,8 @@ To convert a driver that was created with a previous version of the WDK, create 
 
 [WDK and the Visual Studio build environment](devtest.wdk_and_visual_studio_build_environment)
 [ProjectUpgradeTool](devtest.projectupgradetool)
-[MSBuild](%20http://go.microsoft.com/fwlink/p/?linkid=262804)
-[Walkthrough: Using MSBuild](%20http://go.microsoft.com/fwlink/p/?linkid=262807)
+[MSBuild](http://go.microsoft.com/fwlink/p/?linkid=262804)
+[Walkthrough: Using MSBuild](http://go.microsoft.com/fwlink/p/?linkid=262807)
 [Creating a New Device Function Driver](creating_a_new_driver.md)
 [Creating a New Filter Driver](creating_a_new_filter_driver.md)
 [Creating a New Software Driver](creating_a_new_software_driver.md)

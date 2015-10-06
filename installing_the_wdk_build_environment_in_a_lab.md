@@ -86,7 +86,7 @@ The build lab support files include the **setup.ps1** PowerShell command file, w
 -----------------------------------------------
 
 [Building a Driver](building_a_driver.md)
-[MSBuild](%20http://go.microsoft.com/fwlink/p/?linkid=262804)
+[MSBuild](http://go.microsoft.com/fwlink/p/?linkid=262804)
  
 
  

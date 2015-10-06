@@ -1,7 +1,7 @@
 <span id="vsdriver.creating_a_driver_verification_log"></span>Creating a Driver Verification Log
 ================================================================================================
 
-The Windows Server 2012 [Hardware Certification Program](%20http://go.microsoft.com/fwlink/p/?linkid=227016) requires a Driver Verification Log (DVL) for all applicable driver submissions. The DVL contains a summary of the results from the Code Analysis and Static Driver Verifier log files. The DVL does not contain any source information. You must run the Code Analysis tool and Static Driver Verifier prior to creating a DVL for your driver.
+The Windows Server 2012 [Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016) requires a Driver Verification Log (DVL) for all applicable driver submissions. The DVL contains a summary of the results from the Code Analysis and Static Driver Verifier log files. The DVL does not contain any source information. You must run the Code Analysis tool and Static Driver Verifier prior to creating a DVL for your driver.
 
 ![](../common/wedge.gif)**To create a driver verification log**
 
@@ -50,7 +50,7 @@ msbuild.exe <vcxprojectfile> /target:dvl /p:Configuration="Win8 Release" /P:Plat
 
 [Creating a log file for Static Driver Verifier](creating_a_log_file_for_static_driver_verifier.md)
 [Creating a log file for the code analysis tool](creating_a_log_file_for_the_code_analysis_tool.md)
-[Hardware Certification Program](%20http://go.microsoft.com/fwlink/p/?linkid=227016)
+[Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016)
 [Analyzing Driver Quality by Using Code Analysis Tools](analyzing_driver_quality_by_using_code_analysis_tools.md)
 [How to run Code Analysis for drivers](devtest.how_to_run_code_analysis_for_drivers)
 [Using Static Driver Verifier to find defects in drivers](devtest.using_static_driver_verifier_to_find_defects_in_drivers)

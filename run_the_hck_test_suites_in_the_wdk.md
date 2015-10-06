@@ -81,7 +81,7 @@ You can also copy one of the provided HCK Test Suites and export it, along with 
     ```
 
 <span id="RunMe"></span><span id="runme"></span><span id="RUNME"></span>
-**Note**  If the test computer is running Windows 7, you need to download and install the [Microsoft .NET Framework 4.5](%20http://go.microsoft.com/fwlink/p/?linkid=317996) before you can run the HCK Test Suite.
+**Note**  If the test computer is running Windows 7, you need to download and install the [Microsoft .NET Framework 4.5](http://go.microsoft.com/fwlink/p/?linkid=317996) before you can run the HCK Test Suite.
 
  
 
@@ -299,7 +299,7 @@ Use this test suite to test Wireless LAN (802.11) devices. Follow the guidelines
 [How to select and configure the Device Fundamentals Tests](how_to_select_and_configure_the_device_fundamental_tests.md)
 [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
 [Setting Up Kernel-Mode Debugging in Visual Studio](debugger.setting_up_kernel-mode_debugging_in_visual_studio)
-[Hardware Certification Program](%20http://go.microsoft.com/fwlink/p/?linkid=227016)
+[Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016)
 [Windows Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/?linkid=254893)
 [How to test a driver at runtime from a Command Prompt](how_to_test_a_driver_at_runtime_from_a_command_prompt.md)
  

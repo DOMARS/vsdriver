@@ -3,7 +3,7 @@
 
 This topic provides suggestions for fixing problems you might encounter when you use the WDK to run the [Device Fundamentals Tests](devtest.device_fundamentals_tests). For information about the tests and testing, see [How to select and configure the Device Fundamentals tests](how_to_select_and_configure_the_device_fundamental_tests.md), [How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.md), and [How to test a driver at runtime from a Command Prompt](how_to_test_a_driver_at_runtime_from_a_command_prompt.md).
 
-**Note**  For information about troubleshooting the Device.Fundamentals tests using the HCK, see [Troubleshooting Device Fundamentals Reliability Testing by using the Windows HCK](%20http://go.microsoft.com/fwlink/p/?linkid=288941).
+**Note**  For information about troubleshooting the Device.Fundamentals tests using the HCK, see [Troubleshooting Device Fundamentals Reliability Testing by using the Windows HCK](http://go.microsoft.com/fwlink/p/?linkid=288941).
 
  
 
@@ -306,7 +306,7 @@ Device queue is not busy.
 [How to How to test a driver at runtime from a Command Prompt](how_to_test_a_driver_at_runtime_from_a_command_prompt.md)
 [How to select and configure the Device Fundamentals tests](how_to_select_and_configure_the_device_fundamental_tests.md)
 [Provided WDTF Simple I/O plug-ins](dtf.provided_wdtf_simpleio_plug-ins)
-[Troubleshooting Device Fundamentals Reliability Testing by using the Windows HCK](%20http://go.microsoft.com/fwlink/p/?linkid=288941)
+[Troubleshooting Device Fundamentals Reliability Testing by using the Windows HCK](http://go.microsoft.com/fwlink/p/?linkid=288941)
  
 
  
