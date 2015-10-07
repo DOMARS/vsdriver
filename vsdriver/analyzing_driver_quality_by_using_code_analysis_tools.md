@@ -13,10 +13,10 @@ The Windows 8 release of the WDK provides enhancements to the C/C++ Code Analys
 For information about the Code Analysis tool in Visual Studio, see:
 
 -   [Analyzing Application Quality using Code Analysis](http://go.microsoft.com/fwlink/p/?linkid=226836)
--   [Code Analysis for Drivers](devtest.code_analysis_for_drivers)
--   [How to run Code Analysis for drivers](devtest.how_to_run_code_analysis_for_drivers)
+-   [Code Analysis for Drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454182(v=vs.85).aspx)
+-   [How to run Code Analysis for drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454219(v=vs.85).aspx)
 -   [Using SAL Annotations to Reduce C/C++ Code Defects](http://go.microsoft.com/fwlink/p/?linkid=247283)
--   [SAL 2.0 Annotations for Windows Drivers](devtest.sal_2_annotations_for_windows_drivers)
+-   [SAL 2.0 Annotations for Windows Drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454237(v=vs.85).aspx)
 
 **Note**  In previous versions of the WDK, the driver-specific module for code analysis was part of a standalone tool called PREfast for Drivers (PFD). PREfast for Drivers was also integrated into the WDK Build environment, as part of Microsoft Automated Code Review (OACR).
 
@@ -31,8 +31,8 @@ Static Driver Verifier (SDV) is a static verification tool that systematically a
 
 For information about Static Driver Verifier, see:
 
--   Overview: [Static Driver Verifier](devtest.static_driver_verifier)
--   How to: [Using Static Driver Verifier to find defects in drivers](devtest.using_static_driver_verifier_to_find_defects_in_drivers)
+-   Overview: [Static Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff552808(v=vs.85).aspx)
+-   How to: [Using Static Driver Verifier to find defects in drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454281(v=vs.85).aspx)
 
 **Note**  In previous versions of the WDK, Static Driver Verifier was a stand-alone tool that you launched from a WDK Build Environment window.
 

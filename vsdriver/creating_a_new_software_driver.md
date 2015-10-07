@@ -1,9 +1,9 @@
 <span id="vsdriver.creating_a_new_software_driver"></span>Creating a New Software Driver
 ========================================================================================
 
-In this topic we explain how to use Visual Studio to start writing a new software driver. Software drivers are different from device function drivers, filter drivers, and file system drivers, which we cover in other topics. For more information about software drivers and how they differ from other types of drivers, see [What is a Driver?](wdkgetstart.what_is_a_driver_) and [Choosing a Driver Model](wdkgetstart.choosing_a_driver_model).
+In this topic we explain how to use Visual Studio to start writing a new software driver. Software drivers are different from device function drivers, filter drivers, and file system drivers, which we cover in other topics. For more information about software drivers and how they differ from other types of drivers, see [What is a Driver?](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff554678(v=vs.85).aspx) and [Choosing a Driver Model](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff554652(v=vs.85).aspx).
 
-To begin, first determine which driver model is appropriate for your software driver. The three options are the Kernel Mode Driver Framework (KMDF), the legacy NT driver model, and the Windows Driver Model (WDM). For help determining which model is best for you, see [Choosing a Driver Model](wdkgetstart.choosing_a_driver_model).
+To begin, first determine which driver model is appropriate for your software driver. The three options are the Kernel Mode Driver Framework (KMDF), the legacy NT driver model, and the Windows Driver Model (WDM). For help determining which model is best for you, see [Choosing a Driver Model](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff554652(v=vs.85).aspx).
 
 <span id="Case_1__You_want_to_use_KMDF."></span><span id="case_1__you_want_to_use_kmdf."></span><span id="CASE_1__YOU_WANT_TO_USE_KMDF."></span>Case 1: You want to use KMDF.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -11,7 +11,7 @@ To begin, first determine which driver model is appropriate for your software dr
 1.  In Visual Studio, on the **File** menu, choose **New | Project**.
 2.  In the New Project dialog box, in the left pane, locate and select **WDF**.
 3.  In the middle pane, select **Kernel Mode Driver (KMDF)**.
-4.  Fill in the **Name** and **Location** boxes, and click **OK**. For more details, see [Writing a KMDF Driver Based on a Template](wdkgetstart.writing_a_kmdf_driver_based_on_a_template).
+4.  Fill in the **Name** and **Location** boxes, and click **OK**. For more details, see [Writing a KMDF Driver Based on a Template](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439654(v=vs.85).aspx).
     **Note**  When you create a new KMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h.
 
      

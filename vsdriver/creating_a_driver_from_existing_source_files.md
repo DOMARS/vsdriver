@@ -8,8 +8,8 @@ To convert a driver that was created with a previous version of the WDK, create 
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[WDK and the Visual Studio build environment](devtest.wdk_and_visual_studio_build_environment)
-[ProjectUpgradeTool](devtest.projectupgradetool)
+[WDK and the Visual Studio build environment](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454286(v=vs.85).aspx)
+[ProjectUpgradeTool](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn265174(v=vs.85).aspx)
 [MSBuild](http://go.microsoft.com/fwlink/p/?linkid=262804)
 [Walkthrough: Using MSBuild](http://go.microsoft.com/fwlink/p/?linkid=262807)
 [Creating a New Device Function Driver](creating_a_new_driver.md)

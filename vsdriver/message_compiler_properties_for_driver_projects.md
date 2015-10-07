@@ -1,9 +1,9 @@
 <span id="vsdriver.message_compiler_properties_for_driver_projects"></span>Message Compiler Properties for Driver Projects
 ==========================================================================================================================
 
-Sets the properties for the [**Message Compiler (MC.exe)**](wes.message_compiler__mc_exe_) tool. The compiler generates the message resource files that you can add to your project.
+Sets the properties for the [**Message Compiler (MC.exe)**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Aa385638(v=vs.85).aspx) tool. The compiler generates the message resource files that you can add to your project.
 
-For example, if you are using the [Event Tracing for Windows (ETW)](devtest.event_tracing_for_windows__etw_) kernel-mode API to add event tracing to a kernel-mode driver, you could use the message compiler to create a header file that contains definitions for the event provider, event attributes, channels, and events. You must include this header file in your source code. The message compiler creates a resource compiler script (\*.rc) that you add to your project file.
+For example, if you are using the [Event Tracing for Windows (ETW)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545699(v=vs.85).aspx) kernel-mode API to add event tracing to a kernel-mode driver, you could use the message compiler to create a header file that contains definitions for the event provider, event attributes, channels, and events. You must include this header file in your source code. The message compiler creates a resource compiler script (\*.rc) that you add to your project file.
 
 <span id="Setting_Message_Compiler_properties_for_driver_projects"></span><span id="setting_message_compiler_properties_for_driver_projects"></span><span id="SETTING_MESSAGE_COMPILER_PROPERTIES_FOR_DRIVER_PROJECTS"></span>Setting Message Compiler properties for driver projects
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -28,7 +28,7 @@ This property page is available if you add a message text file (.mc) or a manife
 <tbody>
 <tr class="odd">
 <td align="left"><p><span id="Additional_Options"></span><span id="additional_options"></span><span id="ADDITIONAL_OPTIONS"></span><strong>Additional Options</strong></p></td>
-<td align="left"><p>Specifies additional options to pass to the <a href="wes.message_compiler__mc_exe_"><strong>Message Compiler (MC.exe)</strong></a> tool.</p></td>
+<td align="left"><p>Specifies additional options to pass to the <a href="https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Aa385638(v=vs.85).aspx"><strong>Message Compiler (MC.exe)</strong></a> tool.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Ansi_Input_File"></span><span id="ansi_input_file"></span><span id="ANSI_INPUT_FILE"></span><strong>Ansi Input File</strong></p></td>
@@ -164,10 +164,10 @@ This property page is available if you add a message text file (.mc) or a manife
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Message Compiler (MC.exe)](devtest.message_compiler_task)
-[WDK and Visual Studio build environment](devtest.wdk_and_visual_studio_build_environment)
+[Message Compiler (MC.exe)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454227(v=vs.85).aspx)
+[WDK and Visual Studio build environment](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454286(v=vs.85).aspx)
 Message compiler task
-[Event Tracing for Windows (ETW)](devtest.event_tracing_for_windows__etw_)
+[Event Tracing for Windows (ETW)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545699(v=vs.85).aspx)
  
 
  

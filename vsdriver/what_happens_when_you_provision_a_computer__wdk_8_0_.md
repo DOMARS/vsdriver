@@ -1,9 +1,9 @@
 <span id="vsdriver.what_happens_when_you_provision_a_computer__wdk_8_0_"></span>What happens when you provision a computer (WDK 8.0)
 ====================================================================================================================================
 
-Using Microsoft Visual Studio to configure and set up driver deployment and driver testing is called *provisioning a target computer* or *provisioning a test computer*. For information about provisioning with Windows Driver Kit (WDK) 8 , see [Provision a computer for driver deployment and testing (WDK 8)](wdkgetstart.provision_a_target_computer_wdk_8). Here we show what happens when you use version 8.0 of the Windows Driver Kit (WDK) to provision a target computer.
+Using Microsoft Visual Studio to configure and set up driver deployment and driver testing is called *provisioning a target computer* or *provisioning a test computer*. For information about provisioning with Windows Driver Kit (WDK) 8 , see [Provision a computer for driver deployment and testing (WDK 8)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh698272(v=vs.85).aspx). Here we show what happens when you use version 8.0 of the Windows Driver Kit (WDK) to provision a target computer.
 
-**Note**  WDK 8 is not the most current version of the WDK. We recommend that you get the current version of the WDK and provision your target computer according to the [provisioning instructions here](wdkgetstart.provision_a_target_computer_wdk_8_1).
+**Note**  WDK 8 is not the most current version of the WDK. We recommend that you get the current version of the WDK and provision your target computer according to the [provisioning instructions here](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh698272(v=vs.85).aspx_1).
 
  
 
@@ -16,9 +16,9 @@ Provisioning a computer performs the following tasks:
 -   Creates a user named WDKRemoteUser and switches to that user
 -   Installs .NET 4.0 if it is not already installed
 -   Installs Microsoft Visual C++ Redistributable
--   Installs [Test Authoring and Execution Framework (TAEF)](taef.test_authoring_and_execution_framework__taef_) (WDK Client)
+-   Installs [Test Authoring and Execution Framework (TAEF)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439725(v=vs.85).aspx) (WDK Client)
 -   Installs debuggers
--   Installs [Windows Device Testing Framework](dtf.portal) (WDTF)
+-   Installs [Windows Device Testing Framework](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff539547(v=vs.85).aspx) (WDTF)
 -   Turns off AutoReboot
 -   Enables kernel memory crash dumps
 -   Disables Screen Saver

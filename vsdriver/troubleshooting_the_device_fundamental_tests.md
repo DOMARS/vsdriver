@@ -1,7 +1,7 @@
 <span id="vsdriver.troubleshooting_the_device_fundamental_tests"></span>Troubleshooting the Device Fundamentals tests using the WDK
 ===================================================================================================================================
 
-This topic provides suggestions for fixing problems you might encounter when you use the WDK to run the [Device Fundamentals Tests](devtest.device_fundamentals_tests). For information about the tests and testing, see [How to select and configure the Device Fundamentals tests](how_to_select_and_configure_the_device_fundamental_tests.md), [How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.md), and [How to test a driver at runtime from a Command Prompt](how_to_test_a_driver_at_runtime_from_a_command_prompt.md).
+This topic provides suggestions for fixing problems you might encounter when you use the WDK to run the [Device Fundamentals Tests](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/JJ673011(v=vs.85).aspx). For information about the tests and testing, see [How to select and configure the Device Fundamentals tests](how_to_select_and_configure_the_device_fundamental_tests.md), [How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.md), and [How to test a driver at runtime from a Command Prompt](how_to_test_a_driver_at_runtime_from_a_command_prompt.md).
 
 **Note**  For information about troubleshooting the Device.Fundamentals tests using the HCK, see [Troubleshooting Device Fundamentals Reliability Testing by using the Windows HCK](http://go.microsoft.com/fwlink/p/?linkid=288941).
 
@@ -72,7 +72,7 @@ Information about specific device requirements for testing are described under [
 The Device Fundamental tests you are running require that Driver Verifier monitors the drivers associated with the device you are testing. You have two options.
 
 -   Add the **Enable Driver Verifier** test to the test group and specify the same *DQ* parameter that you specified for the Device Fundamental tests you are running.
--   Use [Driver Verifier](devtest.driver_verifier) (Verifier.exe) to manually enable Driver Verifier on all individual drivers of the device(s) under test. The Driver Verifier standard settings must be used. To determine which drivers require Driver Verifier, open Device Manager (Devmgmt.msc) on the test computer. In Device Manager, right click the device that you are testing and select **Properties**. Click the **Driver** tab and then click **Driver Details** to identify the names of the drivers. For network class devices, Driver Verifier also has to be enabled on Ndis.sys.
+-   Use [Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545448(v=vs.85).aspx) (Verifier.exe) to manually enable Driver Verifier on all individual drivers of the device(s) under test. The Driver Verifier standard settings must be used. To determine which drivers require Driver Verifier, open Device Manager (Devmgmt.msc) on the test computer. In Device Manager, right click the device that you are testing and select **Properties**. Click the **Driver** tab and then click **Driver Details** to identify the names of the drivers. For network class devices, Driver Verifier also has to be enabled on Ndis.sys.
 
 <span id="_defund_test_hang"></span><span id="_DEFUND_TEST_HANG"></span>
 ------------------------------------------------------------------------
@@ -165,18 +165,18 @@ When you are debugging PnP and power management tests that have become unrespons
 
 **Solution:**
 
-The PnP Surprise Remove Device test (see [PnP Tests (Device Fundamentals)](devtest.pnp_tests__device_fundamentals_)) might fail with the following error message when the PnP manager does not send the remove IRP to the test device stack after sending the surprise remove IRP.
+The PnP Surprise Remove Device test (see [PnP Tests (Device Fundamentals)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/JJ673015(v=vs.85).aspx)) might fail with the following error message when the PnP manager does not send the remove IRP to the test device stack after sending the surprise remove IRP.
 
 ``` syntax
 "Failed to receive IRP_MN_REMOVE_DEVICE after receiving IRP_MN_SURPRISE_REMOVAL. Ensure that there are no open handles or references to the test device (in user mode or in kernel mode) preventing IRP_MN_REMOVE_DEVICE from being sent. You may need to terminate any processes or services that may have open user mode handles to this device."
 ```
 
-The PnP manager will not send the [**IRP\_MN\_REMOVE\_DEVICE**](kernel.irp_mn_remove_device) request until all outstanding file handles to the device are closed. That is, the PnP manager will not send the **IRP\_MN\_REMOVE\_DEVICE** request until reference count of the PDO reaches zero. See [Handling an IRP\_MN\_SURPRISE\_REMOVAL Request](kernel.handling_an_irp_mn_surprise_removal_request) for information on how to properly handle [**IRP\_MN\_SURPRISE\_REMOVAL**](kernel.irp_mn_surprise_removal) request.
+The PnP manager will not send the [**IRP\_MN\_REMOVE\_DEVICE**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff551738(v=vs.85).aspx) request until all outstanding file handles to the device are closed. That is, the PnP manager will not send the **IRP\_MN\_REMOVE\_DEVICE** request until reference count of the PDO reaches zero. See [Handling an IRP\_MN\_SURPRISE\_REMOVAL Request](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff546699(v=vs.85).aspx) for information on how to properly handle [**IRP\_MN\_SURPRISE\_REMOVAL**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff551760(v=vs.85).aspx) request.
 
 To help debug this test failure, you should determine how the reference count of the physical device object (PDO) changes. That is, identify which process is changing the reference count and examine what the call stack looks like when the reference count is changed. The following steps can be used for debugging this failure:
 
-1.  If you have not already done so, connect a kernel debugger to the test computer. See [Provision a computer for driver deployment and testing (WDK 8.1)](wdkgetstart.provision_a_target_computer_wdk_8_1).
-2.  Set a [**ba (Break on Access) breakpoint**](debugger.ba__break_on_access_) at the location where the reference count of the PDO of the test device is stored. See [Processor Breakpoints (ba Breakpoints)](debugger.processor_breakpoints___ba_breakpoints_) for more information about access breakpoints. In the following example, the kernel debugger [**!devnode**](debugger._devnode) command is used to obtain information about the devnode for the USBvideo driver. The address of the PDO for this devnode is 0x849e9648.
+1.  If you have not already done so, connect a kernel debugger to the test computer. See [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909(v=vs.85).aspx).
+2.  Set a [**ba (Break on Access) breakpoint**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff538165(v=vs.85).aspx) at the location where the reference count of the PDO of the test device is stored. See [Processor Breakpoints (ba Breakpoints)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff553451(v=vs.85).aspx) for more information about access breakpoints. In the following example, the kernel debugger [**!devnode**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff562345(v=vs.85).aspx) command is used to obtain information about the devnode for the USBvideo driver. The address of the PDO for this devnode is 0x849e9648.
 
     ``` syntax
     0: kd> !devnode 0 1 usbvideo
@@ -188,7 +188,7 @@ To help debug this test failure, you should determine how the reference count of
       Previous State = DeviceNodeEnumerateCompletion (0x30d)
     ```
 
-3.  Use the [**!devobj**](debugger._devobj) command on the PDO to display information about the reference count (RefCount) of the PDO.
+3.  Use the [**!devobj**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff562349(v=vs.85).aspx) command on the PDO to display information about the reference count (RefCount) of the PDO.
 
     ``` syntax
     0: kd> !devobj 0x849e9648
@@ -202,7 +202,7 @@ To help debug this test failure, you should determine how the reference count of
     Device queue is not busy
     ```
 
-4.  Examine the PDO device object by using the [**dt (Display Type)**](debugger.dt__display_type_) kernel debugger command. The **ReferenceCount** shows the number of open handles for the device that are associated with the device object.
+4.  Examine the PDO device object by using the [**dt (Display Type)**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff542772(v=vs.85).aspx) kernel debugger command. The **ReferenceCount** shows the number of open handles for the device that are associated with the device object.
 
     ``` syntax
     0: kd> dt nt!_DEVICE_OBJECT 849e9648  
@@ -219,21 +219,21 @@ To help debug this test failure, you should determine how the reference count of
     -   Set a breakpoint where the PDO gets created.
     -   After the PDO is created, set the break on access (**ba**) breakpoint at the location where the reference count of the PDO is stored.
 
-    For example, the following command sets a [**ba (Break on Access)**](debugger.ba__break_on_access_) breakpoint on the device object (0x849e9648). The breakpoint is set on write access to the **ReferenceCount** (+4 offset) with a size of 4 bytes (the size of **ReferenceCount**).
+    For example, the following command sets a [**ba (Break on Access)**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff538165(v=vs.85).aspx) breakpoint on the device object (0x849e9648). The breakpoint is set on write access to the **ReferenceCount** (+4 offset) with a size of 4 bytes (the size of **ReferenceCount**).
 
     ``` syntax
     0: kd> ba w 4 849e9648+4 
     ```
 
-    -   If the reference count of the PDO is equal to 0 before starting the test, it is likely that running the test is what is causing the reference count of the PDO to be greater than zero at the time the test performs the surprise remove of the device. This usually is an indication of the presence of a handle leak(s). Run the **PNP Surprise Remove Device test** from a Command Prompt window or from Visual Studio to reproduce the failure to capture the info needed to troubleshoot the problem. Please see [PnP Tests (Device Fundamentals)](devtest.pnp_tests__device_fundamentals_) and [How to select and configure the Device Fundamentals tests](how_to_select_and_configure_the_device_fundamental_tests.md) for how to run the **PNP Surprise Remove Device test** from Visual Studio.
+    -   If the reference count of the PDO is equal to 0 before starting the test, it is likely that running the test is what is causing the reference count of the PDO to be greater than zero at the time the test performs the surprise remove of the device. This usually is an indication of the presence of a handle leak(s). Run the **PNP Surprise Remove Device test** from a Command Prompt window or from Visual Studio to reproduce the failure to capture the info needed to troubleshoot the problem. Please see [PnP Tests (Device Fundamentals)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/JJ673015(v=vs.85).aspx) and [How to select and configure the Device Fundamentals tests](how_to_select_and_configure_the_device_fundamental_tests.md) for how to run the **PNP Surprise Remove Device test** from Visual Studio.
 
     **Note**  If you set the *DoConcurrentIO* parameter to "TRUE" it causes the test to open hundreds of file handles to the PDO. It is recommended to reproduce this failure with this parameter set to "False" for the purpose of debugging this test failure.
 
      
 
-6.  When the break on access (ba) breakpoint occurs, you can use the [**!thread**](debugger._thread) and [**k (Display Stack Backtrace)**](debugger.k__kb__kc__kd__kp__kp__kv__display_stack_backtrace_) kernel debugger commands to debug the failure. Because the reference count could change multiple times during the course of running the test, as an option, you can use the *commandString* parameter of the [**ba (Break on Access)**](debugger.ba__break_on_access_) debugger command to get the information you need on each change to the reference count and still continue testing.
+6.  When the break on access (ba) breakpoint occurs, you can use the [**!thread**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff565440(v=vs.85).aspx) and [**k (Display Stack Backtrace)**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff551943(v=vs.85).aspx) kernel debugger commands to debug the failure. Because the reference count could change multiple times during the course of running the test, as an option, you can use the *commandString* parameter of the [**ba (Break on Access)**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff538165(v=vs.85).aspx) debugger command to get the information you need on each change to the reference count and still continue testing.
 
-    For example, in the following break on access command, the *commandString* consists of a [**!thread**](debugger._thread) command that will identify the process causing the reference count change, and the **.reload ; k 100** commands that will identify the call stack, a [**!devobj**](debugger._devobj) command to print the reference count on each change, and **g** command to continue after the breakpoint.
+    For example, in the following break on access command, the *commandString* consists of a [**!thread**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff565440(v=vs.85).aspx) command that will identify the process causing the reference count change, and the **.reload ; k 100** commands that will identify the call stack, a [**!devobj**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff562349(v=vs.85).aspx) command to print the reference count on each change, and **g** command to continue after the breakpoint.
 
     ``` syntax
     0: kd> ba w 4 849e9648+4 "!thread; .thread /p /r; .reload; k 100; !devobj 849e9648; g" 
@@ -241,7 +241,7 @@ To help debug this test failure, you should determine how the reference count of
 
 ### <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
-In the following example, the [**CreateFile function**](fs.createfile) call from a thread running in cscript.exe is causing an increment to the reference count. We are also able to see the full call stack. Capturing all the instances where the reference count is changed while running the test and analyzing these call stacks after can help with identifying the handle leaks.
+In the following example, the [**CreateFile function**]() call from a thread running in cscript.exe is causing an increment to the reference count. We are also able to see the full call stack. Capturing all the instances where the reference count is changed while running the test and analyzing these call stacks after can help with identifying the handle leaks.
 
 ``` syntax
 THREAD 87eb3d40  Cid 1094.1490  Teb: 7f5a8000 Win32Thread: 82da2210 RUNNING on processor 3
@@ -301,7 +301,7 @@ Device queue is not busy.
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Device Fundamentals Tests](devtest.device_fundamentals_tests)
+[Device Fundamentals Tests](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/JJ673011(v=vs.85).aspx)
 [How to How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.md)
 [How to How to test a driver at runtime from a Command Prompt](how_to_test_a_driver_at_runtime_from_a_command_prompt.md)
 [How to select and configure the Device Fundamentals tests](how_to_select_and_configure_the_device_fundamental_tests.md)

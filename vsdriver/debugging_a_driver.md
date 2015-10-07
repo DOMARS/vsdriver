@@ -3,13 +3,13 @@
 
 Typically, debugging a kernel-mode driver requires two computers. The debugger runs on the *host computer*, and the code being debugged runs on the *target computer*. The target computer is also called the *test computer*. You can debug a user-mode driver on the host computer or on a separate target computer. Before you can debug a driver running on a target computer, you must configure the target computer for debugging.
 
-For information about configuring a target computer and setting up a debug cable, see [Setting Up Kernel-Mode Debugging in Visual Studio](debugger.setting_up_kernel-mode_debugging_in_visual_studio) and [Provision a computer for driver deployment and testing (WDK 8.1)](wdkgetstart.provision_a_target_computer_wdk_8_1).
+For information about configuring a target computer and setting up a debug cable, see [Setting Up Kernel-Mode Debugging in Visual Studio](debugger.setting_up_kernel-mode_debugging_in_visual_studio) and [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909(v=vs.85).aspx).
 
-For information about using Microsoft Visual Studio to debug a driver, see [Debugging Using Visual Studio](debugger.debugging_using_visual_studio).
+For information about using Microsoft Visual Studio to debug a driver, see [Debugging Using Visual Studio](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh406281(v=vs.85).aspx).
 
-For an example of using Visual Studio to debug a kernel-mode driver, see [Writing a KMDF driver based on a template](wdkgetstart.writing_a_kmdf_driver_based_on_a_template).
+For an example of using Visual Studio to debug a kernel-mode driver, see [Writing a KMDF driver based on a template](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439654(v=vs.85).aspx).
 
-For an introduction to Debugging Tools for Windows, see [Windows Debugging](debugger.introduction6).
+For an introduction to Debugging Tools for Windows, see [Windows Debugging](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff551063(v=vs.85).aspx).
 
 <span id="Video_Demonstration"></span><span id="video_demonstration"></span><span id="VIDEO_DEMONSTRATION"></span>Video Demonstration
 -------------------------------------------------------------------------------------------------------------------------------------

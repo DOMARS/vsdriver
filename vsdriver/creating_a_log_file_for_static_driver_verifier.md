@@ -1,14 +1,14 @@
 <span id="vsdriver.creating_a_log_file_for_static_driver_verifier"></span>Creating a log file for Static Driver Verifier
 ========================================================================================================================
 
-The Windows Server 2012 [Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016) requires a Driver Verification Log (DVL) for all applicable driver submissions. You must run [Static Driver Verifier](devtest.static_driver_verifier) (SDV) prior to creating a DVL for your driver. The DVL contains a summary of the results from the Code Analysis and Static Driver Verifier log files. The log files do not contain source code information.
+The Windows Server 2012 [Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016) requires a Driver Verification Log (DVL) for all applicable driver submissions. You must run [Static Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff552808(v=vs.85).aspx) (SDV) prior to creating a DVL for your driver. The DVL contains a summary of the results from the Code Analysis and Static Driver Verifier log files. The log files do not contain source code information.
 
 For best results, run the Code Analysis tool before you run Static Driver Verifier.
 
 ![](../common/wedge.gif)**To create a log file for Static Driver Verifier**
 
 1.  In Microsoft Visual Studio Ultimate 2012, select the driver project file and then right-click to open the project properties. Select **Windows 8 Release** as the **Configuration** and **x64** as the **Platform**.
-2.  If you have already run the Code Analysis tool, follow these instructions for [running Static Driver Verifier](devtest.using_static_driver_verifier_to_find_defects_in_drivers#running_static_driver_verifier#running_static_driver_verifier). For more information about using SDV, see Using Static Driver Verifier to Find Defects in Drivers
+2.  If you have already run the Code Analysis tool, follow these instructions for [running Static Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454281(v=vs.85).aspx#running_static_driver_verifier#running_static_driver_verifier). For more information about using SDV, see Using Static Driver Verifier to Find Defects in Drivers
 3.  If SDV finds defects in your driver, click the defect in the Results pane to view a trace of the code path that led to the rule violation. Fix any defects found in the driver and run SDV again.
 
 Static Driver Verifier writes the results to the file SDV.DVL.xml in the SDV sub-directory of your project, for example, \\myDriverProject\\SDV.
@@ -45,8 +45,8 @@ msbuild.exe <vcxprojectfile> /p:Configuration="Win8 Release" /p:Platform=x64 /ta
 -----------------------------------------------
 
 [Creating a driver verification log](creating_a_driver_verification_log.md)
-[Static Driver Verifier](devtest.static_driver_verifier)
-[Using Static Driver Verifier to Find Defects in Drivers](devtest.using_static_driver_verifier_to_find_defects_in_drivers)
+[Static Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff552808(v=vs.85).aspx)
+[Using Static Driver Verifier to Find Defects in Drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454281(v=vs.85).aspx)
 [Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016)
  
 

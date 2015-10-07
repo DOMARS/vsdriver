@@ -8,15 +8,15 @@ Starting in WDK 8.1, you can copy and run the HCK Test Suites on test computers 
 ### <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
 -   Install Visual Studio and the WDK on the computer you use for development.
--   From Visual Studio, you can configure and provision computers for testing. When you configure the test computer, the WDK driver test framework automatically enables the test computer for remote debugging and transfers the necessary test binaries and support files. If you have not already done so, follow the instructions in [Provision a computer for driver deployment and testing (WDK 8.1)](wdkgetstart.provision_a_target_computer_wdk_8_1)
--   Although it is not recommended, you can also install the necessary test components manually. Follow the instructions to install the [Test Authoring and Execution Framework (TAEF)](taef.test_authoring_and_execution_framework__taef_) and WDTF on the test computer. See [Manually installing and uninstalling TAEF on a test computer](taef.getting_started#manual_install_taef#manual_install_taef) and [Manually installing WDTF on a test computer](dtf.runtime_library#manual_install_wdtf#manual_install_wdtf).
+-   From Visual Studio, you can configure and provision computers for testing. When you configure the test computer, the WDK driver test framework automatically enables the test computer for remote debugging and transfers the necessary test binaries and support files. If you have not already done so, follow the instructions in [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909(v=vs.85).aspx)
+-   Although it is not recommended, you can also install the necessary test components manually. Follow the instructions to install the [Test Authoring and Execution Framework (TAEF)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439725(v=vs.85).aspx) and WDTF on the test computer. See [Manually installing and uninstalling TAEF on a test computer](taef.getting_started#manual_install_taef#manual_install_taef) and [Manually installing WDTF on a test computer](dtf.runtime_library#manual_install_wdtf#manual_install_wdtf).
 
 Instructions
 ------------
 
 ### <span id="Copy_the_tests_to_the_test_computer"></span><span id="copy_the_tests_to_the_test_computer"></span><span id="COPY_THE_TESTS_TO_THE_TEST_COMPUTER"></span>Step 1: Copy the tests to the test computer
 
--   Copy the [Device Fundamentals Tests](devtest.device_fundamentals_tests) from the computer you use for development. Copy the folder %ProgramFiles%\\Windows Kits\\8.0\\Testing\\Tests\\Device Fundamentals to the test computer.
+-   Copy the [Device Fundamentals Tests](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/JJ673011(v=vs.85).aspx) from the computer you use for development. Copy the folder %ProgramFiles%\\Windows Kits\\8.0\\Testing\\Tests\\Device Fundamentals to the test computer.
 
 ### <span id="Run_the_tests"></span><span id="run_the_tests"></span><span id="RUN_THE_TESTS"></span>Step 2: Run the tests
 
@@ -29,7 +29,7 @@ Te.exe [/name:<Test Method>] [<Test Name>.dll | <Test Name.wsc> ]  [/rebootState
 Remarks
 -------
 
-You must specify the test binary (.dll) or script (.wsc) file. The test method (**/name:***&lt;test method&gt;*) is optional. For the test names and test methods, see the [Device Fundamentals Tests](devtest.device_fundamentals_tests). For information about specifying test parameters, see [Device Fundamentals Test Parameters](how_to_select_and_configure_the_device_fundamental_tests.htm#DevFund_Params) and [Te.exe Command Options](taef.te_exe_command_line_parameters) .
+You must specify the test binary (.dll) or script (.wsc) file. The test method (**/name:***&lt;test method&gt;*) is optional. For the test names and test methods, see the [Device Fundamentals Tests](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/JJ673011(v=vs.85).aspx). For information about specifying test parameters, see [Device Fundamentals Test Parameters](how_to_select_and_configure_the_device_fundamental_tests.htm#DevFund_Params) and [Te.exe Command Options](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439743(v=vs.85).aspx) .
 
 For example, to run all PnP tests in the Devfund\_PnPDTest.dll on a device with a specific device ID.
 
@@ -46,11 +46,11 @@ Te.exe /name:"*PNPSurpriseRemoveAndRestartDevice" Devfund_PnPDTest.dll /P:"DQ=De
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Device Fundamentals Tests](devtest.device_fundamentals_tests)
+[Device Fundamentals Tests](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/JJ673011(v=vs.85).aspx)
 [Device Fundamentals Test Parameters](how_to_select_and_configure_the_device_fundamental_tests.htm#DevFund_Params)
 [How to run the HCK Test Suites in WDK 8.1](run_the_hck_test_suites_in_the_wdk.md)
-[Test Authoring and Execution Framework (TAEF)](taef.test_authoring_and_execution_framework__taef_)
-[Te.exe Command Options](taef.te_exe_command_line_parameters)
+[Test Authoring and Execution Framework (TAEF)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439725(v=vs.85).aspx)
+[Te.exe Command Options](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439743(v=vs.85).aspx)
  
 
  

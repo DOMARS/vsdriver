@@ -1,7 +1,7 @@
 <span id="vsdriver.troubleshooting_configuration_of_driver_deployment__testing_and_debugging"></span>Troubleshooting Configuration of Driver Deployment, Testing and Debugging
 ==============================================================================================================================================================================
 
-Provisioning a target computer is described in [Provision a computer for driver deployment and testing (WDK 8.1)](wdkgetstart.provision_a_target_computer_wdk_8_1). Here we give some troubleshooting tips for the provisioning process.
+Provisioning a target computer is described in [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909(v=vs.85).aspx). Here we give some troubleshooting tips for the provisioning process.
 
 <span id="General_tips"></span><span id="general_tips"></span><span id="GENERAL_TIPS"></span>General tips
 ---------------------------------------------------------------------------------------------------------
@@ -46,7 +46,7 @@ Driver Test Computer Configuration 20121115130459167.log
 
 When you start to provision a target computer, you might see a message that says **The network path was not found**.
 
-On the target computer, make sure that you have turned on **Network Discovery** and that you have turned on **File and Printer Sharing** for the appropriate network profile. For example, if the host and target computers are joined to a network domain, you must turn on network discovery and file and printer sharing for the **Domain** network profile. For more information, see [Provision a computer for driver deployment and testing (WDK 8.1)](wdkgetstart.provision_a_target_computer_wdk_8_1).
+On the target computer, make sure that you have turned on **Network Discovery** and that you have turned on **File and Printer Sharing** for the appropriate network profile. For example, if the host and target computers are joined to a network domain, you must turn on network discovery and file and printer sharing for the **Domain** network profile. For more information, see [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909(v=vs.85).aspx).
 
 Make sure you can ping the target computer from the host computer. On the host computer, open a Command Prompt window, and enter **ping** *targetComputerName*, where *targetComputerName* is the name of the target computer.
 
@@ -104,7 +104,7 @@ Enter your password to connect to: NonExistentComputer
 <span id="domain_could_not_access_remote_machine"></span><span id="DOMAIN_COULD_NOT_ACCESS_REMOTE_MACHINE"></span>Provisioning fails: Could not access remote machine
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-When you start to provision a target computer, you might see a message that says **Could not access the remote machine** "*computerName*" **over the network**. This message can be displayed for several reasons. Verify that your host and target computers are both joined to the same domain or the same workgroup. For more information, see [Provision a computer for driver deployment and testing (WDK 8.1)](wdkgetstart.provision_a_target_computer_wdk_8_1). Verify that you entered the correct name for the target computer. Verify that you have enabled network discovery and file and print sharing on the target computer.
+When you start to provision a target computer, you might see a message that says **Could not access the remote machine** "*computerName*" **over the network**. This message can be displayed for several reasons. Verify that your host and target computers are both joined to the same domain or the same workgroup. For more information, see [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909(v=vs.85).aspx). Verify that you entered the correct name for the target computer. Verify that you have enabled network discovery and file and print sharing on the target computer.
 
 <span id="debugger_wont_connect_network"></span><span id="DEBUGGER_WONT_CONNECT_NETWORK"></span>Debugger won't connect or break in: Network connection
 ------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -25,9 +25,9 @@ To determine if your existing driver calls any interfaces outside of UWP, recomp
 
 In other cases, you may have to code a workaround if there is not a suitable replacement. If you need to, write a new Universal Windows driver starting from the driver templates in the unified WDK.
 
-The compiler might also display [INF validation errors](devtest.inf_validation_errors_and_warnings) if you are not [using a universal INF file](devinst.using_a_configurable_inf_file).
+The compiler might also display [INF validation errors](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn929320(v=vs.85).aspx) if you are not [using a universal INF file](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn941087(v=vs.85).aspx).
 
-A Universal Windows driver can use [KMDF](wdf.portal), [UMDF 2](wdf.getting_started_with_umdf_version_2) or the Windows Driver Model (WDM).
+A Universal Windows driver can use [KMDF](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff557565(v=vs.85).aspx), [UMDF 2](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn384105(v=vs.85).aspx) or the Windows Driver Model (WDM).
 
 <span id="Building_a_Universal_Windows_driver"></span><span id="building_a_universal_windows_driver"></span><span id="BUILDING_A_UNIVERSAL_WINDOWS_DRIVER"></span>Building a Universal Windows driver
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -59,7 +59,7 @@ In contrast, existing user-mode drivers may require modification to compile as U
 
      
 
-3.  You might need to modify the .inf file to specify the provider, specified as an **%***ManufacturerName***%** token that is expanded later in the INF file's [**Strings**](devinst.inf_strings_section) section. For example:
+3.  You might need to modify the .inf file to specify the provider, specified as an **%***ManufacturerName***%** token that is expanded later in the INF file's [**Strings**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff547485(v=vs.85).aspx) section. For example:
 
     ``` syntax
     Provider="Contoso"
@@ -83,7 +83,7 @@ If you want to install a Universal Windows driver on a device that is running Wi
 -   RegisterDLL, DelFile, or DelReg directives
 -   Non-HKR AddReg directives
 
-For more information, see [Using a Universal INF File](devinst.using_a_configurable_inf_file).
+For more information, see [Using a Universal INF File](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn941087(v=vs.85).aspx).
 
 If you want to install your Universal Windows driver on Windows 10 Mobile, you can use an .spkg file. An .spkg ("*package file*") is a standalone module that contains your driver package. If you are not deploying to Windows 10 Mobile, you do not need to generate a package file. You can still compile a Universal Windows driver (as defined by the driver source code) without a package file.
 
@@ -139,7 +139,7 @@ To flash the image to the device, either use the Microsoft-supplied FFUTool, or 
 <span id="Debugging_a_Universal_Windows_driver"></span><span id="debugging_a_universal_windows_driver"></span><span id="DEBUGGING_A_UNIVERSAL_WINDOWS_DRIVER"></span>Debugging a Universal Windows driver
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Starting in Windows 10, you can build your KMDF or UMDF driver so that it gets additional driver debugging information through the [Inflight Trace Recorder](devtest.using_wpp_recorder). Universal Windows drivers can take advantage of this feature.
+Starting in Windows 10, you can build your KMDF or UMDF driver so that it gets additional driver debugging information through the [Inflight Trace Recorder](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn914610(v=vs.85).aspx). Universal Windows drivers can take advantage of this feature.
 
 In addition, if you used the Visual Studio KMDF template, your driver uses Windows software trace preprocessor (WPP) to write trace messages. Your driver is an ETW provider with a provider GUID.
 
@@ -157,7 +157,7 @@ To send a trace message from your driver, use this code:
 </tbody>
 </table>
 
-You can access the ETW logs either using Tracelog via the [TShell tool](http://go.microsoft.com/fwlink/p/?linkid=617388) on a phone, or by using [!wmitrace](debugger.wmi_tracing_extensions__wmitrace_dll_) in a debugger session.
+You can access the ETW logs either using Tracelog via the [TShell tool](http://go.microsoft.com/fwlink/p/?linkid=617388) on a phone, or by using [!wmitrace](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff561362(v=vs.85).aspx) in a debugger session.
 
 To use Tracelog on a phone:
 
@@ -178,17 +178,17 @@ To use Tracelog on a phone:
 
 3.  Reboot the phone, and watch for trace messages in the debugger.
 
-All existing kernel mode debug transports continue to work on Windows 10 for desktop editions. However, for both user-mode and kernel-mode drivers, you must use a remote debugger session over KDNET to test Windows 10 Mobile. For more info, see [Setting Up Kernel-Mode Debugging over a Network Cable Manually](debugger.setting_up_a_network_debugging_connection) in Visual Studio.
+All existing kernel mode debug transports continue to work on Windows 10 for desktop editions. However, for both user-mode and kernel-mode drivers, you must use a remote debugger session over KDNET to test Windows 10 Mobile. For more info, see [Setting Up Kernel-Mode Debugging over a Network Cable Manually](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439346(v=vs.85).aspx) in Visual Studio.
 
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
 [Building a Driver with the WDK](building_a_driver.md)
 [Windows 10 Editions for Universal Windows drivers](windows_10_editions_for_universal_drivers.md)
-[Write a Universal Windows driver (UMDF 2) based on a template](wdkgetstart.writing_a_umdf_driver_based_on_a_template)
-[Write a universal Hello World driver (KMDF)](wdkgetstart.writing_a_very_small_kmdf__driver)
-[Write a Universal Windows driver (KMDF) based on a template](wdkgetstart.writing_a_kmdf_driver_based_on_a_template)
-[Provision a computer for driver deployment and testing (WDK 10)](wdkgetstart.provision_a_target_computer_wdk_8_1)
+[Write a Universal Windows driver (UMDF 2) based on a template](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439659(v=vs.85).aspx)
+[Write a universal Hello World driver (KMDF)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439665(v=vs.85).aspx)
+[Write a Universal Windows driver (KMDF) based on a template](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439654(v=vs.85).aspx)
+[Provision a computer for driver deployment and testing (WDK 10)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909(v=vs.85).aspx)
 [What's new in driver development](p_getstarted.what_s_new_in_universal_driver_development)
  
 

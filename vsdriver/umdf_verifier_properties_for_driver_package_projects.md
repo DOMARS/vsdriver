@@ -3,9 +3,9 @@
 
 Sets the properties for the UMDF Verifier on a test computer. You can use these settings when you build and deploy a driver to a test computer.
 
-For information about deployment, see [Provision a computer for driver deployment and testing (WDK 8.1)](wdkgetstart.provision_a_target_computer_wdk_8_1) and [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
+For information about deployment, see [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909(v=vs.85).aspx) and [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
 
-For information about debugging UMDF drivers, see [How to Enable Debugging of a UMDF Driver](umdf.enabling_a_debugger) and [WDF Verifier Control Application](devtest.wdf_verifier_control_application).
+For information about debugging UMDF drivers, see [How to Enable Debugging of a UMDF Driver]() and [WDF Verifier Control Application](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff556129(v=vs.85).aspx).
 
 <span id="Setting_UMDF_Verifier_properties_for_driver_projects"></span><span id="setting_umdf_verifier_properties_for_driver_projects"></span><span id="SETTING_UMDF_VERIFIER_PROPERTIES_FOR_DRIVER_PROJECTS"></span>Setting UMDF Verifier properties for driver projects
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -87,8 +87,8 @@ For information about debugging UMDF drivers, see [How to Enable Debugging of a 
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[User-Mode Driver Framework](umdf.portal)
-[Driver Verifier](devtest.driver_verifier)
+[User-Mode Driver Framework]()
+[Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545448(v=vs.85).aspx)
 [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
  
 

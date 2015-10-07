@@ -19,7 +19,7 @@ Possible values are:
 
 **KDMF** A KMDF driver.
 
-**Export driver (WDM)** A WDM driver that exports functions which other drivers can call. For more information, see [Creating Export Drivers](kernel.creating_export_drivers).
+**Export driver (WDM)** A WDM driver that exports functions which other drivers can call. For more information, see [Creating Export Drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff542891(v=vs.85).aspx).
 
 <span id="KMDF_Version_Major"></span><span id="kmdf_version_major"></span><span id="KMDF_VERSION_MAJOR"></span>**KMDF Version Major**  
 When the type of driver is KMDF, this option specifies the major version of KMDF that will be used when compiling your driver.
@@ -28,15 +28,15 @@ The KMDF\_VERSION\_MAJOR entry informs the MSBuild utility that it must link the
 
 You can build a KMDF driver for an earlier minor version of the library. For example, you could build a driver using KMDF Version Major=1 and KDMDF Version Minor=9 (KMDF Version 1.9) rather than 1.11 so that the driver could be shipped in a package containing an earlier version of the WDF co-installers.
 
-For more information, see [Framework Library Versioning](kmdf.framework_library_versioning).
+For more information, see [Framework Library Versioning]().
 
 <span id="KMDF_Version_Minor"></span><span id="kmdf_version_minor"></span><span id="KMDF_VERSION_MINOR"></span>**KMDF Version Minor**  
 When the type of driver is KMDF, this option specifies the minor version of KMDF that will be used when compiling your driver.
 
-For more information, see [Framework Library Versioning](kmdf.framework_library_versioning) (11, 9, 7, 5). If you omit the KMDF Version Minor, the most recent minor version is used.
+For more information, see [Framework Library Versioning]() (11, 9, 7, 5). If you omit the KMDF Version Minor, the most recent minor version is used.
 
 <span id="UMDF_Version_Major"></span><span id="umdf_version_major"></span><span id="UMDF_VERSION_MAJOR"></span>**UMDF Version Major**  
-When you have a UMDF driver, this option specifies the major version of UMDF that will be used when compiling your driver. See [UMDF Version History](umdf.umdf_version_history). When you have a UMDF driver, the **Configuration type** is **Dynamic Library (.dll)**.
+When you have a UMDF driver, this option specifies the major version of UMDF that will be used when compiling your driver. See [UMDF Version History](). When you have a UMDF driver, the **Configuration type** is **Dynamic Library (.dll)**.
 
 <span id="UMDF_Version_Minor"></span><span id="umdf_version_minor"></span><span id="UMDF_VERSION_MINOR"></span>**UMDF Version Minor**  
 When you have a UMDF driver, this option specifies the minor version of UMDF that will be used when compiling your driver (11, 9, 7, 5). If you omit the UMDF Version Minor, the most recent minor version is used.
@@ -50,11 +50,11 @@ Overrides the default values for preprocessing symbols: \_WIN32\_WINNT, WINVER, 
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Framework Library Versioning](kmdf.framework_library_versioning)
-[Building and Loading a Framework-based Driver](kmdf.building_and_loading_a_framework_based_driver)
-[UMDF Version History](umdf.umdf_version_history)
-[Building UMDF Drivers](umdf.building_umdf_drivers)
-[Creating Export Drivers](kernel.creating_export_drivers)
+[Framework Library Versioning]()
+[Building and Loading a Framework-based Driver]()
+[UMDF Version History]()
+[Building UMDF Drivers]()
+[Creating Export Drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff542891(v=vs.85).aspx)
  
 
  

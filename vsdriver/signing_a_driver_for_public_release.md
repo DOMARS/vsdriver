@@ -5,7 +5,7 @@ Before you release a driver package to the public, we recommend that you submit 
 
 Suppose you have obtained a pair of files from Verisign: a private key file (PVK) and a software publishing certificate (SPC). Also suppose you have a Microsoft Visual Studio solution that contains a driver project named MyDriver and a driver package project named MyDriver Package. To sign your driver package, follow these steps.
 
-1.  Use the [**Pvk2Pfx**](devtest.pvk2pfx) tool to create a Personal Information Exchange (PFX) certificate. The **Pvk2Pfx** tool takes your PVK and SPC files as input and creates a single PFX file. For this exercise, assume that your PFX file is named MyCert.pfx.
+1.  Use the [**Pvk2Pfx**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff550672(v=vs.85).aspx) tool to create a Personal Information Exchange (PFX) certificate. The **Pvk2Pfx** tool takes your PVK and SPC files as input and creates a single PFX file. For this exercise, assume that your PFX file is named MyCert.pfx.
 
     **Note**  Once you have created your PFX file, you can reuse it for other driver projects and on other driver development computers.
 
@@ -40,12 +40,12 @@ Suppose you have obtained a pair of files from Verisign: a private key file (PVK
 8.  Right-click the driver project, **MyDriver**, and choose **Properties**
 9.  In the property pages for the driver, navigate to **Configuration Properties &gt; Driver Signing &gt; General**. Set **TimeStampServer** to the same value that you used in the driver package properties. Set **Sign Mode** to **Production Sign**, and set **Production Certificate** to the same value that you used in the driver package properties.
 
-10. When you are ready to build your driver package, press **F5**. Visual Studio will automatically sign your package and your driver file. If you have configured deployment, Visual Studio will also deploy your signed driver package to a test computer. For more information, see [Provision a computer for driver deployment and testing (WDK 8.1)](wdkgetstart.provision_a_target_computer_wdk_8_1).
+10. When you are ready to build your driver package, press **F5**. Visual Studio will automatically sign your package and your driver file. If you have configured deployment, Visual Studio will also deploy your signed driver package to a test computer. For more information, see [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909(v=vs.85).aspx).
 
 <span id="Viewing_the_driver_package_files"></span><span id="viewing_the_driver_package_files"></span><span id="VIEWING_THE_DRIVER_PACKAGE_FILES"></span>Viewing the driver package files
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-After you build your solution, navigate in File Explorer to the folder that contains your driver package. One of the files in the package is a catalog file. The catalog file contains the digital signature for the package. For an example of viewing the files in a signed package, see [Writing a KMDF driver based on a template](wdkgetstart.writing_a_kmdf_driver_based_on_a_template).
+After you build your solution, navigate in File Explorer to the folder that contains your driver package. One of the files in the package is a catalog file. The catalog file contains the digital signature for the package. For an example of viewing the files in a signed package, see [Writing a KMDF driver based on a template](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439654(v=vs.85).aspx).
 
 <span id="Getting_a_WHQL_release_signature"></span><span id="getting_a_whql_release_signature"></span><span id="GETTING_A_WHQL_RELEASE_SIGNATURE"></span>Getting a WHQL release signature
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -91,9 +91,9 @@ Suppose you want to build and sign a driver package that will run on Windows 7 
 [Driver Signing Requirements for Windows](http://go.microsoft.com/fwlink/p/?linkid=617515)
 [Cross-Certificates for Kernel Mode Code Signing](http://go.microsoft.com/fwlink/p/?LinkID=248296)
 [Kernel-Mode Code Signing Walkthrough](http://go.microsoft.com/fwlink/p/?linkid=617516)
-[Driver Signing](devinst.driver_signing)
-[Installing a Boot-Start Driver](devinst.installing_a_boot_start_driver)
-[Tools for Signing Drivers](devtest.tools_for_signing_drivers)
+[Driver Signing](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff544865(v=vs.85).aspx)
+[Installing a Boot-Start Driver](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff547570(v=vs.85).aspx)
+[Tools for Signing Drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff552958(v=vs.85).aspx)
  
 
  

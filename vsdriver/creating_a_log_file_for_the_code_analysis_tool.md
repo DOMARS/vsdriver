@@ -7,7 +7,7 @@ The Windows Server 2012 [Hardware Certification Program](http://go.microsoft.co
 
 1.  In Microsoft Visual Studio Ultimate 2012, select the driver project file and then right-click to open the project properties. Select **Windows 8 Release** as the **Configuration** and **x64** as the **Platform**.
 2.  From the **Analyze** or **Build** menu, click **Run Code Analysis on Solution**.
-3.  If errors or warnings are found, use the **Code Analysis Report** window to investigate the cause of the errors. Use the warning messages to fix those problems. For more information about the Code Analysis tool, see [How to run Code Analysis for drivers](devtest.how_to_run_code_analysis_for_drivers) and [Analyzing C/C++ Code Quality by Using Code Analysis](http://go.microsoft.com/fwlink/p/?linkid=226836).
+3.  If errors or warnings are found, use the **Code Analysis Report** window to investigate the cause of the errors. Use the warning messages to fix those problems. For more information about the Code Analysis tool, see [How to run Code Analysis for drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454219(v=vs.85).aspx) and [Analyzing C/C++ Code Quality by Using Code Analysis](http://go.microsoft.com/fwlink/p/?linkid=226836).
 
 The Code Analysis tool for drivers writes the results to the file vc.nativecodeanalysis.all.xml in the build configuration and platform sub-directory of your project, for example, \\Windows 8Release\\x64.
 
@@ -42,10 +42,10 @@ For the most up-to-date information about the requirements for the Driver Verifi
 
 [Creating a driver verification log](creating_a_driver_verification_log.md)
 [Creating a log file for Static Driver Verifier](creating_a_log_file_for_static_driver_verifier.md)
-[Code Analysis for Drivers](devtest.code_analysis_for_drivers)
+[Code Analysis for Drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454182(v=vs.85).aspx)
 [Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016)
 [Analyzing C/C++ Code Quality by Using Code Analysis](http://go.microsoft.com/fwlink/p/?linkid=226836)
-[How to run Code Analysis for drivers](devtest.how_to_run_code_analysis_for_drivers)
+[How to run Code Analysis for drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454219(v=vs.85).aspx)
  
 
  

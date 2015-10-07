@@ -3,13 +3,13 @@
 
 In this topic we explain how to use Visual Studio to start writing a new filter driver. Filter drivers are different from device function drivers, software drivers, and file system drivers, which we cover in other topics. To learn about filter drivers and how they differ from other types of drivers, see the following topics.
 
--   [What is a Driver?](wdkgetstart.what_is_a_driver_)
--   [Choosing a Driver Model](wdkgetstart.choosing_a_driver_model)
--   [Device Nodes and Device Stacks](wdkgetstart.device_nodes_and_device_stacks)
--   [Filter Drivers](kernel.filter_drivers)
--   [Types of WDM Drivers](kernel.types_of_wdm_drivers)
+-   [What is a Driver?](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff554678(v=vs.85).aspx)
+-   [Choosing a Driver Model](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff554652(v=vs.85).aspx)
+-   [Device Nodes and Device Stacks](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff554721(v=vs.85).aspx)
+-   [Filter Drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545890(v=vs.85).aspx)
+-   [Types of WDM Drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff564862(v=vs.85).aspx)
 
-To begin, first determine which driver model is appropriate for your filter driver. For help determining which model is best for you, see [Choosing a Driver Model](wdkgetstart.choosing_a_driver_model). If you are writing a filter driver for a hardware device, determine where your device fits in the list of technologies described in [Device and Driver Technologies](wdknodes.device_and_driver_technologies). See the documentation for that particular technology to see whether there is any guidance for choosing a filter driver model. The recommended filter driver model varies from one technology to the next. For some technologies, the documentation recommends using the User Mode Driver Framework (UMDF), the Kernel Mode Driver Framework (KMDF), or the Windows Driver Model (WDM). For other technologies, the documentation gives explicit details on how to write a filter driver. Some technologies have mini filter models. For some technologies, there might not be any recommendation for a filter driver model.
+To begin, first determine which driver model is appropriate for your filter driver. For help determining which model is best for you, see [Choosing a Driver Model](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff554652(v=vs.85).aspx). If you are writing a filter driver for a hardware device, determine where your device fits in the list of technologies described in [Device and Driver Technologies](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff557557(v=vs.85).aspx). See the documentation for that particular technology to see whether there is any guidance for choosing a filter driver model. The recommended filter driver model varies from one technology to the next. For some technologies, the documentation recommends using the User Mode Driver Framework (UMDF), the Kernel Mode Driver Framework (KMDF), or the Windows Driver Model (WDM). For other technologies, the documentation gives explicit details on how to write a filter driver. Some technologies have mini filter models. For some technologies, there might not be any recommendation for a filter driver model.
 
 Next, determine which of the following cases describes your driver model recommendation and follow the steps:
 
@@ -19,7 +19,7 @@ Next, determine which of the following cases describes your driver model recomme
 1.  In Visual Studio, on the **File** menu, choose **New | Project**.
 2.  In the New Project dialog box, in the left pane, locate and select **Visual C++ | Windows Driver | WDF**.
 3.  In the middle pane, select **User Mode Driver (UMDF)**.
-4.  Fill in the **Name** and **Location** boxes, and click **OK**. For more information, see [Writing a UMDF Driver Based on a Template](wdkgetstart.writing_a_umdf_driver_based_on_a_template).
+4.  Fill in the **Name** and **Location** boxes, and click **OK**. For more information, see [Writing a UMDF Driver Based on a Template](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439659(v=vs.85).aspx).
     **Note**  When you create a new UMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h.
 
      
@@ -32,7 +32,7 @@ Next, determine which of the following cases describes your driver model recomme
 1.  In Visual Studio, on the **File** menu, choose **New | Project**.
 2.  In the New Project dialog box, in the left pane, locate and select **WDF**.
 3.  In the middle pane, select **Kernel Mode Driver (KMDF)**.
-4.  Fill in the **Name** and **Location** boxes, and click **OK**. For more information, see [Writing a KMDF Driver Based on a Template](wdkgetstart.writing_a_kmdf_driver_based_on_a_template).
+4.  Fill in the **Name** and **Location** boxes, and click **OK**. For more information, see [Writing a KMDF Driver Based on a Template](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439654(v=vs.85).aspx).
     **Note**  When you create a new KMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h.
 
      
@@ -71,7 +71,7 @@ If your device technology has a specific filter model or a minifilter model, and
 <span id="Case_5__The_documentation_for_your_technology_does_not_have_a_recommendation_for_a_filter_driver_model."></span><span id="case_5__the_documentation_for_your_technology_does_not_have_a_recommendation_for_a_filter_driver_model."></span><span id="CASE_5__THE_DOCUMENTATION_FOR_YOUR_TECHNOLOGY_DOES_NOT_HAVE_A_RECOMMENDATION_FOR_A_FILTER_DRIVER_MODEL."></span>Case 5: The documentation for your technology does not have a recommendation for a filter driver model.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-1.  Determine whether UMDF, KMDF, or WDM is the best model for your filter driver. For help, see [Choosing a Driver Model](wdkgetstart.choosing_a_driver_model).
+1.  Determine whether UMDF, KMDF, or WDM is the best model for your filter driver. For help, see [Choosing a Driver Model](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff554652(v=vs.85).aspx).
 2.  In Visual Studio, on the **File** menu, choose **New | Project**.
 3.  In Visual Studio, in the New Project dialog box, under **Windows Driver**, select one of the following templates:
 
