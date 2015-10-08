@@ -1,11 +1,11 @@
 # VS Driver
 ## Partial pages
 ### [Developing, Testing, and Deploying Drivers](vsdriver/visual_studio_driver_development_environment.md)
-### [Getting Started with ](vsdriver/getting_started_with_universal_drivers.md)
-### [Validating ](vsdriver/validating_universal_drivers.md)
-### [Installing a ](vsdriver/installing_a_universal_driver.md)
+### [Getting Started with Universal Drivers](vsdriver/getting_started_with_universal_drivers.md)
+### [Validating Universal Drivers](vsdriver/validating_universal_drivers.md)
+### [Installing a Universal Driver](vsdriver/installing_a_universal_driver.md)
 ### [Target platform on MSDN driver reference pages](vsdriver/windows_10_editions_for_universal_drivers.md)
-### [Driver convergence model for ](vsdriver/driver_model_convergence.md)
+### [Driver convergence model for Windows 10](vsdriver/driver_model_convergence.md)
 ### [Creating a New Device Function Driver](vsdriver/creating_a_new_driver.md)
 ### [Creating a New Filter Driver](vsdriver/creating_a_new_filter_driver.md)
 ### [Creating a New Software Driver](vsdriver/creating_a_new_software_driver.md)
