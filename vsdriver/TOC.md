@@ -1,5 +1,5 @@
 # VS Driver
-## Partial pages
+## Topics
 ### [Developing, Testing, and Deploying Drivers](vsdriver/visual_studio_driver_development_environment.md)
 ### [Getting Started with Universal Drivers](vsdriver/getting_started_with_universal_drivers.md)
 ### [Validating Universal Drivers](vsdriver/validating_universal_drivers.md)
