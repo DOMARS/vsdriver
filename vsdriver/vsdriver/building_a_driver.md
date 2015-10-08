@@ -99,28 +99,28 @@ You can set properties for an individual driver or for an entire driver package.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Signing properties for individual driver files (see <a href="signing_a_driver.htm">Signing a Driver</a>)</p></td>
-<td align="left"><p>Signing properties for driver packages (see <a href="signing_a_driver.htm">Signing a Driver</a>)</p></td>
+<td align="left"><p>Signing properties for individual driver files (see <a href="signing_a_driver.md">Signing a Driver</a>)</p></td>
+<td align="left"><p>Signing properties for driver packages (see <a href="signing_a_driver.md">Signing a Driver</a>)</p></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="counters_manifest_preprocessor_properties_for_driver_projects.htm">Counters Manifest Preprocessor Properties for Driver Projects</a> (for <a href="perf.ctrpp"><strong>CTRPP</strong></a>)</td>
-<td align="left"><p><a href="deployment_properties_for_driver_projects.htm">Deployment Properties for Driver Package Projects</a> (see <a href="deploying_a_driver_to_a_test_computer.htm">Deploying a Driver to a Test Computer</a>)</p></td>
+<td align="left"><a href="counters_manifest_preprocessor_properties_for_driver_projects.md">Counters Manifest Preprocessor Properties for Driver Projects</a> (for <a href="https://perf.ctrpp"><strong>CTRPP</strong></a>)</td>
+<td align="left"><p><a href="deployment_properties_for_driver_projects.md">Deployment Properties for Driver Package Projects</a> (see <a href="deploying_a_driver_to_a_test_computer.md">Deploying a Driver to a Test Computer</a>)</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="driver_model_settings_properties_for_driver_projects.htm">Driver Model Settings Properties for Driver Projects</a></td>
-<td align="left"><p><a href="driver_verifier_properties_for__driver_projects.htm">Driver Verifier Properties for Driver Package Projects</a></p></td>
+<td align="left"><a href="driver_model_settings_properties_for_driver_projects.md">Driver Model Settings Properties for Driver Projects</a></td>
+<td align="left"><p><a href="driver_verifier_properties_for__driver_projects.md">Driver Verifier Properties for Driver Package Projects</a></p></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="message_compiler_properties_for_driver_projects.htm">Message Compiler Properties for Driver Projects</a></td>
-<td align="left"><p><a href="kmdf_verifier_properties_for_driver_package_projects.htm">KMDF Verifier Properties for Driver Package Projects</a></p></td>
+<td align="left"><a href="message_compiler_properties_for_driver_projects.md">Message Compiler Properties for Driver Projects</a></td>
+<td align="left"><p><a href="kmdf_verifier_properties_for_driver_package_projects.md">KMDF Verifier Properties for Driver Package Projects</a></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="stampinf_properties_for_driver_projects.htm">Stampinf Properties for Driver Projects</a></td>
-<td align="left"><p><a href="umdf_verifier_properties_for_driver_package_projects.htm">UMDF Verifier Properties for Driver Package Projects</a></p></td>
+<td align="left"><a href="stampinf_properties_for_driver_projects.md">Stampinf Properties for Driver Projects</a></td>
+<td align="left"><p><a href="umdf_verifier_properties_for_driver_package_projects.md">UMDF Verifier Properties for Driver Package Projects</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><a href="https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff556201(v=vs.85).aspx">WPP Preprocessor (WPP Tracing)</a></td>
-<td align="left"><p><a href="inf2cat_properties_for_driver_package_projects.htm">Inf2Cat Properties for Driver Package Projects</a> (see the <a href="devtest.inf2cat"><strong>Inf2Cat</strong></a> tool)</p></td>
+<td align="left"><p><a href="inf2cat_properties_for_driver_package_projects.md">Inf2Cat Properties for Driver Package Projects</a> (see the <a href="https://devtest.inf2cat"><strong>Inf2Cat</strong></a> tool)</p></td>
 </tr>
 </tbody>
 </table>

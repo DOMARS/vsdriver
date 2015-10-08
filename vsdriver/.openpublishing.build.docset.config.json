@@ -1,0 +1,23 @@
+{
+  "toc_file": "TOC.md",
+  "exclude_path_patterns": [
+    "*how_to_select_and_configure_the_device_fundamental_tests.md",
+    "*stampinf_properties_for_driver_projects.md",
+    "vsdriver/vsdriver/a*",
+    "vsdriver/vsdriver/c*",
+    "vsdriver/vsdriver/d*",
+    "vsdriver/vsdriver/g*",
+    "vsdriver/vsdriver/h*",
+    "vsdriver/vsdriver/i*",
+    "vsdriver/vsdriver/k*",
+    "vsdriver/vsdriver/m*",
+    "vsdriver/vsdriver/p*",
+    "vsdriver/vsdriver/r*",
+    "vsdriver/vsdriver/s*",
+    "vsdriver/vsdriver/k*",
+    "vsdriver/vsdriver/t*",
+    "vsdriver/vsdriver/u*",
+    "vsdriver/vsdriver/v*",
+    "vsdriver/vsdriver/w*"],
+  "common_metadata": {}
+}
