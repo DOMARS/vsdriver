@@ -29,7 +29,7 @@ Te.exe [/name:<Test Method>] [<Test Name>.dll | <Test Name.wsc> ]  [/rebootState
 Remarks
 -------
 
-You must specify the test binary (.dll) or script (.wsc) file. The test method (**/name:***&lt;test method&gt;*) is optional. For the test names and test methods, see the [Device Fundamentals Tests](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/JJ673011(v=vs.85).aspx). For information about specifying test parameters, see [Device Fundamentals Test Parameters](how_to_select_and_configure_the_device_fundamental_tests.htm#DevFund_Params) and [Te.exe Command Options](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439743(v=vs.85).aspx) .
+You must specify the test binary (.dll) or script (.wsc) file. The test method (**/name:***&lt;test method&gt;*) is optional. For the test names and test methods, see the [Device Fundamentals Tests](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/JJ673011(v=vs.85).aspx). For information about specifying test parameters, see [Device Fundamentals Test Parameters](how_to_select_and_configure_the_device_fundamental_tests.md) and [Te.exe Command Options](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439743(v=vs.85).aspx) .
 
 For example, to run all PnP tests in the Devfund\_PnPDTest.dll on a device with a specific device ID.
 
@@ -47,7 +47,7 @@ Te.exe /name:"*PNPSurpriseRemoveAndRestartDevice" Devfund_PnPDTest.dll /P:"DQ=De
 -----------------------------------------------
 
 [Device Fundamentals Tests](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/JJ673011(v=vs.85).aspx)
-[Device Fundamentals Test Parameters](how_to_select_and_configure_the_device_fundamental_tests.htm#DevFund_Params)
+[Device Fundamentals Test Parameters](how_to_select_and_configure_the_device_fundamental_tests.md)
 [How to run the HCK Test Suites in WDK 8.1](run_the_hck_test_suites_in_the_wdk.md)
 [Test Authoring and Execution Framework (TAEF)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439725(v=vs.85).aspx)
 [Te.exe Command Options](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439743(v=vs.85).aspx)

@@ -115,7 +115,7 @@ You can also copy one of the provided HCK Test Suites and export it, along with 
 -   [HCK Tests.Basic.Device.Network.MobileBroadband.GSM Test Suite](#HCK_GSM)
 -   [HCK Tests.Basic.Device.Network.WLAN Test Suite](#HCK_WLAN)
 
-For information about specifying test parameters, see [Device Fundamentals Test Parameters](how_to_select_and_configure_the_device_fundamental_tests.htm#DevFund_Params). If the device under test under test or one of its child devices is a WiFi adapter or a network device, you might need to set the *Wpa2PskAesSsid*, *Wpa2PskPassword*, or *WDTFREMOTESYSTEM* parameters.
+For information about specifying test parameters, see [Device Fundamentals Test Parameters](how_to_select_and_configure_the_device_fundamental_tests.md). If the device under test under test or one of its child devices is a WiFi adapter or a network device, you might need to set the *Wpa2PskAesSsid*, *Wpa2PskPassword*, or *WDTFREMOTESYSTEM* parameters.
 
 ### <span id="HCK_devfund"></span><span id="hck_devfund"></span><span id="HCK_DEVFUND"></span>HCK Tests.Basic.Device.Device Fundamentals Test Suite
 
