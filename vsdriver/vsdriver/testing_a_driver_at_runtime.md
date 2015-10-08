@@ -83,17 +83,17 @@ Running the Device Fundamentals tests in Visual Studio early in the development 
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[How to run the HCK Test Suites in WDK 8.1](run_the_hck_test_suites_in_the_wdk.md)
-[How to select and configure the Device Fundamentals Tests](how_to_select_and_configure_the_device_fundamental_tests.md)
-[Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
-[Setting Up Kernel-Mode Debugging in Visual Studio](debugger.setting_up_kernel-mode_debugging_in_visual_studio)
-[Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016)
-[Windows Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/?linkid=254893)
-[How to test a driver at runtime from a Command Prompt](how_to_test_a_driver_at_runtime_from_a_command_prompt.md)
+* [How to run the HCK Test Suites in WDK 8.1](run_the_hck_test_suites_in_the_wdk.md)
+* [How to select and configure the Device Fundamentals Tests](how_to_select_and_configure_the_device_fundamental_tests.md)
+* [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
+* [Setting Up Kernel-Mode Debugging in Visual Studio](debugger.setting_up_kernel-mode_debugging_in_visual_studio)
+* [Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016)
+* [Windows Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/?linkid=254893)
+* [How to test a driver at runtime from a Command Prompt](how_to_test_a_driver_at_runtime_from_a_command_prompt.md)
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20How%20to%20test%20a%20driver%20at%20runtime%20using%20Visual%20Studio%20%20RELEASE:%20(9/30/2015)&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+* [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20How%20to%20test%20a%20driver%20at%20runtime%20using%20Visual%20Studio%20%20RELEASE:%20(9/30/2015)&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
 
 © 2015 Microsoft. All rights reserved.

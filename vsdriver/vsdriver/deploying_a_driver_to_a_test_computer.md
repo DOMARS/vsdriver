@@ -68,19 +68,19 @@ The WDK can deploy and install a driver package on a test computer, but only if 
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Provision a computer for driver deployment and testing (WDK 10)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909(v=vs.85).aspx)
-[Troubleshooting Configuration of Driver Deployment, Testing and Debugging](troubleshooting_configuration_of_driver_deployment__testing_and_debugging.md)
-[Signing a Driver During Development and Testing](signing_a_driver_during_development_and_testing.md)
-[Deployment Properties for Driver Projects](deployment_properties_for_driver_projects.md)
-[Driver Verifier Properties for Driver Projects](driver_verifier_properties_for__driver_projects.md)
-[KMDF Verifier Properties for Driver Package Projects](kmdf_verifier_properties_for_driver_package_projects.md)
-[UMDF Verifier Properties for Driver Package Projects](umdf_verifier_properties_for_driver_package_projects.md)
-[How to create a custom driver installation script](create_a_custom_driver_installation_script.md)
-[Inf2Cat Properties for Driver Package Projects](inf2cat_properties_for_driver_package_projects.md)
+* [Provision a computer for driver deployment and testing (WDK 10)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909(v=vs.85).aspx)
+* [Troubleshooting Configuration of Driver Deployment, Testing and Debugging](troubleshooting_configuration_of_driver_deployment__testing_and_debugging.md)
+* [Signing a Driver During Development and Testing](signing_a_driver_during_development_and_testing.md)
+* [Deployment Properties for Driver Projects](deployment_properties_for_driver_projects.md)
+* [Driver Verifier Properties for Driver Projects](driver_verifier_properties_for__driver_projects.md)
+* [KMDF Verifier Properties for Driver Package Projects](kmdf_verifier_properties_for_driver_package_projects.md)
+* [UMDF Verifier Properties for Driver Package Projects](umdf_verifier_properties_for_driver_package_projects.md)
+* [How to create a custom driver installation script](create_a_custom_driver_installation_script.md)
+* [Inf2Cat Properties for Driver Package Projects](inf2cat_properties_for_driver_package_projects.md)
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20Deploying%20a%20Driver%20to%20a%20Test%20Computer%20%20RELEASE:%20(9/30/2015)&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+* [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20Deploying%20a%20Driver%20to%20a%20Test%20Computer%20%20RELEASE:%20(9/30/2015)&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
 
 © 2015 Microsoft. All rights reserved.

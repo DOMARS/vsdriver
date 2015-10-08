@@ -9,10 +9,10 @@ You might find this feature useful if you need to integrate the WDK with your bu
 
  
 
-[1. Download the Visual Studio and WDK and SDK setup files](#download_vs_kits)
-[2. Download the BuildLabSupport files](#download_script)
-[3. Install the WDK 8.1 build environment](#install_script)
-[4. Build Windows driver projects and solutions](#build_step)
+* [1. Download the Visual Studio and WDK and SDK setup files](#download_vs_kits)
+* [2. Download the BuildLabSupport files](#download_script)
+* [3. Install the WDK 8.1 build environment](#install_script)
+* [4. Build Windows driver projects and solutions](#build_step)
 <span id="download_vs_kits"></span><span id="DOWNLOAD_VS_KITS"></span>1. Download the Visual Studio and WDK and SDK setup files
 -------------------------------------------------------------------------------------------------------------------------------
 
@@ -85,12 +85,12 @@ The build lab support files include the **setup.ps1** PowerShell command file, w
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Building a Driver](building_a_driver.md)
-[MSBuild](http://go.microsoft.com/fwlink/p/?linkid=262804)
+* [Building a Driver](building_a_driver.md)
+* [MSBuild](http://go.microsoft.com/fwlink/p/?linkid=262804)
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20Installing%20the%20WDK%20Build%20Environment%20in%20a%20Lab%20%20RELEASE:%20(9/30/2015)&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+* [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20Installing%20the%20WDK%20Build%20Environment%20in%20a%20Lab%20%20RELEASE:%20(9/30/2015)&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
 
 © 2015 Microsoft. All rights reserved.

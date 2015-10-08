@@ -48,16 +48,16 @@ msbuild.exe <vcxprojectfile> /target:dvl /p:Configuration="Win8 Release" /P:Plat
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Creating a log file for Static Driver Verifier](creating_a_log_file_for_static_driver_verifier.md)
-[Creating a log file for the code analysis tool](creating_a_log_file_for_the_code_analysis_tool.md)
-[Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016)
-[Analyzing Driver Quality by Using Code Analysis Tools](analyzing_driver_quality_by_using_code_analysis_tools.md)
-[How to run Code Analysis for drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454219(v=vs.85).aspx)
-[Using Static Driver Verifier to find defects in drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454281(v=vs.85).aspx)
+* [Creating a log file for Static Driver Verifier](creating_a_log_file_for_static_driver_verifier.md)
+* [Creating a log file for the code analysis tool](creating_a_log_file_for_the_code_analysis_tool.md)
+* [Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016)
+* [Analyzing Driver Quality by Using Code Analysis Tools](analyzing_driver_quality_by_using_code_analysis_tools.md)
+* [How to run Code Analysis for drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454219(v=vs.85).aspx)
+* [Using Static Driver Verifier to find defects in drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454281(v=vs.85).aspx)
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20Creating%20a%20Driver%20Verification%20Log%20%20RELEASE:%20(9/30/2015)&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+* [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20Creating%20a%20Driver%20Verification%20Log%20%20RELEASE:%20(9/30/2015)&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
 
 © 2015 Microsoft. All rights reserved.

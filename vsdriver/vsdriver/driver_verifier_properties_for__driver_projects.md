@@ -1,7 +1,7 @@
 <span id="vsdriver.driver_verifier_properties_for__driver_projects"></span>Driver Verifier Properties for Driver Package Projects
 =================================================================================================================================
 
-[Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545448(v=vs.85).aspx) is a run-time verification tool that increases the effectiveness of your driver testing. You can enable and configure Driver Verifier to run on all test computers when you deploy your driver for testing.
+* [Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545448(v=vs.85).aspx) is a run-time verification tool that increases the effectiveness of your driver testing. You can enable and configure Driver Verifier to run on all test computers when you deploy your driver for testing.
 
 You should always set up a kernel mode debugging connection with the test computer when you enable Driver Verifier on the remote test computer. For information about configuring a target computer and setting up a debug cable, see [Setting Up Kernel-Mode Debugging in Visual Studio](debugger.setting_up_kernel-mode_debugging_in_visual_studio).
 
@@ -125,14 +125,14 @@ There are four options that require you to first enable [I/O Verification](https
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545448(v=vs.85).aspx)
-[How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.md)
-[Setting Up Kernel-Mode Debugging in Visual Studio](debugger.setting_up_kernel-mode_debugging_in_visual_studio)
-[Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
+* [Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545448(v=vs.85).aspx)
+* [How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.md)
+* [Setting Up Kernel-Mode Debugging in Visual Studio](debugger.setting_up_kernel-mode_debugging_in_visual_studio)
+* [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20Driver%20Verifier%20Properties%20for%20%20Driver%20Package%20Projects%20%20RELEASE:%20(9/30/2015)&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+* [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20Driver%20Verifier%20Properties%20for%20%20Driver%20Package%20Projects%20%20RELEASE:%20(9/30/2015)&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
 
 © 2015 Microsoft. All rights reserved.
