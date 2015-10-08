@@ -1,316 +1,158 @@
 <Project
-   DefaultTargets="Build"
+    DefaultTargets="Build"
     ToolsVersion="4.0"
     xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-  <Import
-      Project="OpenPublishingBuild.props"
-      Condition="'$(OpenPublishingBuildPropsImported)' == '' "/>
+  <PropertyGroup>
+    <BuildTaskPackage>OpenPublishingBuild</BuildTaskPackage>
+    <ToolsFolder>$(MSBuildThisFileDirectory)Tools\</ToolsFolder>
+  </PropertyGroup>
 
-  <!-- Begin Processing targets -->
-  <UsingTask TaskName="GetBuildFiles"             AssemblyFile="$(BuildTaskAssembly)" />
-  <UsingTask TaskName="ParseRepoConfiguration"    AssemblyFile="$(BuildTaskAssembly)" />
-  <UsingTask TaskName="ExpandScriptIncludes"      AssemblyFile="$(BuildTaskAssembly)" />
-  <UsingTask TaskName="ExtractContentMetadata"    AssemblyFile="$(BuildTaskAssembly)" />
-  <UsingTask TaskName="Transform"                 AssemblyFile="$(BuildTaskAssembly)" />
-  <UsingTask TaskName="ExpandFileIncludes"        AssemblyFile="$(BuildTaskAssembly)" />
-  <UsingTask TaskName="NormalizeReference"        AssemblyFile="$(BuildTaskAssembly)" />
-  <UsingTask TaskName="CopyOutputFile"            AssemblyFile="$(BuildTaskAssembly)" />
-  <UsingTask TaskName="CopyResourceFile"          AssemblyFile="$(BuildTaskAssembly)" />
-  <UsingTask TaskName="ParseToc"                  AssemblyFile="$(BuildTaskAssembly)" />
-  <UsingTask TaskName="GenerateManifest"          AssemblyFile="$(BuildTaskAssembly)" />
+  <PropertyGroup>
+    <PackageInstalled>True</PackageInstalled>
+    <PackageInstalled Condition="EXISTS('$(PackageRootFolder)build\Net451\OpenPublishingBuild.props') != 'True'">False</PackageInstalled>
+    <PackageInstalled Condition="EXISTS('$(PackageRootFolder)build\Net451\OpenPublishingBuild.mdproj') != 'True'">False</PackageInstalled>
+  </PropertyGroup>
 
-  <Target Name="PrepareFolder">
-    <Message Text="Preparing folder: LogOutputFolder=$(LogOutputFolder);OutputFolder=$(OutputFolder)" />
-    <Message Text="Temp folder full path: $(TempFolderFullPath)"/>
-    <MakeDir Directories="$(LogOutputFolder)" Condition="!Exists($(LogOutputFolder))"/>
-    <MakeDir Directories="$(OutputFolder)" Condition="!Exists($(OutputFolder))"/>
-    <MakeDir Directories="$(TempFolderFullPath)" Condition="!Exists($(TempFolderFullPath))"/>
-  </Target>
+  <!-- nuget Restore Target-->
+  <Target Name="RestorePackages">
 
-  <!-- ParseToc Target-->
-  <Target
-      Name="ParseToc">
-    <PropertyGroup>
-      <CurrentTask>ParseRepoConfiguration</CurrentTask>
-    </PropertyGroup>
+    <!-- There are three files manually needed to publish a content repository. This -->
+    <!-- file, packages.config, and nuget.exe. The rest can be boot strapped by the build process. -->
+    <Error Condition="EXISTS('$(MSBuildThisFileDirectory)packages.config') != 'True'" Text="packages.config was not found at the expected location: $(MSBuildThisFileDirectory)." />
+    <Error Condition="EXISTS('$(ToolsFolder)NuGet\NuGet.exe') != 'True'" Text="Nuget.exe was not found at the expected location: $(ToolsFolder)NuGet." />
 
-    <ParseRepoConfiguration
-        RepositoryRoot="$(RepositoryRoot)"
-        TempFolder="$(TempFolder)"
-        LogOutputFolder="$(LogOutputFolder)"
-        OutputFolder="$(OutputFolder)"
-        FileAccessorType="$(FileAccessorType)"
-        ContinueOnError="ErrorAndStop">
-
+    <!-- Get package version from packages.config -->
+    <XmlPeek
+        XmlInputPath=".\packages.config"
+        Query="//package[@id='$(BuildTaskPackage)']/@version">
       <Output
-        TaskParameter ="DocsetSettingsWithoutTocId"
-        ItemName="DocsetSettingsWithoutTocId" />
-    </ParseRepoConfiguration>
-
-    <Copy SourceFiles="$(RepoConfigurationFile)" DestinationFolder="$(OutputFolder)" />
-
-    <PropertyGroup>
-      <CurrentTask>ParseToc</CurrentTask>
-    </PropertyGroup>
-
-    <ParseToc
-        RepositoryRoot="$(RepositoryRoot)"
-        TempFolder="$(TempFolder)"
-        LogOutputFolder="$(LogOutputFolder)"
-        FileAccessorType="$(FileAccessorType)"
-        DocsetSettingsWithoutTocId="@(DocsetSettingsWithoutTocId)"
-        OutputFolder="$(OutputFolder)"
-        ContinueOnError="ErrorAndStop">
-
+          TaskParameter="Result"
+          ItemName="PackageVersion" />
+    </XmlPeek>
+    <CreateProperty
+        Value="@(PackageVersion)">
       <Output
-        TaskParameter ="TocOutputItems"
-        ItemName="TocOutputItems" />
-
-      <Output
-        TaskParameter ="DocsetSettings"
-        ItemName="DocsetSettings" />
-    </ParseToc>
-  </Target>
-
-  <!-- Transform Target-->
-  <Target
-      Name="Transform">
-
-    <PropertyGroup>
-      <CurrentTask>GetBuildFiles</CurrentTask>
-    </PropertyGroup>
-
-    <GetBuildFiles
-        RepositoryRoot="$(RepositoryRoot)"
-        TempFolder="$(TempFolder)"
-        BuildSearchPatterns="$(BuildSearchPatterns)"
-        LogOutputFolder="$(LogOutputFolder)"
-        OutputFolder="$(OutputFolder)"
-        FileAccessorType="$(FileAccessorType)"
-        DocsetSettingsWithoutTocId="@(DocsetSettingsWithoutTocId)"
-        ContinueOnError="ErrorAndStop">
-
-      <Output
-          TaskParameter="ContentItems"
-          ItemName="ContentItems"/>
-
-      <Output
-          TaskParameter="ResourceItems"
-          ItemName="ResourceItems"/>
-
-      <Output
-          TaskParameter="ExcludedContentItems"
-          ItemName="ExcludedContentItems"/>
-
-      <Output
-          TaskParameter="ExcludedResourceItems"
-          ItemName="ExcludedResourceItems"/>
-    </GetBuildFiles>
-    
-    <PropertyGroup>
-      <CurrentTask>ExpandScriptIncludes</CurrentTask>
-    </PropertyGroup>
-
-    <ExpandScriptIncludes
-        RepositoryRoot="$(RepositoryRoot)"
-        TempFolder="$(TempFolder)"
-        LogOutputFolder="$(LogOutputFolder)"
-        OutputFolder="$(OutputFolder)"
-        ContentItems="@(ContentItems)"
-        FileAccessorType="$(FileAccessorType)"
-        ContinueOnError="ErrorAndStop">
-
-      <Output
-        TaskParameter="ExpandedScriptContentItems"
-        ItemName="ExpandedScriptContentItems" />
-    </ExpandScriptIncludes>
-    
-    <PropertyGroup>
-      <CurrentTask>ExtractContentMetadata</CurrentTask>
-    </PropertyGroup>
-
-    <ExtractContentMetadata
-        RepositoryRoot="$(RepositoryRoot)"
-        TempFolder="$(TempFolder)"
-        LogOutputFolder="$(LogOutputFolder)"
-        OutputFolder="$(OutputFolder)"
-        ContentItems="@(ExpandedScriptContentItems)"
-        FileAccessorType="$(FileAccessorType)"
-        DocsetSettings="@(DocsetSettings)"
-        ContinueOnError="ErrorAndStop">
-
-      <Output
-        TaskParameter="MetadataStrippedContentItems"
-        ItemName="MetadataStrippedContentItems" />
-
-      <Output
-        TaskParameter="BuildFilesMetadata"
-        ItemName="BuildFilesMetadata" />
-    </ExtractContentMetadata>
-
-    <PropertyGroup>
-      <CurrentTask>Transform</CurrentTask>
-    </PropertyGroup>
-
-    <Transform
-        RepositoryRoot="$(RepositoryRoot)"
-        TempFolder="$(TempFolder)"
-        LogOutputFolder="$(LogOutputFolder)"
-        OutputFolder="$(OutputFolder)"
-        ContentItems="@(MetadataStrippedContentItems)"
-        FileAccessorType="$(FileAccessorType)"
-        ContinueOnError="ErrorAndStop">
-
-      <Output
-        TaskParameter ="TransformedContentItems"
-        ItemName="TransformedContentItems" />
-    </Transform>
-
-    <PropertyGroup>
-      <CurrentTask>ExpandFileIncludes</CurrentTask>
-    </PropertyGroup>
-
-    <ExpandFileIncludes
-        RepositoryRoot="$(RepositoryRoot)"
-        TempFolder="$(TempFolder)"
-        LogOutputFolder="$(LogOutputFolder)"
-        OutputFolder="$(OutputFolder)"
-        ContentItems="@(TransformedContentItems)"
-        ExcludedContentItems="@(ExcludedContentItems)"
-        FileAccessorType="$(FileAccessorType)"
-        ContinueOnError="ErrorAndStop">
-
-      <Output
-        TaskParameter="ExpandedContentItems"
-        ItemName="ExpandedContentItems" />
-    </ExpandFileIncludes>
-
-    <PropertyGroup>
-      <CurrentTask>NormalizeReference</CurrentTask>
-    </PropertyGroup>
-
-    <NormalizeReference
-        RepositoryRoot="$(RepositoryRoot)"
-        TempFolder="$(TempFolder)"
-        LogOutputFolder="$(LogOutputFolder)"
-        OutputFolder="$(OutputFolder)"
-        ContentItems="@(ExpandedContentItems)"
-        FileAccessorType="$(FileAccessorType)"
-        ContinueOnError="ErrorAndStop">
-
-      <Output
-        TaskParameter="NormalizedContentItems"
-        ItemName="NormalizedContentItems" />
-    </NormalizeReference>
-
-    <PropertyGroup>
-      <CurrentTask>CopyOutputFile</CurrentTask>
-    </PropertyGroup>
-
-    <CopyOutputFile
-        RepositoryRoot="$(RepositoryRoot)"
-        TempFolder="$(TempFolder)"
-        LogOutputFolder="$(LogOutputFolder)"
-        OutputFolder="$(OutputFolder)"
-        BuildItems="@(NormalizedContentItems)"
-        BuildFilesMetadata="@(BuildFilesMetadata)"
-        FileAccessorType="$(FileAccessorType)"
-        ContinueOnError="ErrorAndStop">
-
-      <Output
-        TaskParameter ="OutputItems"
-        ItemName="ContentOutputItems" />
-    </CopyOutputFile>
-
-    <PropertyGroup>
-      <CurrentTask>CopyResourceFile</CurrentTask>
-    </PropertyGroup>
-
-    <CopyResourceFile
-        RepositoryRoot="$(RepositoryRoot)"
-        TempFolder="$(TempFolder)"
-        LogOutputFolder="$(LogOutputFolder)"
-        OutputFolder="$(OutputFolder)"
-        ResourceItems="@(ResourceItems)"
-        FileAccessorType="$(FileAccessorType)"
-        ContinueOnError="ErrorAndStop">
-
-      <Output
-        TaskParameter ="ResourceOutputItems"
-        ItemName="ResourceOutputItems" />
-    </CopyResourceFile>
-
-    <PropertyGroup>
-      <CurrentTask>GenerateManifest</CurrentTask>
-    </PropertyGroup>
-
-    <GenerateManifest
-        RepositoryRoot="$(RepositoryRoot)"
-        TempFolder="$(TempFolder)"
-        LogOutputFolder="$(LogOutputFolder)"
-        FileAccessorType="$(FileAccessorType)"
-        DocsetSettings="@(DocsetSettings)"
-        OutputFolder="$(OutputFolder)"
-        ContentBuildItems="@(ContentOutputItems)"
-        ResourceBuildItems="@(ResourceOutputItems)"
-        TocBuildItems="@(TocOutputItems)"
-        ContinueOnError="ErrorAndStop">
-    </GenerateManifest>
-  </Target>
-
-  <Target
-      Name="RemoveFolder">
-    <RemoveDir Directories="$(TempFolderFullPath)" />
-  </Target>
-  
-  <!-- Clean Target-->
-  <Target
-      Name="Clean">
-
-    <!-- Set rebuild property -->
-    <CreateProperty Value="true">
-      <Output
-        TaskParameter ="Value"
-        PropertyName="Rebuild" />
+          TaskParameter="Value"
+          PropertyName="PackageVersion" />
     </CreateProperty>
+    <Message Text="Original PackageVersion=$(PackageVersion)" />
+
+    <!-- Check whether need latest package version -->
+    <PropertyGroup>
+      <UseLatestPackage>false</UseLatestPackage>
+      <UseLatestPackage Condition="'$(PackageVersion)'=='latest'">true</UseLatestPackage>
+    </PropertyGroup>
+    <Message Text="Use latest package version: $(UseLatestPackage)" />
+
+    <!-- Get Latest version from nuget server if latest version is needed -->
+    <XmlPeek
+        Condition="$(UseLatestPackage)"
+        XmlInputPath="$(ToolsFolder)NuGet\NuGet.config"
+        Query="//packageSources/add[@key='Azure']/@value">
+      <Output
+          TaskParameter="Result"
+          ItemName="NugetSource" />
+    </XmlPeek>
+    <CreateProperty
+        Condition="$(UseLatestPackage)"
+        Value="@(NugetSource)">
+      <Output
+          TaskParameter="Value"
+          PropertyName="NugetSource" />
+    </CreateProperty>
+    <Message Text="NugetSource=$(NugetSource)" Condition="$(UseLatestPackage)" />
+
+    <Exec Command="&quot;$(ToolsFolder)NuGet\NuGet.exe&quot; list $(BuildTaskPackage) -Source &quot;$(NugetSource)&quot;" ConsoleToMSBuild="true" Condition="$(UseLatestPackage)">
+      <Output TaskParameter="ConsoleOutput" PropertyName="LatestPackage" />
+    </Exec>
+    <ItemGroup Condition="$(UseLatestPackage)" >
+      <LatestPackageVersion Include="$(LatestPackage.Split(' ')[1])" />
+    </ItemGroup>
+    <CreateProperty
+        Condition="$(UseLatestPackage)"
+        Value="@(LatestPackageVersion)">
+      <Output
+          TaskParameter="Value"
+          PropertyName="LatestPackageVersion" />
+    </CreateProperty>
+    <Message Text="LatestPackageVersion=@(LatestPackageVersion)" Condition="$(UseLatestPackage)" />
+
+    <!-- Update packages.config file's version with latest version then do the restore-->
+    <XmlPoke
+       Condition="$(UseLatestPackage)"
+       XmlInputPath=".\packages.config"
+       Query="//packages/package[@id='$(BuildTaskPackage)']/@version"
+       Value="$(LatestPackageVersion)" />
+
+    <!-- Use NuGet to pull down specific version packages -->
+    <PropertyGroup>
+      <NuGetConfigFileArgument Condition="EXISTS('$(ToolsFolder)NuGet\NuGet.config') == 'True'">-ConfigFile &quot;$(ToolsFolder)NuGet\NuGet.config&quot;</NuGetConfigFileArgument>
+    </PropertyGroup>
+    <Exec Command="&quot;$(ToolsFolder)NuGet\NuGet.exe&quot; restore &quot;.\packages.config&quot; -PackagesDirectory &quot;.\packages&quot; $(NuGetConfigFileArgument)" Condition="$(PackageInstalled) != 'True'"/>
+
+    <PropertyGroup>
+      <BuildTaskNugetPackageFolderName>$(BuildTaskPackage).$(PackageVersion)</BuildTaskNugetPackageFolderName>
+      <BuildTaskNugetPackageFolderName Condition="$(UseLatestPackage)">$(BuildTaskPackage).$(LatestPackageVersion)</BuildTaskNugetPackageFolderName>
+      <PackageRootFolder>$(MSBuildThisFileDirectory)packages\$(BuildTaskNugetPackageFolderName)\</PackageRootFolder>
+    </PropertyGroup>
+
+    <!-- Update packages.config file's version back to "latest" string-->
+    <XmlPoke
+       Condition="$(UseLatestPackage)"
+       XmlInputPath=".\packages.config"
+       Query="//packages/package[@id='$(BuildTaskPackage)']/@version"
+       Value="$(PackageVersion)" />
+  </Target>
+
+  <!-- Build Target -->
+  <Target
+      Name="Build"
+      DependsOnTargets="RestorePackages">
+
+    <MSBuild
+        Targets="Build"
+        Projects="$(PackageRootFolder)build\Net451\OpenPublishingBuild.mdproj" />
 
   </Target>
 
-  <!-- Build Target-->
   <Target
-      Name="Build">
+    Name="Generate"
+    DependsOnTargets="RestorePackages">
 
-    <CallTarget
-        Targets="PrepareFolder;
-                 ParseToc;
-                 Transform;
-                 RemoveFolder" />
+    <MSBuild
+        Targets="Generate"
+        Projects="$(PackageRootFolder)build\Net451\OpenPublishingBuild.mdproj" />
 
-    <OnError ExecuteTargets="RemoveFolder" />
   </Target>
 
-  <!-- Rebuild Target-->
-  <Target
-      Name="Rebuild"
-      DependsOnTargets="Clean; 
-                        Build" />
-
-  <!-- Generate Target-->
-  <Target
-      Name="Generate"
-      DependsOnTargets="Build" >
-
-    <Exec Command="$(LocalPreviewExe) -i $(OutputFolder) --only-generate -t $(LocalPreviewServeTemplate)" />
-  </Target>
-
-  <!-- Serve Target-->
   <Target
       Name="Serve"
-      DependsOnTargets="Build" >
+      DependsOnTargets="RestorePackages">
 
-    <Exec Command="start cmd /c &quot;$(LocalPreviewExe) -i $(OutputFolder) -t $(LocalPreviewServeTemplate)&quot;" />
+    <MSBuild
+        Targets="Serve"
+        Projects="$(PackageRootFolder)build\Net451\OpenPublishingBuild.mdproj" />
+
   </Target>
 
-  <!-- End Publishing Targets -->
+  <Target
+      Name="Clean"
+      DependsOnTargets="RestorePackages">
+
+    <MSBuild
+        Targets="Clean"
+        Projects="$(PackageRootFolder)build\Net451\OpenPublishingBuild.mdproj" />
+
+  </Target>
+
+  <Target
+      Name="Rebuild"
+      DependsOnTargets="RestorePackages">
+
+    <MSBuild
+        Targets="Rebuild"
+        Projects="$(PackageRootFolder)build\Net451\OpenPublishingBuild.mdproj" />
+  </Target>
+
 </Project>
