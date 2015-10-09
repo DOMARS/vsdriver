@@ -1,7 +1,7 @@
 <span id="vsdriver.counters_manifest_preprocessor_properties_for_driver_projects"></span>Counters Manifest Preprocessor Properties for Driver Projects
 ======================================================================================================================================================
 
-Sets the properties for the [**CTRPP**]() tool that parses and validates your counters manifest. For information about working with performance counters, see [Performance Counters](). For information about using performance counters in a kernel-mode Windows driver, see [Kernel Mode Performance Monitoring](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff548159(v=vs.85).aspx).
+Sets the properties for the [**CTRPP**](https://msdn.microsoft.com/en-us/Library/Windows/Desktop/aa372128(v=vs.85).aspx) tool that parses and validates your counters manifest. For information about working with performance counters, see [Performance Counters](https://msdn.microsoft.com/en-us/Library/Windows/Desktop/aa373083(v=vs.85).aspx). For information about using performance counters in a kernel-mode Windows driver, see [Kernel Mode Performance Monitoring](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff548159(v=vs.85).aspx).
 
 <span id="Setting_the_Counters_Manifest_Preprocessor_properties_for_driver_projects"></span><span id="setting_the_counters_manifest_preprocessor_properties_for_driver_projects"></span><span id="SETTING_THE_COUNTERS_MANIFEST_PREPROCESSOR_PROPERTIES_FOR_DRIVER_PROJECTS"></span>Setting the Counters Manifest Preprocessor properties for driver projects
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -90,13 +90,13 @@ If you want to add this property page to your project so that you can run the CT
 <span id="Comment"></span><span id="comment"></span><span id="COMMENT"></span>Comment
 -------------------------------------------------------------------------------------
 
-The default names of the files that the tool generates are based on the name of the manifest file that you pass to the [**CTRPP**]() tool.
+The default names of the files that the tool generates are based on the name of the manifest file that you pass to the [**CTRPP**](https://msdn.microsoft.com/en-us/Library/Windows/Desktop/aa372128(v=vs.85).aspx) tool.
 
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-* [**CTRPP**]()
-* [Performance Counters]()
+* [**CTRPP**](https://msdn.microsoft.com/en-us/Library/Windows/Desktop/aa372128(v=vs.85).aspx)
+* [Performance Counters](https://msdn.microsoft.com/en-us/Library/Windows/Desktop/aa373083(v=vs.85).aspx)
 * [Kernel Mode Performance Monitoring](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff548159(v=vs.85).aspx)
  
 
