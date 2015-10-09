@@ -25,9 +25,9 @@ After you have configured and provisioned a test computer, you can configure the
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909(v=vs.85).aspx)
-[Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
-[Testing a Driver](testing_a_driver.md)
+* [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909(v=vs.85).aspx)
+* [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
+* [Testing a Driver](testing_a_driver.md)
  
 
  

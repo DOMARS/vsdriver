@@ -28,11 +28,11 @@ From the project property pages for your driver package, you can configure wheth
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
-[Deployment Properties for Driver Projects](deployment_properties_for_driver_projects.md)
-[How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.md)
-[Building a Driver](building_a_driver.md)
-[Creating a Driver Package](creating_a_driver_package.md)
+* [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
+* [Deployment Properties for Driver Projects](deployment_properties_for_driver_projects.md)
+* [How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.md)
+* [Building a Driver](building_a_driver.md)
+* [Creating a Driver Package](creating_a_driver_package.md)
  
 
  

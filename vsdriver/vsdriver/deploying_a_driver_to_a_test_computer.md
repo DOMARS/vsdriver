@@ -68,15 +68,15 @@ The WDK can deploy and install a driver package on a test computer, but only if 
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Provision a computer for driver deployment and testing (WDK 10)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909(v=vs.85).aspx)
-[Troubleshooting Configuration of Driver Deployment, Testing and Debugging](troubleshooting_configuration_of_driver_deployment__testing_and_debugging.md)
-[Signing a Driver During Development and Testing](signing_a_driver_during_development_and_testing.md)
-[Deployment Properties for Driver Projects](deployment_properties_for_driver_projects.md)
-[Driver Verifier Properties for Driver Projects](driver_verifier_properties_for__driver_projects.md)
-[KMDF Verifier Properties for Driver Package Projects](kmdf_verifier_properties_for_driver_package_projects.md)
-[UMDF Verifier Properties for Driver Package Projects](umdf_verifier_properties_for_driver_package_projects.md)
-[How to create a custom driver installation script](create_a_custom_driver_installation_script.md)
-[Inf2Cat Properties for Driver Package Projects](inf2cat_properties_for_driver_package_projects.md)
+* [Provision a computer for driver deployment and testing (WDK 10)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909(v=vs.85).aspx)
+* [Troubleshooting Configuration of Driver Deployment, Testing and Debugging](troubleshooting_configuration_of_driver_deployment__testing_and_debugging.md)
+* [Signing a Driver During Development and Testing](signing_a_driver_during_development_and_testing.md)
+* [Deployment Properties for Driver Projects](deployment_properties_for_driver_projects.md)
+* [Driver Verifier Properties for Driver Projects](driver_verifier_properties_for__driver_projects.md)
+* [KMDF Verifier Properties for Driver Package Projects](kmdf_verifier_properties_for_driver_package_projects.md)
+* [UMDF Verifier Properties for Driver Package Projects](umdf_verifier_properties_for_driver_package_projects.md)
+* [How to create a custom driver installation script](create_a_custom_driver_installation_script.md)
+* [Inf2Cat Properties for Driver Package Projects](inf2cat_properties_for_driver_package_projects.md)
  
 
  

@@ -48,12 +48,12 @@ msbuild.exe <vcxprojectfile> /target:dvl /p:Configuration="Win8 Release" /P:Plat
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Creating a log file for Static Driver Verifier](creating_a_log_file_for_static_driver_verifier.md)
-[Creating a log file for the code analysis tool](creating_a_log_file_for_the_code_analysis_tool.md)
-[Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016)
-[Analyzing Driver Quality by Using Code Analysis Tools](analyzing_driver_quality_by_using_code_analysis_tools.md)
-[How to run Code Analysis for drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454219(v=vs.85).aspx)
-[Using Static Driver Verifier to find defects in drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454281(v=vs.85).aspx)
+* [Creating a log file for Static Driver Verifier](creating_a_log_file_for_static_driver_verifier.md)
+* [Creating a log file for the code analysis tool](creating_a_log_file_for_the_code_analysis_tool.md)
+* [Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016)
+* [Analyzing Driver Quality by Using Code Analysis Tools](analyzing_driver_quality_by_using_code_analysis_tools.md)
+* [How to run Code Analysis for drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454219(v=vs.85).aspx)
+* [Using Static Driver Verifier to find defects in drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454281(v=vs.85).aspx)
  
 
  

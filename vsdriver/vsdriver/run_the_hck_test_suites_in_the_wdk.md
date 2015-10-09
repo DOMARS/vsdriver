@@ -115,7 +115,7 @@ You can also copy one of the provided HCK Test Suites and export it, along with 
 -   [HCK Tests.Basic.Device.Network.MobileBroadband.GSM Test Suite](#HCK_GSM)
 -   [HCK Tests.Basic.Device.Network.WLAN Test Suite](#HCK_WLAN)
 
-For information about specifying test parameters, see [Device Fundamentals Test Parameters](how_to_select_and_configure_the_device_fundamental_tests.htm#DevFund_Params). If the device under test under test or one of its child devices is a WiFi adapter or a network device, you might need to set the *Wpa2PskAesSsid*, *Wpa2PskPassword*, or *WDTFREMOTESYSTEM* parameters.
+For information about specifying test parameters, see [Device Fundamentals Test Parameters](how_to_select_and_configure_the_device_fundamental_tests.md). If the device under test under test or one of its child devices is a WiFi adapter or a network device, you might need to set the *Wpa2PskAesSsid*, *Wpa2PskPassword*, or *WDTFREMOTESYSTEM* parameters.
 
 ### <span id="HCK_devfund"></span><span id="hck_devfund"></span><span id="HCK_DEVFUND"></span>HCK Tests.Basic.Device.Device Fundamentals Test Suite
 
@@ -295,13 +295,13 @@ Use this test suite to test Wireless LAN (802.11) devices. Follow the guidelines
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[How to test a driver a runtime using Visual Studio](testing_a_driver_at_runtime.md)
-[How to select and configure the Device Fundamentals Tests](how_to_select_and_configure_the_device_fundamental_tests.md)
-[Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
-[Setting Up Kernel-Mode Debugging in Visual Studio](debugger.setting_up_kernel-mode_debugging_in_visual_studio)
-[Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016)
-[Windows Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/?linkid=254893)
-[How to test a driver at runtime from a Command Prompt](how_to_test_a_driver_at_runtime_from_a_command_prompt.md)
+* [How to test a driver a runtime using Visual Studio](testing_a_driver_at_runtime.md)
+* [How to select and configure the Device Fundamentals Tests](how_to_select_and_configure_the_device_fundamental_tests.md)
+* [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
+* [Setting Up Kernel-Mode Debugging in Visual Studio](debugger.setting_up_kernel-mode_debugging_in_visual_studio)
+* [Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016)
+* [Windows Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/?linkid=254893)
+* [How to test a driver at runtime from a Command Prompt](how_to_test_a_driver_at_runtime_from_a_command_prompt.md)
  
 
  

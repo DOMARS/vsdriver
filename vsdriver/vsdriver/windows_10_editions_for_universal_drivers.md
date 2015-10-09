@@ -32,7 +32,7 @@ Here are the values you might see for **Target Platform** on MSDN, and what they
 <li>Windows 10 IoT Core</li>
 <li>Windows Server 2016 Technical Preview</li>
 </ul>
-<p>For more info, see <a href="getting_started_with_universal_drivers.htm">Getting Started with Universal Windows drivers</a>.</p></td>
+<p>For more info, see <a href="getting_started_with_universal_drivers.md">Getting Started with Universal Windows drivers</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Desktop"></span><span id="desktop"></span><span id="DESKTOP"></span>Desktop</p></td>

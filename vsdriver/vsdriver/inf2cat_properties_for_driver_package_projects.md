@@ -75,12 +75,12 @@ For information about property pages and projects, see the [WDK and Visual Studi
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Creating a Catalog File for a PnP Driver Package](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff540161(v=vs.85).aspx)
-[**Inf2Cat**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff547089(v=vs.85).aspx)
-[Creating a Driver Package](creating_a_driver_package.md)
-[Signing a Driver](signing_a_driver.md)
-[Using Inf2Cat to Create a Catalog File](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff553618(v=vs.85).aspx)
-[WDK and Visual Studio build environment](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454286(v=vs.85).aspx)
+* [Creating a Catalog File for a PnP Driver Package](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff540161(v=vs.85).aspx)
+* [**Inf2Cat**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff547089(v=vs.85).aspx)
+* [Creating a Driver Package](creating_a_driver_package.md)
+* [Signing a Driver](signing_a_driver.md)
+* [Using Inf2Cat to Create a Catalog File](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff553618(v=vs.85).aspx)
+* [WDK and Visual Studio build environment](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454286(v=vs.85).aspx)
  
 
  

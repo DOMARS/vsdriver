@@ -268,10 +268,10 @@ For more information about *DQ* and the other run-time parameters, see [Device F
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[How to How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.md)
-[Device Fundamentals Tests](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/JJ673011(v=vs.85).aspx)
-[Provided WDTF Simple I/O plug-ins](dtf.provided_wdtf_simpleio_plug-ins)
-[How to customize I/O for your device using the WDTF Simple I/O Action Plug-in](dtf.to_customize_i_o_for_your_device_using_the_wdtf_simple_i_o_action_plug-in)
+* [How to How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.md)
+* [Device Fundamentals Tests](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/JJ673011(v=vs.85).aspx)
+* [Provided WDTF Simple I/O plug-ins](dtf.provided_wdtf_simpleio_plug-ins)
+* [How to customize I/O for your device using the WDTF Simple I/O Action Plug-in](dtf.to_customize_i_o_for_your_device_using_the_wdtf_simple_i_o_action_plug-in)
  
 
  

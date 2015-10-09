@@ -9,7 +9,7 @@ This topic describes how to securely distribute your driver package. This inform
 <span id="ddk_windows_update_pg"></span><span id="DDK_WINDOWS_UPDATE_PG"></span>Windows Update
 ----------------------------------------------------------------------------------------------
 
-[Driver packages](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff544840(v=vs.85).aspx) that pass [Windows Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/?linkid=254893) testing can be digitally-signed by WHQL. If your driver package is digitally-signed by WHQL, it can be distributed through the Windows Update program or other Microsoft-supported distribution mechanisms.
+* [Driver packages](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff544840(v=vs.85).aspx) that pass [Windows Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/?linkid=254893) testing can be digitally-signed by WHQL. If your driver package is digitally-signed by WHQL, it can be distributed through the Windows Update program or other Microsoft-supported distribution mechanisms.
 
 Obtaining a WHQL release signature is part of the [Windows Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/?linkid=254893). A WHQL release signature consists of a digitally-signed [catalog file](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff537872(v=vs.85).aspx). The digital signature does not change the driver binary files or the INF file that you submit for testing.
 

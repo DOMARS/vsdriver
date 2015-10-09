@@ -301,12 +301,12 @@ Device queue is not busy.
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Device Fundamentals Tests](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/JJ673011(v=vs.85).aspx)
-[How to How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.md)
-[How to How to test a driver at runtime from a Command Prompt](how_to_test_a_driver_at_runtime_from_a_command_prompt.md)
-[How to select and configure the Device Fundamentals tests](how_to_select_and_configure_the_device_fundamental_tests.md)
-[Provided WDTF Simple I/O plug-ins](dtf.provided_wdtf_simpleio_plug-ins)
-[Troubleshooting Device Fundamentals Reliability Testing by using the Windows HCK](http://go.microsoft.com/fwlink/p/?linkid=288941)
+* [Device Fundamentals Tests](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/JJ673011(v=vs.85).aspx)
+* [How to How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.md)
+* [How to How to test a driver at runtime from a Command Prompt](how_to_test_a_driver_at_runtime_from_a_command_prompt.md)
+* [How to select and configure the Device Fundamentals tests](how_to_select_and_configure_the_device_fundamental_tests.md)
+* [Provided WDTF Simple I/O plug-ins](dtf.provided_wdtf_simpleio_plug-ins)
+* [Troubleshooting Device Fundamentals Reliability Testing by using the Windows HCK](http://go.microsoft.com/fwlink/p/?linkid=288941)
  
 
  

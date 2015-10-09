@@ -80,11 +80,11 @@ The following is an example of how to include the CRT binaries in the **\[COPY\_
 Msvcr120.dll
 ; other files
 
-[SourceDisksFiles]
+* [SourceDisksFiles]
 Msvcr120.dll = 2 
 ; other files
 
-[SourceDisksNames.amd64]
+* [SourceDisksNames.amd64]
 1 = %Location%,,,
 2 = %Location%,,,&quot;amd64&quot;</code></pre></td>
 </tr>
@@ -151,9 +151,9 @@ For UMDF drivers, use static linking of the CRT with your driver code.
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Determining Which DLLs to Redistribute](http://go.microsoft.com/fwlink/p/?linkid=321001)
-[Redistributable Code for Visual Studio 2013 Preview and Visual Studio 2013 SDK Preview](http://go.microsoft.com/fwlink/p/?linkid=320999)
-[Choosing a Deployment Method](http://go.microsoft.com/fwlink/p/?linkid=321651)
+* [Determining Which DLLs to Redistribute](http://go.microsoft.com/fwlink/p/?linkid=321001)
+* [Redistributable Code for Visual Studio 2013 Preview and Visual Studio 2013 SDK Preview](http://go.microsoft.com/fwlink/p/?linkid=320999)
+* [Choosing a Deployment Method](http://go.microsoft.com/fwlink/p/?linkid=321651)
  
 
  

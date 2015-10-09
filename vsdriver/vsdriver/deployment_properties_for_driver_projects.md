@@ -53,9 +53,9 @@ You can use the **Additional Files** box to specify custom installation scripts 
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
-[How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.md)
-[Setting Up Kernel-Mode Debugging in Visual Studio](debugger.setting_up_kernel-mode_debugging_in_visual_studio)
+* [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
+* [How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.md)
+* [Setting Up Kernel-Mode Debugging in Visual Studio](debugger.setting_up_kernel-mode_debugging_in_visual_studio)
  
 
  

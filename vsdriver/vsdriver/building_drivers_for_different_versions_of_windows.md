@@ -110,8 +110,8 @@ If you are [writing drivers for different versions of Windows](https://msdn.micr
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Writing drivers for different versions of Windows](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff554887(v=vs.85).aspx)
-[Building a Driver](building_a_driver.md)
+* [Writing drivers for different versions of Windows](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff554887(v=vs.85).aspx)
+* [Building a Driver](building_a_driver.md)
  
 
  

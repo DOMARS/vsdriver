@@ -90,9 +90,9 @@ This property page is available if you add a Managed Object Format (MOF) file (.
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Compiling MOF Files]()
-[Compiling a Driver's MOF File](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff542012(v=vs.85).aspx)
-[**mofcomp**]()
+* [Compiling MOF Files]()
+* [Compiling a Driver's MOF File](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff542012(v=vs.85).aspx)
+* [**mofcomp**]()
  
 
  

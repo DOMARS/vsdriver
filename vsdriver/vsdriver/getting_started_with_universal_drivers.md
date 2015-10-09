@@ -183,13 +183,13 @@ All existing kernel mode debug transports continue to work on Windows 10 for de
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Building a Driver with the WDK](building_a_driver.md)
-[Windows 10 Editions for Universal Windows drivers](windows_10_editions_for_universal_drivers.md)
-[Write a Universal Windows driver (UMDF 2) based on a template](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439659(v=vs.85).aspx)
-[Write a universal Hello World driver (KMDF)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439665(v=vs.85).aspx)
-[Write a Universal Windows driver (KMDF) based on a template](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439654(v=vs.85).aspx)
-[Provision a computer for driver deployment and testing (WDK 10)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909(v=vs.85).aspx)
-[What's new in driver development](p_getstarted.what_s_new_in_universal_driver_development)
+* [Building a Driver with the WDK](building_a_driver.md)
+* [Windows 10 Editions for Universal Windows drivers](windows_10_editions_for_universal_drivers.md)
+* [Write a Universal Windows driver (UMDF 2) based on a template](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439659(v=vs.85).aspx)
+* [Write a universal Hello World driver (KMDF)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439665(v=vs.85).aspx)
+* [Write a Universal Windows driver (KMDF) based on a template](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439654(v=vs.85).aspx)
+* [Provision a computer for driver deployment and testing (WDK 10)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909(v=vs.85).aspx)
+* [What's new in driver development](p_getstarted.what_s_new_in_universal_driver_development)
  
 
  

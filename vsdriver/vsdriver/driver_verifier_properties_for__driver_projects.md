@@ -1,7 +1,7 @@
 <span id="vsdriver.driver_verifier_properties_for__driver_projects"></span>Driver Verifier Properties for Driver Package Projects
 =================================================================================================================================
 
-[Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545448(v=vs.85).aspx) is a run-time verification tool that increases the effectiveness of your driver testing. You can enable and configure Driver Verifier to run on all test computers when you deploy your driver for testing.
+* [Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545448(v=vs.85).aspx) is a run-time verification tool that increases the effectiveness of your driver testing. You can enable and configure Driver Verifier to run on all test computers when you deploy your driver for testing.
 
 You should always set up a kernel mode debugging connection with the test computer when you enable Driver Verifier on the remote test computer. For information about configuring a target computer and setting up a debug cable, see [Setting Up Kernel-Mode Debugging in Visual Studio](debugger.setting_up_kernel-mode_debugging_in_visual_studio).
 
@@ -125,10 +125,10 @@ There are four options that require you to first enable [I/O Verification](https
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545448(v=vs.85).aspx)
-[How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.md)
-[Setting Up Kernel-Mode Debugging in Visual Studio](debugger.setting_up_kernel-mode_debugging_in_visual_studio)
-[Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
+* [Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545448(v=vs.85).aspx)
+* [How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.md)
+* [Setting Up Kernel-Mode Debugging in Visual Studio](debugger.setting_up_kernel-mode_debugging_in_visual_studio)
+* [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
  
 
  

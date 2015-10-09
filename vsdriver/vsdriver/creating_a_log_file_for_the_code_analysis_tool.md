@@ -40,12 +40,12 @@ For the most up-to-date information about the requirements for the Driver Verifi
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Creating a driver verification log](creating_a_driver_verification_log.md)
-[Creating a log file for Static Driver Verifier](creating_a_log_file_for_static_driver_verifier.md)
-[Code Analysis for Drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454182(v=vs.85).aspx)
-[Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016)
-[Analyzing C/C++ Code Quality by Using Code Analysis](http://go.microsoft.com/fwlink/p/?linkid=226836)
-[How to run Code Analysis for drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454219(v=vs.85).aspx)
+* [Creating a driver verification log](creating_a_driver_verification_log.md)
+* [Creating a log file for Static Driver Verifier](creating_a_log_file_for_static_driver_verifier.md)
+* [Code Analysis for Drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454182(v=vs.85).aspx)
+* [Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016)
+* [Analyzing C/C++ Code Quality by Using Code Analysis](http://go.microsoft.com/fwlink/p/?linkid=226836)
+* [How to run Code Analysis for drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454219(v=vs.85).aspx)
  
 
  

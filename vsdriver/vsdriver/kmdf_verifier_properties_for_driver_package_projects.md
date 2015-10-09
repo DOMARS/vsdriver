@@ -76,9 +76,9 @@ For more information about the framework verifier, see [Using the Framework's Ve
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Kernel-Mode Driver Framework]()
-[Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545448(v=vs.85).aspx)
-[Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
+* [Kernel-Mode Driver Framework]()
+* [Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545448(v=vs.85).aspx)
+* [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
  
 
  

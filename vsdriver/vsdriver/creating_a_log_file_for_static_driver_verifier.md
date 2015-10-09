@@ -44,10 +44,10 @@ msbuild.exe <vcxprojectfile> /p:Configuration="Win8 Release" /p:Platform=x64 /ta
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Creating a driver verification log](creating_a_driver_verification_log.md)
-[Static Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff552808(v=vs.85).aspx)
-[Using Static Driver Verifier to Find Defects in Drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454281(v=vs.85).aspx)
-[Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016)
+* [Creating a driver verification log](creating_a_driver_verification_log.md)
+* [Static Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff552808(v=vs.85).aspx)
+* [Using Static Driver Verifier to Find Defects in Drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454281(v=vs.85).aspx)
+* [Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016)
  
 
  

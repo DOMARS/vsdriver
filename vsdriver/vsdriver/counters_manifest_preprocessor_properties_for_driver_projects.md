@@ -95,9 +95,9 @@ The default names of the files that the tool generates are based on the name of 
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[**CTRPP**]()
-[Performance Counters]()
-[Kernel Mode Performance Monitoring](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff548159(v=vs.85).aspx)
+* [**CTRPP**]()
+* [Performance Counters]()
+* [Kernel Mode Performance Monitoring](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff548159(v=vs.85).aspx)
  
 
  

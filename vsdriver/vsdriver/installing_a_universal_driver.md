@@ -8,8 +8,8 @@ To install a Universal Windows driver on Windows 10 for desktop editions, we re
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Using a Universal INF File](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn941087(v=vs.85).aspx)
-[InfVerif](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn929319(v=vs.85).aspx)
+* [Using a Universal INF File](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn941087(v=vs.85).aspx)
+* [InfVerif](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn929319(v=vs.85).aspx)
  
 
  

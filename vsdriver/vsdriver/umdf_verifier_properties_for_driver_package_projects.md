@@ -87,9 +87,9 @@ For information about debugging UMDF drivers, see [How to Enable Debugging of a 
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[User-Mode Driver Framework]()
-[Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545448(v=vs.85).aspx)
-[Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
+* [User-Mode Driver Framework]()
+* [Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545448(v=vs.85).aspx)
+* [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
  
 
  

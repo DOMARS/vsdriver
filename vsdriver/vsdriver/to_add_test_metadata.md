@@ -368,7 +368,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[How to write a driver test using a Driver Test template](how_to_write_a_driver_test_.md)
+* [How to write a driver test using a Driver Test template](how_to_write_a_driver_test_.md)
  
 
  

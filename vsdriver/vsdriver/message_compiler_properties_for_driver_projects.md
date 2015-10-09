@@ -164,10 +164,10 @@ This property page is available if you add a message text file (.mc) or a manife
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Message Compiler (MC.exe)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454227(v=vs.85).aspx)
-[WDK and Visual Studio build environment](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454286(v=vs.85).aspx)
+* [Message Compiler (MC.exe)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454227(v=vs.85).aspx)
+* [WDK and Visual Studio build environment](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454286(v=vs.85).aspx)
 Message compiler task
-[Event Tracing for Windows (ETW)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545699(v=vs.85).aspx)
+* [Event Tracing for Windows (ETW)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545699(v=vs.85).aspx)
  
 
  

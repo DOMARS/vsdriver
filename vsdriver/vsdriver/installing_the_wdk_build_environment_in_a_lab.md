@@ -9,10 +9,10 @@ You might find this feature useful if you need to integrate the WDK with your bu
 
  
 
-[1. Download the Visual Studio and WDK and SDK setup files](#download_vs_kits)
-[2. Download the BuildLabSupport files](#download_script)
-[3. Install the WDK 8.1 build environment](#install_script)
-[4. Build Windows driver projects and solutions](#build_step)
+* [1. Download the Visual Studio and WDK and SDK setup files](#download_vs_kits)
+* [2. Download the BuildLabSupport files](#download_script)
+* [3. Install the WDK 8.1 build environment](#install_script)
+* [4. Build Windows driver projects and solutions](#build_step)
 <span id="download_vs_kits"></span><span id="DOWNLOAD_VS_KITS"></span>1. Download the Visual Studio and WDK and SDK setup files
 -------------------------------------------------------------------------------------------------------------------------------
 
@@ -85,8 +85,8 @@ The build lab support files include the **setup.ps1** PowerShell command file, w
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Building a Driver](building_a_driver.md)
-[MSBuild](http://go.microsoft.com/fwlink/p/?linkid=262804)
+* [Building a Driver](building_a_driver.md)
+* [MSBuild](http://go.microsoft.com/fwlink/p/?linkid=262804)
  
 
  

@@ -85,15 +85,15 @@ Suppose you want to build and sign a driver package that will run on Windows 7 
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Signing a Driver](signing_a_driver.md)
-[Windows Hardware Certification](http://go.microsoft.com/fwlink/p/?LinkID=248337)
-[Hardware Dashboard Services](http://go.microsoft.com/fwlink/p/?LinkID=248336)
-[Driver Signing Requirements for Windows](http://go.microsoft.com/fwlink/p/?linkid=617515)
-[Cross-Certificates for Kernel Mode Code Signing](http://go.microsoft.com/fwlink/p/?LinkID=248296)
-[Kernel-Mode Code Signing Walkthrough](http://go.microsoft.com/fwlink/p/?linkid=617516)
-[Driver Signing](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff544865(v=vs.85).aspx)
-[Installing a Boot-Start Driver](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff547570(v=vs.85).aspx)
-[Tools for Signing Drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff552958(v=vs.85).aspx)
+* [Signing a Driver](signing_a_driver.md)
+* [Windows Hardware Certification](http://go.microsoft.com/fwlink/p/?LinkID=248337)
+* [Hardware Dashboard Services](http://go.microsoft.com/fwlink/p/?LinkID=248336)
+* [Driver Signing Requirements for Windows](http://go.microsoft.com/fwlink/p/?linkid=617515)
+* [Cross-Certificates for Kernel Mode Code Signing](http://go.microsoft.com/fwlink/p/?LinkID=248296)
+* [Kernel-Mode Code Signing Walkthrough](http://go.microsoft.com/fwlink/p/?linkid=617516)
+* [Driver Signing](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff544865(v=vs.85).aspx)
+* [Installing a Boot-Start Driver](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff547570(v=vs.85).aspx)
+* [Tools for Signing Drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff552958(v=vs.85).aspx)
  
 
  

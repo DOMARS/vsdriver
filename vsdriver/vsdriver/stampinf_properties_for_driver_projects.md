@@ -118,12 +118,12 @@ If you want to add this property page to your project, so that you can run the S
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Stampinf](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff552786(v=vs.85).aspx)
-[**INF DriverVer directive**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff547394(v=vs.85).aspx)
-[**INF Version section**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff547502(v=vs.85).aspx)
-[WDK and Visual Studio build environment](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454286(v=vs.85).aspx)
-[Stampinf task](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff552786(v=vs.85).aspx_task)
-[How to: Use Environment Variables in a Build](7f9e4469-8865-4b59-aab3-3ff26bd36e77)
+* [Stampinf](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff552786(v=vs.85).aspx)
+* [**INF DriverVer directive**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff547394(v=vs.85).aspx)
+* [**INF Version section**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff547502(v=vs.85).aspx)
+* [WDK and Visual Studio build environment](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454286(v=vs.85).aspx)
+* [Stampinf task](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff552786(v=vs.85).aspx_task)
+* [How to: Use Environment Variables in a Build](7f9e4469-8865-4b59-aab3-3ff26bd36e77)
  
 
  
