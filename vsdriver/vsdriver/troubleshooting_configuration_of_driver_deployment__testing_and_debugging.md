@@ -115,17 +115,17 @@ Check with network administrator about ports that allow network debugging.
 
 If the target computer has more than one network adapter, you must specify the bus parameters of the network adapter that you intend to use for debugging.
 
-For more information, see [Troubleshooting Tips for Debugging over a Network Cable](debugger.setting_up_a_network_debugging_connection_in_visual_studio#troubleshooting_tips_for_debugging_over_a_network_cable#troubleshooting_tips_for_debugging_over_a_network_cable)
+For more information, see [Troubleshooting Tips for Debugging over a Network Cable](https://msdn.microsoft.com/en-us/library/windows/hardware/hh439346(v=vs.85).aspx)
 
 <span id="debugger_wont_connect_1394"></span><span id="DEBUGGER_WONT_CONNECT_1394"></span>Debugger won't connect or break in: 1394 connection
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
-If the target computer has more than one 1394 controller, you must specify the bus parameters of the 1394 controller that you intend to use for debugging. For more information, see [Troubleshooting Tips for Debugging over a 1394 Cable](debugger.setting_up_a_1394_cable_connection_in_visual_studio#troubleshooting_tips_for_debugging_over_a_1394_cable#troubleshooting_tips_for_debugging_over_a_1394_cable).
+If the target computer has more than one 1394 controller, you must specify the bus parameters of the 1394 controller that you intend to use for debugging. For more information, see [Troubleshooting Tips for Debugging over a 1394 Cable](https://msdn.microsoft.com/en-us/library/windows/hardware/ff556866(v=vs.85).aspx).
 
 <span id="debugger_wont_connect_serial"></span><span id="DEBUGGER_WONT_CONNECT_SERIAL"></span>Debugger won't connect or break in : Serial connection
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
-Check the COM port numbers on the host and target computer. Verify that you have configured the same baud rate for debugging on both the host and target computers. For more information, see [Troubleshooting Tips for Debugging over a Serial Cable](debugger.setting_up_a_null-modem_cable_connection_in_visual_studio#troubleshooting_tips_for_debugging_over_a_serial_cable#troubleshooting_tips_for_debugging_over_a_serial_cable)
+Check the COM port numbers on the host and target computer. Verify that you have configured the same baud rate for debugging on both the host and target computers. For more information, see [Troubleshooting Tips for Debugging over a Serial Cable](https://msdn.microsoft.com/en-us/windows/hardware/hh439359(v=vs.85).aspx)
 
  
 

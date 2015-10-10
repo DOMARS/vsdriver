@@ -30,7 +30,7 @@ To ensure that you are testing the latest version of the driver, select **Remove
 <span id="Target_computer_name"></span><span id="target_computer_name"></span><span id="TARGET_COMPUTER_NAME"></span>Target computer name
 -----------------------------------------------------------------------------------------------------------------------------------------
 
-You can choose the target computer to use for deployment and testing. If you have already configured your test computers, you can select one from this list. If you have not configured a test computer, you can configure one using the **Browse** button. For more information about configuring a test computer, see [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md). Make sure that the project configuration and platform match the target architecture of your test system. A common deployment error occurs when you attempt to install an x86 (Win32) driver on a system running an x64 version of Windows. When you configure the test computer, you can also run a kernel-mode debugger. For more information, see [Setting Up Kernel-Mode Debugging in Visual Studio](debugger.setting_up_kernel-mode_debugging_in_visual_studio).
+You can choose the target computer to use for deployment and testing. If you have already configured your test computers, you can select one from this list. If you have not configured a test computer, you can configure one using the **Browse** button. For more information about configuring a test computer, see [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md). Make sure that the project configuration and platform match the target architecture of your test system. A common deployment error occurs when you attempt to install an x86 (Win32) driver on a system running an x64 version of Windows. When you configure the test computer, you can also run a kernel-mode debugger. For more information, see [Setting Up Kernel-Mode Debugging in Visual Studio](https://msdn.microsoft.com/en-us/windows/hardware/hh439376(v=vs.85).
 
 <span id="Driver_installation_options"></span><span id="driver_installation_options"></span><span id="DRIVER_INSTALLATION_OPTIONS"></span>Driver installation options
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -55,7 +55,7 @@ You can use the **Additional Files** box to specify custom installation scripts 
 
 * [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
 * [How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.md)
-* [Setting Up Kernel-Mode Debugging in Visual Studio](debugger.setting_up_kernel-mode_debugging_in_visual_studio)
+* [Setting Up Kernel-Mode Debugging in Visual Studio](https://msdn.microsoft.com/en-us/windows/hardware/hh439376(v=vs.85)
  
 
  
