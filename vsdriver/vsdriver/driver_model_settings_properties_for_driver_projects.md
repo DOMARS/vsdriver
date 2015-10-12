@@ -52,7 +52,7 @@ Overrides the default values for preprocessing symbols: \_WIN32\_WINNT, WINVER, 
 
 * [Framework Library Versioning](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff542842(v=vs.85).aspx)
 * [Building and Loading a Framework-based Driver](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff540730(v=vs.85).aspx)
-* [UMDF Version History](umdf_version_history)
+* [UMDF Version History](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff561356(v=vs.85).aspx)
 * [Building UMDF Drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff540730(v=vs.85).aspx)
 * [Creating Export Drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff542891(v=vs.85).aspx)
  
