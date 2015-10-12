@@ -99,7 +99,7 @@ WDK 10 includes PkgGen, a tool that generates package files. You run PkgGen in 
 
 To view the contents of the package file, append a .cab suffix to the file name and then open the cab file in Windows Explorer.
 
-To learn about running PkgGen outside of Visual Studio, see [Creating packages](p_phPackaging.creating_packages).
+To learn about running PkgGen outside of Visual Studio, see [Creating packages](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn756642(v=vs.85).aspx).
 
 To install a mobile driver package (.spkg file), you have two options.
 
@@ -124,7 +124,7 @@ To install a mobile driver package (.spkg file), you have two options.
     </tbody>
     </table>
 
-2.  For more information, see [IUTool.exe: Update packages on a phone](http://go.microsoft.com/fwlink/p/?linkid=617385) and [Adding a driver to a test image](p_phFlashing.adding_a_driver_to_a_test_image).
+2.  For more information, see [IUTool.exe: Update packages on a phone](http://go.microsoft.com/fwlink/p/?linkid=617385) and [Adding a driver to a test image](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Mt131832(v=vs.85).aspx).
 
 ![](../common/wedge.gif)**Using ImgGen to add a driver package (.spkg) to a mobile OS image (.ffu)**
 
@@ -189,7 +189,7 @@ All existing kernel mode debug transports continue to work on Windows 10 for de
 * [Write a universal Hello World driver (KMDF)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439665(v=vs.85).aspx)
 * [Write a Universal Windows driver (KMDF) based on a template](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439654(v=vs.85).aspx)
 * [Provision a computer for driver deployment and testing (WDK 10)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909(v=vs.85).aspx)
-* [What's new in driver development](p_getstarted.what_s_new_in_universal_driver_development)
+* [What's new in driver development](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn927349(v=vs.85).aspx)
  
 
  

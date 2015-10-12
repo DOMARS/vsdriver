@@ -60,7 +60,7 @@ If the driver package is installed by using an INF file, use the Inf2Cat tool to
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Use_Local_Time"></span><span id="use_local_time"></span><span id="USE_LOCAL_TIME"></span><strong>Use Local Time</strong></p></td>
-<td align="left"><p>Use the local time zone while verifying the <a href="devinst.inf_driverver_directive"><strong>INF DriverVer Directive</strong></a> directive. By default UTC, is used.</p>
+<td align="left"><p>Use the local time zone while verifying the <a href="https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff547394(v=vs.85).aspx"><strong>INF DriverVer Directive</strong></a> directive. By default UTC, is used.</p>
 <p>This setting is equivalent to specifying the <a href="https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff547089(v=vs.85).aspx"><strong>Inf2Cat</strong></a> option <strong>/uselocaltime</strong>.</p></td>
 </tr>
 </tbody>

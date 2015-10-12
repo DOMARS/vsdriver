@@ -252,13 +252,13 @@ For more information about *DQ* and the other run-time parameters, see [Device F
 <tbody>
 <tr class="odd">
 <td align="left"><p><span id="Disable_Driver_Verifier"></span><span id="disable_driver_verifier"></span><span id="DISABLE_DRIVER_VERIFIER"></span>Disable Driver Verifier</p></td>
-<td align="left"><p>Disables <a href="devtest.driver_verifier">Driver Verifier</a> on the test computer.</p>
+<td align="left"><p>Disables <a href="https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545448(v=vs.85).aspx">Driver Verifier</a> on the test computer.</p>
 <p><strong>Parameters:</strong> None</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Enable_Driver_Verifier"></span><span id="enable_driver_verifier"></span><span id="ENABLE_DRIVER_VERIFIER"></span>Enable Driver Verifier</p></td>
-<td align="left"><p>You can use this test to enable <a href="devtest.driver_verifier">Driver Verifier</a> for all drivers of a device (or devices) on the test computer.</p>
-<p><strong>Parameters:</strong> - See <a href="devtest.driver_verifier_options">Driver Verifier Options</a>.</p></td>
+<td align="left"><p>You can use this test to enable <a href="https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545448(v=vs.85).aspx">Driver Verifier</a> for all drivers of a device (or devices) on the test computer.</p>
+<p><strong>Parameters:</strong> - See <a href="https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545448(v=vs.85).aspx_options">Driver Verifier Options</a>.</p></td>
 </tr>
 </tbody>
 </table>
