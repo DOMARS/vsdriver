@@ -37,23 +37,23 @@ Before you run the following [Device Fundamental tests](how_to_select_and_config
 
 **Solution:**
 
-Information about specific device requirements for testing are described under [Provided WDTF Simple I/O plug-ins](dtf.provided_wdtf_simpleio_plug-ins). The Device Fundamentals tests use the Provided WDTF Simple I/O plug-ins to perform device specific I/O operations to improve the effectiveness of tests. For a description of the type of I/O the plug-ins perform, and to see if there are any special device requirements, use the following links. If there are any specific triage steps that you can follow to help debug and triage test failures those will also be shown for the device type.
+Information about specific device requirements for testing are described under [Provided WDTF Simple I/O plug-ins](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh781398(v=vs.85).aspx). The Device Fundamentals tests use the Provided WDTF Simple I/O plug-ins to perform device specific I/O operations to improve the effectiveness of tests. For a description of the type of I/O the plug-ins perform, and to see if there are any special device requirements, use the following links. If there are any specific triage steps that you can follow to help debug and triage test failures those will also be shown for the device type.
 
--   [Audio devices](dtf.provided_wdtf_simpleio_plug-ins#_audio#_audio)
--   [Bluetooth devices](dtf.provided_wdtf_simpleio_plug-ins#_bluetooth#_bluetooth)
--   [CDROM devices](dtf.provided_wdtf_simpleio_plug-ins#_cdrom#_cdrom)
--   [Disk devices](dtf.provided_wdtf_simpleio_plug-ins#_disk#_disk)
--   [Display devices](dtf.provided_wdtf_simpleio_plug-ins#_display#_display)
--   [GPS devices](dtf.provided_wdtf_simpleio_plug-ins#_gps#_gps)
--   [LAN devices](dtf.provided_wdtf_simpleio_plug-ins#_lan#_lan)
--   [Mobile Broadband devices](dtf.provided_wdtf_simpleio_plug-ins#_mobile_broadband#_mobile_broadband)
--   [Portable devices](dtf.provided_wdtf_simpleio_plug-ins#_portable_devices#_portable_devices)
--   [Smart Card Readers](dtf.provided_wdtf_simpleio_plug-ins#_smartcard#_smartcard)
--   [Sensor devices](dtf.provided_wdtf_simpleio_plug-ins#_sensors#_sensors)
--   [Volume](dtf.provided_wdtf_simpleio_plug-ins#_volume#_volume)
--   [Webcam](dtf.provided_wdtf_simpleio_plug-ins#_webcam#_webcam)
--   [WLAN](dtf.provided_wdtf_simpleio_plug-ins#_wlan#_wlan)
--   [USB Controller and HUB with Mutt](dtf.provided_wdtf_simpleio_plug-ins#_usb_mutt#_usb_mutt)
+-   [Audio devices](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh781398(v=vs.85).aspx#_audio#_audio)
+-   [Bluetooth devices](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh781398(v=vs.85).aspx#_bluetooth#_bluetooth)
+-   [CDROM devices](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh781398(v=vs.85).aspx#_cdrom#_cdrom)
+-   [Disk devices](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh781398(v=vs.85).aspx#_disk#_disk)
+-   [Display devices](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh781398(v=vs.85).aspx#_display#_display)
+-   [GPS devices](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh781398(v=vs.85).aspx#_gps#_gps)
+-   [LAN devices](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh781398(v=vs.85).aspx#_lan#_lan)
+-   [Mobile Broadband devices](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh781398(v=vs.85).aspx#_mobile_broadband#_mobile_broadband)
+-   [Portable devices](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh781398(v=vs.85).aspx#_portable_devices#_portable_devices)
+-   [Smart Card Readers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh781398(v=vs.85).aspx#_smartcard#_smartcard)
+-   [Sensor devices](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh781398(v=vs.85).aspx#_sensors#_sensors)
+-   [Volume](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh781398(v=vs.85).aspx#_volume#_volume)
+-   [Webcam](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh781398(v=vs.85).aspx#_webcam#_webcam)
+-   [WLAN](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh781398(v=vs.85).aspx#_wlan#_wlan)
+-   [USB Controller and HUB with Mutt](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh781398(v=vs.85).aspx#_usb_mutt#_usb_mutt)
 
 <span id="_defund_verifier"></span><span id="_DEFUND_VERIFIER"></span>
 ----------------------------------------------------------------------
@@ -305,7 +305,7 @@ Device queue is not busy.
 * [How to How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.md)
 * [How to How to test a driver at runtime from a Command Prompt](how_to_test_a_driver_at_runtime_from_a_command_prompt.md)
 * [How to select and configure the Device Fundamentals tests](how_to_select_and_configure_the_device_fundamental_tests.md)
-* [Provided WDTF Simple I/O plug-ins](dtf.provided_wdtf_simpleio_plug-ins)
+* [Provided WDTF Simple I/O plug-ins](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh781398(v=vs.85).aspx)
 * [Troubleshooting Device Fundamentals Reliability Testing by using the Windows HCK](http://go.microsoft.com/fwlink/p/?linkid=288941)
  
 

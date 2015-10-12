@@ -6,7 +6,7 @@ The WDK for Windows 8 provides a driver testing framework that includes a set o
 <span id="Getting_the_most_from_the_Device_Fundamentals_tests"></span><span id="getting_the_most_from_the_device_fundamentals_tests"></span><span id="GETTING_THE_MOST_FROM_THE_DEVICE_FUNDAMENTALS_TESTS"></span>Getting the most from the Device Fundamentals tests
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-To get the most benefit from the Device Fundamentals tests, your device must be supported by the default I/O plug-ins. To see whether your device type is supported and to determine whether there are specific requirements for testing, refer to [Provided WDTF Simple I/O plug-ins](dtf.provided_wdtf_simpleio_plug-ins). The Device Fundamentals test also include a utility you can use to test your device to see whether it is supported. If your device is not supported, you can create a WDTF Simple I/O plug-in. in Visual Studio. For more information, see [How to customize I/O for your device using the WDTF Simple I/O Action Plug-in](dtf.to_customize_i_o_for_your_device_using_the_wdtf_simple_i_o_action_plug-in).
+To get the most benefit from the Device Fundamentals tests, your device must be supported by the default I/O plug-ins. To see whether your device type is supported and to determine whether there are specific requirements for testing, refer to [Provided WDTF Simple I/O plug-ins](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh781398(v=vs.85).aspx). The Device Fundamentals test also include a utility you can use to test your device to see whether it is supported. If your device is not supported, you can create a WDTF Simple I/O plug-in. in Visual Studio. For more information, see [How to customize I/O for your device using the WDTF Simple I/O Action Plug-in](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh706277(v=vs.85).aspx).
 
 <span id="About_the_Device_Fundamentals_Tests"></span><span id="about_the_device_fundamentals_tests"></span><span id="ABOUT_THE_DEVICE_FUNDAMENTALS_TESTS"></span>About the Device Fundamentals Tests
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -270,8 +270,8 @@ For more information about *DQ* and the other run-time parameters, see [Device F
 
 * [How to How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.md)
 * [Device Fundamentals Tests](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/JJ673011(v=vs.85).aspx)
-* [Provided WDTF Simple I/O plug-ins](dtf.provided_wdtf_simpleio_plug-ins)
-* [How to customize I/O for your device using the WDTF Simple I/O Action Plug-in](dtf.to_customize_i_o_for_your_device_using_the_wdtf_simple_i_o_action_plug-in)
+* [Provided WDTF Simple I/O plug-ins](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh781398(v=vs.85).aspx)
+* [How to customize I/O for your device using the WDTF Simple I/O Action Plug-in](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh706277(v=vs.85).aspx)
  
 
  
