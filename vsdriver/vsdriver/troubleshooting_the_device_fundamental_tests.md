@@ -241,7 +241,7 @@ To help debug this test failure, you should determine how the reference count of
 
 ### <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
-In the following example, the [**CreateFile function**]() call from a thread running in cscript.exe is causing an increment to the reference count. We are also able to see the full call stack. Capturing all the instances where the reference count is changed while running the test and analyzing these call stacks after can help with identifying the handle leaks.
+In the following example, the [**CreateFile function**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Aa363858(v=vs.85).aspx) call from a thread running in cscript.exe is causing an increment to the reference count. We are also able to see the full call stack. Capturing all the instances where the reference count is changed while running the test and analyzing these call stacks after can help with identifying the handle leaks.
 
 ``` syntax
 THREAD 87eb3d40  Cid 1094.1490  Teb: 7f5a8000 Win32Thread: 82da2210 RUNNING on processor 3
