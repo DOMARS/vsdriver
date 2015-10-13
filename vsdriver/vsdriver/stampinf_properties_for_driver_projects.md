@@ -47,7 +47,7 @@ If you want to add this property page to your project, so that you can run the S
 <li><p>If the STAMPINF_VERSION environment variable is not specified, Stampinf extracts the version number from the ntverp.h file.</p></li>
 </ul>
 <div class="alert">
-<strong>Note</strong>  By default, the STAMPINF_VERSION environment variable is not set when you build a driver unless you set it as a system environment variable. To specify this environment variable within the Visual Studio build environment, see <a href="7f9e4469-8865-4b59-aab3-3ff26bd36e77">How to: Use Environment Variables in a Build</a>.
+<strong>Note</strong>  By default, the STAMPINF_VERSION environment variable is not set when you build a driver unless you set it as a system environment variable. To specify this environment variable within the Visual Studio build environment, see <a href="https://msdn.microsoft.com/en-us/Library/Windows/Hardware/ms171459(v=vs.85).aspx">How to: Use Environment Variables in a Build</a>.
 </div>
 <div>
  
@@ -69,7 +69,7 @@ If you want to add this property page to your project, so that you can run the S
 </ul>
 <p>This setting is equivalent to specifying the <a href="https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff552786(v=vs.85).aspx">Stampinf</a> option <strong>-d [</strong><em>date</em><strong>|*]</strong>.</p>
 <div class="alert">
-<strong>Note</strong>  By default, the STAMPINF_DATE environment variable is not set when you build a driver unless you set it as a system environment variable. To specify this environment variable within the Visual Studio build environment, see <a href="7f9e4469-8865-4b59-aab3-3ff26bd36e77">How to: Use Environment Variables in a Build</a>.
+<strong>Note</strong>  By default, the STAMPINF_DATE environment variable is not set when you build a driver unless you set it as a system environment variable. To specify this environment variable within the Visual Studio build environment, see <a href="https://msdn.microsoft.com/en-us/Library/Windows/Hardware/ms171459(v=vs.85).aspx">How to: Use Environment Variables in a Build</a>.
 </div>
 <div>
  
@@ -123,7 +123,7 @@ If you want to add this property page to your project, so that you can run the S
 * [**INF Version section**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff547502(v=vs.85).aspx)
 * [WDK and Visual Studio build environment](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454286(v=vs.85).aspx)
 * [Stampinf task](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff552786(v=vs.85).aspx_task)
-* [How to: Use Environment Variables in a Build](7f9e4469-8865-4b59-aab3-3ff26bd36e77)
+* [How to: Use Environment Variables in a Build](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/ms171459(v=vs.85).aspx)
  
 
  

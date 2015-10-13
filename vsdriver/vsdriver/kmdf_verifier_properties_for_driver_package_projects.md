@@ -1,9 +1,9 @@
 <span id="vsdriver.kmdf_verifier_properties_for_driver_package_projects"></span>KMDF Verifier Properties for Driver Package Projects
 ====================================================================================================================================
 
-Sets the properties for the KMDF Verifier (or framework verifier) on a remote computer. You can use these settings when you build and deploy a KMDF driver to a test computer. For information about KMDF drivers, see [Kernel-Mode Driver Framework](kmdf.portal).
+Sets the properties for the KMDF Verifier (or framework verifier) on a remote computer. You can use these settings when you build and deploy a KMDF driver to a test computer. For information about KMDF drivers, see [Kernel-Mode Driver Framework](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff557565(v=vs.85).aspx).
 
-For more information about the framework verifier, see [Using the Framework's Verifier](kmdf.using_the_framework_s_verifier) and [WDF Verifier Control Application](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff556129(v=vs.85).aspx).
+For more information about the framework verifier, see [Using the Framework's Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545540(v=vs.85).aspx) and [WDF Verifier Control Application](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff556129(v=vs.85).aspx).
 
 <span id="Setting_KMDF_Verifier_properties_for_driver_package_projects"></span><span id="setting_kmdf_verifier_properties_for_driver_package_projects"></span><span id="SETTING_KMDF_VERIFIER_PROPERTIES_FOR_DRIVER_PACKAGE_PROJECTS"></span>Setting KMDF Verifier properties for driver package projects
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -76,7 +76,7 @@ For more information about the framework verifier, see [Using the Framework's Ve
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-* [Kernel-Mode Driver Framework](kmdf.portal)
+* [Kernel-Mode Driver Framework](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff557565(v=vs.85).aspx)
 * [Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545448(v=vs.85).aspx)
 * [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
  
