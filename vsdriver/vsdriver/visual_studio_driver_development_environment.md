@@ -5,8 +5,6 @@ Starting with Windows Driver Kit (WDK) 8, the Windows driver development enviro
 
 [This video demonstrates the integration of the WDK into Visual Studio.](https://hubs-video.ssl.catalog.video.msn.com/embed/9673727b-89ef-4a54-8228-dad41dbd8201)
 
-This video demonstrates the integration of the WDK into Visual Studio.
-
 To set up the integrated development environment, first install Visual Studio and then install the WDK. You can find information about how to get Visual Studio and the WDK [here](http://go.microsoft.com/fwlink/p/?linkid=239721). [Debugging Tools for Windows](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff551063(v=vs.85).aspx) is included when you install the WDK. For more information, see [Download and Install Debugging Tools for Windows](http://go.microsoft.com/fwlink/p/?linkid=235427).
 
 WDK 8 uses MSBuild.exe, which is a different build utility from the one used in previous releases. (Previous releases used Build.exe, which was available only in a command-line environment.) MSBuild is available both in the Visual Studio user interface and as a command-line tool. Driver projects created with previous releases of the WDK used Sources (and possibly Dirs) files to describe a project or group of projects. Drivers created with the Visual Studio environment use Project and Solution files instead of Sources and Dirs files. The Visual Studio environment provides a tool for converting Sources and Dirs files to Project and Solution files.
