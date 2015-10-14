@@ -1,5 +1,6 @@
 ---
 title: Getting Started with Universal Windows drivers
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 <span id="vsdriver.getting_started_with_universal_drivers"></span>Getting Started with Universal Windows drivers
