@@ -1,4 +1,4 @@
-<span id="vsdriver.converting_wdk_8_1_projects_to_wdk_10"></span>Converting WDK 8.1 Projects to WDK 10
+Converting WDK 8.1 Projects to WDK 10
 ======================================================================================================
 
 This topic describes how to convert a driver project that was created using Microsoft Visual Studio 2013 and Windows Driver Kit (WDK) 8.1 to a driver project that builds in Microsoft Visual Studio 2015 with the Windows Driver Kit (WDK) 10.

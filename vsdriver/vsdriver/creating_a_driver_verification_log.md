@@ -1,4 +1,4 @@
-<span id="vsdriver.creating_a_driver_verification_log"></span>Creating a Driver Verification Log
+Creating a Driver Verification Log
 ================================================================================================
 
 The Windows Server 2012 [Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016) requires a Driver Verification Log (DVL) for all applicable driver submissions. The DVL contains a summary of the results from the Code Analysis and Static Driver Verifier log files. The DVL does not contain any source information. You must run the Code Analysis tool and Static Driver Verifier prior to creating a DVL for your driver.

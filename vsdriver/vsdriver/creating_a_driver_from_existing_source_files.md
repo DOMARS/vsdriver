@@ -1,4 +1,4 @@
-<span id="vsdriver.creating_a_driver_from_existing_source_files"></span>Creating a Driver From Existing Source Files
+Creating a Driver From Existing Source Files
 ====================================================================================================================
 
 The WDK is integrated with Microsoft Visual Studio, and uses the same compiler and build tools that you use to build Visual Studio solutions and projects. [MSBuild](http://go.microsoft.com/fwlink/p/?linkid=262804) replaces the Windows Build Utility (Build.exe) that was used in versions of the WDK prior to Windows Driver Kit (WDK) 8.

@@ -1,4 +1,4 @@
-<span id="vsdriver.message_compiler_properties_for_driver_projects"></span>Message Compiler Properties for Driver Projects
+Message Compiler Properties for Driver Projects
 ==========================================================================================================================
 
 Sets the properties for the [**Message Compiler (MC.exe)**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Aa385638(v=vs.85).aspx) tool. The compiler generates the message resource files that you can add to your project.

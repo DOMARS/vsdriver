@@ -1,4 +1,4 @@
-<span id="vsdriver.building_drivers_for_different_versions_of_windows"></span>Building Drivers for Different Versions of Windows
+Building Drivers for Different Versions of Windows
 ================================================================================================================================
 
 If you are [writing drivers for different versions of Windows](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff554887(v=vs.85).aspx), the following section provides some guidelines about how you should build those drivers using the Windows Driver Kit (WDK) 8.1 or WDK 8, Visual Studio, and MSBuild.

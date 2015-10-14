@@ -1,4 +1,4 @@
-<span id="vsdriver.stampinf_properties_for_driver_projects"></span>Stampinf Properties for Driver Projects
+Stampinf Properties for Driver Projects
 ==========================================================================================================
 
 Sets the properties for the [Stampinf](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff552786(v=vs.85).aspx) tool. You can use Stampinf to update common INF and INX file directives when you build the driver.

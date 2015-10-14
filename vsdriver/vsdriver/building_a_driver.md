@@ -1,4 +1,4 @@
-<span id="vsdriver.building_a_driver"></span>Building a Driver with the WDK
+Building a Driver with the WDK
 ===========================================================================
 
 <span class="sidebar_heading" style="font-weight: bold;">In this article</span>

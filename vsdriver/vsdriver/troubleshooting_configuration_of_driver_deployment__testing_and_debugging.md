@@ -1,4 +1,4 @@
-<span id="vsdriver.troubleshooting_configuration_of_driver_deployment__testing_and_debugging"></span>Troubleshooting Configuration of Driver Deployment, Testing and Debugging
+Troubleshooting Configuration of Driver Deployment, Testing and Debugging
 ==============================================================================================================================================================================
 
 Provisioning a target computer is described in [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909(v=vs.85).aspx). Here we give some troubleshooting tips for the provisioning process.

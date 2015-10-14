@@ -1,4 +1,4 @@
-<span id="vsdriver.windows_10_editions_for_universal_drivers"></span>Target platform on MSDN driver reference pages
+Target platform on MSDN driver reference pages
 ===================================================================================================================
 
 In the Requirements block at the bottom of MSDN driver reference pages, you'll see an entry called **Target Platform**. This line lists editions of Windows to which the page applies.

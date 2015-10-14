@@ -1,4 +1,4 @@
-<span id="vsdriver.validating_universal_drivers"></span>Validating Universal Windows drivers
+Validating Universal Windows drivers
 ============================================================================================
 
 <span class="sidebar_heading" style="font-weight: bold;">In this article</span>

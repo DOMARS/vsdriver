@@ -1,4 +1,4 @@
-<span id="vsdriver.troubleshooting_the_device_fundamental_tests"></span>Troubleshooting the Device Fundamentals tests using the WDK
+Troubleshooting the Device Fundamentals tests using the WDK
 ===================================================================================================================================
 
 This topic provides suggestions for fixing problems you might encounter when you use the WDK to run the [Device Fundamentals Tests](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/JJ673011(v=vs.85).aspx). For information about the tests and testing, see [How to select and configure the Device Fundamentals tests](how_to_select_and_configure_the_device_fundamental_tests.md), [How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.md), and [How to test a driver at runtime from a Command Prompt](how_to_test_a_driver_at_runtime_from_a_command_prompt.md).

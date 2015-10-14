@@ -1,4 +1,4 @@
-<span id="vsdriver.using_the_microsoft_c_runtime_with_user_mode_drivers_and_apps"></span>Using the Microsoft C Runtime with User-Mode Drivers and Desktop Apps
+Using the Microsoft C Runtime with User-Mode Drivers and Desktop Apps
 ==============================================================================================================================================================
 
 This topic provides information about distributing the C Runtime Libraries with applications and drivers for Windows 8 and Windows 8.1. It provides guidelines for user-mode driver and desktop application writers to compile their code, and package it for redistribution with the necessary C Runtime libraries.

@@ -1,4 +1,4 @@
-<span id="vsdriver.create_a_custom_driver_installation_script"></span>How to create a custom driver installation script
+How to create a custom driver installation script
 =======================================================================================================================
 
 If your deployment scenario requires more than installing the driver package on the test computers, you can choose to run your own custom command scripts upon installation.

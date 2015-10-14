@@ -1,4 +1,4 @@
-<span id="vsdriver.inf2cat_properties_for_driver_package_projects"></span>Inf2Cat Properties for Driver Package Projects
+Inf2Cat Properties for Driver Package Projects
 ========================================================================================================================
 
 Sets the properties for the [**Inf2Cat**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff547089(v=vs.85).aspx) tool. The **Inf2Cat** tool can be used to create catalog files for any driver package that has an INF file.

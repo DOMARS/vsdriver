@@ -1,4 +1,4 @@
-<span id="vsdriver.test_a_driver_package"></span>How to test a driver package
+How to test a driver package
 =============================================================================
 
 You can use Visual Studio to deploy and install a driver package on a test computer, and then verify that the driver is installed and running.

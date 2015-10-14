@@ -1,4 +1,4 @@
-<span id="vsdriver.what_happens_when_you_provision_a_computer__wdk_8_0_"></span>What happens when you provision a computer (WDK 8.0)
+What happens when you provision a computer (WDK 8.0)
 ====================================================================================================================================
 
 Using Microsoft Visual Studio to configure and set up driver deployment and driver testing is called *provisioning a target computer* or *provisioning a test computer*. For information about provisioning with Windows Driver Kit (WDK) 8 , see [Provision a computer for driver deployment and testing (WDK 8)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh698272(v=vs.85).aspx). Here we show what happens when you use version 8.0 of the Windows Driver Kit (WDK) to provision a target computer.

@@ -1,4 +1,4 @@
-<span id="vsdriver.counters_manifest_preprocessor_properties_for_driver_projects"></span>Counters Manifest Preprocessor Properties for Driver Projects
+Counters Manifest Preprocessor Properties for Driver Projects
 ======================================================================================================================================================
 
 Sets the properties for the [**CTRPP**](https://msdn.microsoft.com/en-us/Library/Windows/Desktop/aa372128(v=vs.85).aspx) tool that parses and validates your counters manifest. For information about working with performance counters, see [Performance Counters](https://msdn.microsoft.com/en-us/Library/Windows/Desktop/aa373083(v=vs.85).aspx). For information about using performance counters in a kernel-mode Windows driver, see [Kernel Mode Performance Monitoring](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff548159(v=vs.85).aspx).

@@ -1,4 +1,4 @@
-<span id="vsdriver.testing_a_driver"></span>Testing a Driver
+Testing a Driver
 ============================================================
 
 The WDK adds a driver testing interface to Visual Studio that allows you to conveniently build, deploy, install, and test a driver on a remote test computer on your network. The WDK also provides a collection of device driver tests that you can use to test features and functions of your driver. You can also write customize or write your own driver tests using the Driver Test Template in Visual Studio.

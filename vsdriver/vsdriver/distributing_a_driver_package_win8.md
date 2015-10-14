@@ -1,4 +1,4 @@
-<span id="vsdriver.distributing_a_driver_package_win8"></span>Distributing a driver package
+Distributing a driver package
 ===========================================================================================
 
 <span id="ddk_distributing_a_driver_pg"></span><span id="DDK_DISTRIBUTING_A_DRIVER_PG"></span>

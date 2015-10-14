@@ -1,4 +1,4 @@
-<span id="vsdriver.read_the_driver_test_results_log"></span>How to read the driver test results log
+How to read the driver test results log
 ===================================================================================================
 
 From the **Driver Test Group Explorer**, you can display the results from driver tests, save the test results to a folder, or load the results from a folder.

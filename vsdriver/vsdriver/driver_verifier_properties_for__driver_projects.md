@@ -1,4 +1,4 @@
-<span id="vsdriver.driver_verifier_properties_for__driver_projects"></span>Driver Verifier Properties for Driver Package Projects
+Driver Verifier Properties for Driver Package Projects
 =================================================================================================================================
 
 * [Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545448(v=vs.85).aspx) is a run-time verification tool that increases the effectiveness of your driver testing. You can enable and configure Driver Verifier to run on all test computers when you deploy your driver for testing.

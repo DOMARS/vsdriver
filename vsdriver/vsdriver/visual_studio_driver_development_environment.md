@@ -1,4 +1,4 @@
-<span id="vsdriver.visual_studio_driver_development_environment"></span>Developing, Testing, and Deploying Drivers
+Developing, Testing, and Deploying Drivers
 ==================================================================================================================
 
 Starting with Windows Driver Kit (WDK) 8, the Windows driver development environment and the Windows debuggers are integrated into Microsoft Visual Studio. In this integrated driver development environment, most of the tools you need for coding, building, packaging, deploying, debugging, and testing a driver are available in the Visual Studio user interface. This is a departure from previous releases of the Windows Driver Kit (WDK), where the various stages of the driver life cycle were performed as separate tasks with stand-alone tools.
