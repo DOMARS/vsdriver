@@ -14,6 +14,9 @@ Next, determine which of the following cases describes your driver model recomme
 3.  In the middle pane, select **User Mode Driver (UMDF)**.
 4.  Fill in the **Name** and **Location** boxes, and click **OK**. For more details, see [Writing a UMDF Driver Based on a Template](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439659).
     **Note**  When you create a new UMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h.
+
+
+
 5.  At this point, you have a driver project that implements the general code required by most UMDF drivers. Now you can supply the code that is specific to your device. Refer to the documentation for your technology to learn about the interfaces that you need to implement.
 
 ### <span id="Case_2__The_documentation_for_your_technology_recommends_KMDF."></span><span id="case_2__the_documentation_for_your_technology_recommends_kmdf."></span><span id="CASE_2__THE_DOCUMENTATION_FOR_YOUR_TECHNOLOGY_RECOMMENDS_KMDF."></span>Case 2: The documentation for your technology recommends KMDF.
@@ -23,6 +26,9 @@ Next, determine which of the following cases describes your driver model recomme
 3.  In the middle pane, select **Kernel Mode Driver (KMDF)**.
 4.  Fill in the **Name** and **Location** boxes, and click **OK**. For more details, see [Writing a KMDF Driver Based on a Template](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439654).
     **Note**  When you create a new KMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h.
+
+
+
 5.  At this point, you have a driver project that implements the general code required by most KMDF drivers. Now you can supply the code that is specific to your device. Refer to the documentation for your technology to learn about the methods that you need to implement.
 
 ### <span id="Case_3__The_documentation_for_your_technology_describes_a_minidriver_model."></span><span id="case_3__the_documentation_for_your_technology_describes_a_minidriver_model."></span><span id="CASE_3__THE_DOCUMENTATION_FOR_YOUR_TECHNOLOGY_DESCRIBES_A_MINIDRIVER_MODEL."></span>Case 3: The documentation for your technology describes a minidriver model.
@@ -45,6 +51,9 @@ If your device technology has a minidriver model, and you are not able to find a
 5.  In the Add New Item dialog box, select **C++ File (.cpp)**, enter a name for your file, and click **OK**.
 
     **Note**  If you want to create a .c file instead of a .cpp file, enter a name that has the **.c** extension.
+
+
+
 6.  Refer to the documentation for your technology to learn about the functions that you need to implement. As you implement and organize your functions, you might decide to add additional .cpp or .c files.
 
  
