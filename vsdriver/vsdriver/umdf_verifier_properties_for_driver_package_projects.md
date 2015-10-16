@@ -3,9 +3,9 @@ UMDF Verifier Properties for Driver Package Projects
 
 Sets the properties for the UMDF Verifier on a test computer. You can use these settings when you build and deploy a driver to a test computer.
 
-For information about deployment, see [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909(v=vs.85).aspx) and [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
+For information about deployment, see [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909) and [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
 
-For information about debugging UMDF drivers, see [How to Enable Debugging of a UMDF Driver](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff554716(v=vs.85).aspx) and [WDF Verifier Control Application](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff556129(v=vs.85).aspx).
+For information about debugging UMDF drivers, see [How to Enable Debugging of a UMDF Driver](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff554716) and [WDF Verifier Control Application](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff556129).
 
 <span id="Setting_UMDF_Verifier_properties_for_driver_projects"></span><span id="setting_umdf_verifier_properties_for_driver_projects"></span><span id="SETTING_UMDF_VERIFIER_PROPERTIES_FOR_DRIVER_PROJECTS"></span>Setting UMDF Verifier properties for driver projects
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -87,13 +87,13 @@ For information about debugging UMDF drivers, see [How to Enable Debugging of a 
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-* [User-Mode Driver Framework](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff557565(v=vs.85).aspx)
-* [Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545448(v=vs.85).aspx)
+* [User-Mode Driver Framework](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff557565)
+* [Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545448)
 * [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20UMDF%20Verifier%20Properties%20for%20Driver%20Package%20Projects%20%20RELEASE:%20(9/30/2015)&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20UMDF%20Verifier%20Properties%20for%20Driver%20Package%20Projects%20%20RELEASE:%20%289/30/2015%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default. "Send comments about this topic to Microsoft")
 
-© 2015 Microsoft. All rights reserved.
+

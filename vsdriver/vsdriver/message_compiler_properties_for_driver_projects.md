@@ -1,9 +1,9 @@
 Message Compiler Properties for Driver Projects
 ==========================================================================================================================
 
-Sets the properties for the [**Message Compiler (MC.exe)**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Aa385638(v=vs.85).aspx) tool. The compiler generates the message resource files that you can add to your project.
+Sets the properties for the [**Message Compiler (MC.exe)**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Aa385638) tool. The compiler generates the message resource files that you can add to your project.
 
-For example, if you are using the [Event Tracing for Windows (ETW)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545699(v=vs.85).aspx) kernel-mode API to add event tracing to a kernel-mode driver, you could use the message compiler to create a header file that contains definitions for the event provider, event attributes, channels, and events. You must include this header file in your source code. The message compiler creates a resource compiler script (\*.rc) that you add to your project file.
+For example, if you are using the [Event Tracing for Windows (ETW)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545699) kernel-mode API to add event tracing to a kernel-mode driver, you could use the message compiler to create a header file that contains definitions for the event provider, event attributes, channels, and events. You must include this header file in your source code. The message compiler creates a resource compiler script (\*.rc) that you add to your project file.
 
 <span id="Setting_Message_Compiler_properties_for_driver_projects"></span><span id="setting_message_compiler_properties_for_driver_projects"></span><span id="SETTING_MESSAGE_COMPILER_PROPERTIES_FOR_DRIVER_PROJECTS"></span>Setting Message Compiler properties for driver projects
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -28,7 +28,7 @@ This property page is available if you add a message text file (.mc) or a manife
 <tbody>
 <tr class="odd">
 <td align="left"><p><span id="Additional_Options"></span><span id="additional_options"></span><span id="ADDITIONAL_OPTIONS"></span><strong>Additional Options</strong></p></td>
-<td align="left"><p>Specifies additional options to pass to the <a href="https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Aa385638(v=vs.85).aspx"><strong>Message Compiler (MC.exe)</strong></a> tool.</p></td>
+<td align="left"><p>Specifies additional options to pass to the <a href="https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Aa385638"><strong>Message Compiler (MC.exe)</strong></a> tool.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Ansi_Input_File"></span><span id="ansi_input_file"></span><span id="ANSI_INPUT_FILE"></span><strong>Ansi Input File</strong></p></td>
@@ -164,14 +164,14 @@ This property page is available if you add a message text file (.mc) or a manife
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-* [Message Compiler (MC.exe)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454227(v=vs.85).aspx)
-* [WDK and Visual Studio build environment](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454286(v=vs.85).aspx)
+* [Message Compiler (MC.exe)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454227)
+* [WDK and Visual Studio build environment](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454286)
 Message compiler task
-* [Event Tracing for Windows (ETW)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545699(v=vs.85).aspx)
+* [Event Tracing for Windows (ETW)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545699)
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20Message%20Compiler%20Properties%20for%20Driver%20Projects%20%20RELEASE:%20(9/30/2015)&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20Message%20Compiler%20Properties%20for%20Driver%20Projects%20%20RELEASE:%20%289/30/2015%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default. "Send comments about this topic to Microsoft")
 
-© 2015 Microsoft. All rights reserved.
+

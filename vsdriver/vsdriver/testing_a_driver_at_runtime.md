@@ -7,9 +7,9 @@ The WDK extensions to Visual Studio provide a device testing interface that enab
 
 -   A Driver Package that is ready to install. You must first create and build your driver and then create a Driver Package for installation. For more information, see [Building a Driver](building_a_driver.md) and [Creating a Driver Package](creating_a_driver_package.md).
 -   The driver must be test signed. For more information, see [Signing a Driver](signing_a_driver.md).
--   A test computer (or computers). The test computer must be on the same network as the computer that you are using for development. Both computers must be connected to the same domain, or both connected to the network under the same workgroup. The test computer should be running the version of Windows that you want to target for testing. You can also [install a checked build](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff547205(v=vs.85).aspx) or partial checked build of Windows for testing and debugging purposes.
+-   A test computer (or computers). The test computer must be on the same network as the computer that you are using for development. Both computers must be connected to the same domain, or both connected to the network under the same workgroup. The test computer should be running the version of Windows that you want to target for testing. You can also [install a checked build](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff547205) or partial checked build of Windows for testing and debugging purposes.
 -   A device to be tested.
--   (*Recommended*) Set up a kernel mode debugging connection to the test computer. To use a network connection for kernel mode debugging, the target computer must be running Windows 8. On computers running Windows 7 or Windows Vista, you can set up a USB, 1394, or a serial connection for kernel mode debugging. For more information, see [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909(v=vs.85).aspx).
+-   (*Recommended*) Set up a kernel mode debugging connection to the test computer. To use a network connection for kernel mode debugging, the target computer must be running Windows 8. On computers running Windows 7 or Windows Vista, you can set up a USB, 1394, or a serial connection for kernel mode debugging. For more information, see [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909).
 
 Instructions
 ------------
@@ -18,18 +18,18 @@ Instructions
 
 From Visual Studio, you can configure and provision computers for testing. When you configure the test computers, the WDK driver test framework automatically enables the test computer for remote debugging and transfers the necessary test binaries and support files.
 
-1.  If you have not already done so, follow the instructions to [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909(v=vs.85).aspx).
+1.  If you have not already done so, follow the instructions to [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909).
 2.  Connect the device that you want to test to the test computer or computers.
 
 After you have configured and provisioned a test computer, you can use Visual Studio to deploy drivers, schedule tests, and debug drivers on the test computer. For information about deployment and about how you can deploy a driver automatically at build time, see [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md).
 
-You can also enable and set options for [Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545448(v=vs.85).aspx), the runtime verification tool for drivers. Driver Verifier monitors your driver as you run tests on the test computer. For information about setting the Driver Verifier options for deployment, see [Driver Verifier Properties for Driver Projects](driver_verifier_properties_for__driver_projects.md).
+You can also enable and set options for [Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545448), the runtime verification tool for drivers. Driver Verifier monitors your driver as you run tests on the test computer. For information about setting the Driver Verifier options for deployment, see [Driver Verifier Properties for Driver Projects](driver_verifier_properties_for__driver_projects.md).
 
 You can also run tests outside of Visual Studio, for more information see [How to test a driver at runtime from a Command Prompt](how_to_test_a_driver_at_runtime_from_a_command_prompt.md). Starting in WDK 8.1, you can copy and run the HCK Test Suites on test computers using command scripts. See [How to run the HCK Test Suites in WDK 8.1](run_the_hck_test_suites_in_the_wdk.md).
 
 ### <span id="Select_an_HCK_Test_Suite_to_run_on_the_test_computer__using_WDK__8.1_"></span><span id="select_an_hck_test_suite_to_run_on_the_test_computer__using_wdk__8.1_"></span><span id="SELECT_AN_HCK_TEST_SUITE_TO_RUN_ON_THE_TEST_COMPUTER__USING_WDK__8.1_"></span>Step 2: Select an HCK Test Suite to run on the test computer (using WDK 8.1)
 
-Starting with WDK 8.1, you can select HCK Test Suites to run on the test computer. The HCK Test Suites include the [Device Fundamentals Tests](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/JJ673011(v=vs.85).aspx), and Windows Hardware Certification kit (HCK) Basic tests for graphics, imaging, wireless LAN, mobile broadband (CDMA and GSM), and WiFi Direct devices.
+Starting with WDK 8.1, you can select HCK Test Suites to run on the test computer. The HCK Test Suites include the [Device Fundamentals Tests](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/JJ673011), and Windows Hardware Certification kit (HCK) Basic tests for graphics, imaging, wireless LAN, mobile broadband (CDMA and GSM), and WiFi Direct devices.
 
 -   See [How to run the HCK Test Suites in WDK 8.1](run_the_hck_test_suites_in_the_wdk.md).
 
@@ -52,7 +52,7 @@ To make driver testing on different test targets easier, tests are scheduled to 
 
 ### <span id="Configure_test_parameters"></span><span id="configure_test_parameters"></span><span id="CONFIGURE_TEST_PARAMETERS"></span>Step 4: Configure test parameters
 
-After you select the tests for your test group, you can configure any of the runtime parameters that are passed to the driver tests. For example, many of the Device Fundamentals Tests have a parameter *DQ*, which stands for Device Query. This is a [Simple Data Evaluation Language](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff539607(v=vs.85).aspx) (SDEL) query. The [Windows Driver Test Framework](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff539547(v=vs.85).aspx) provides SDEL as a query language to simplify the task of collecting targets based on attributes or relationships.
+After you select the tests for your test group, you can configure any of the runtime parameters that are passed to the driver tests. For example, many of the Device Fundamentals Tests have a parameter *DQ*, which stands for Device Query. This is a [Simple Data Evaluation Language](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff539607) (SDEL) query. The [Windows Driver Test Framework](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff539547) provides SDEL as a query language to simplify the task of collecting targets based on attributes or relationships.
 
 For example, to run the tests for USB devices only, use the device query: class='usb'. You can change the value of each test parameter in the test group.
 
@@ -74,7 +74,7 @@ For information about deploying a driver automatically at build time, see [Deplo
 Remarks
 -------
 
-For information about the driver tests and test categories, see [How to select and configure the Device Fundamentals Tests](how_to_select_and_configure_the_device_fundamental_tests.md). For information about the testing framework, see [Test Authoring and Execution Framework](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439725(v=vs.85).aspx) (TAEF) and [Windows Driver Test Framework](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff539547(v=vs.85).aspx) (WDTF).
+For information about the driver tests and test categories, see [How to select and configure the Device Fundamentals Tests](how_to_select_and_configure_the_device_fundamental_tests.md). For information about the testing framework, see [Test Authoring and Execution Framework](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439725) (TAEF) and [Windows Driver Test Framework](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff539547) (WDTF).
 
 You can write your own driver tests and deploy those tests on test computers. For more information, see [How to write a driver test](how_to_write_a_driver_test_.md).
 
@@ -86,7 +86,7 @@ Running the Device Fundamentals tests in Visual Studio early in the development 
 * [How to run the HCK Test Suites in WDK 8.1](run_the_hck_test_suites_in_the_wdk.md)
 * [How to select and configure the Device Fundamentals Tests](how_to_select_and_configure_the_device_fundamental_tests.md)
 * [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
-* [Setting Up Kernel-Mode Debugging in Visual Studio](https://msdn.microsoft.com/en-us/windows/hardware/hh439376(v=vs.85)
+* [Setting Up Kernel-Mode Debugging in Visual Studio](https://msdn.microsoft.com/en-us/windows/hardware/hh439376
 * [Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016)
 * [Windows Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/?linkid=254893)
 * [How to test a driver at runtime from a Command Prompt](how_to_test_a_driver_at_runtime_from_a_command_prompt.md)
@@ -94,6 +94,6 @@ Running the Device Fundamentals tests in Visual Studio early in the development 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20How%20to%20test%20a%20driver%20at%20runtime%20using%20Visual%20Studio%20%20RELEASE:%20(9/30/2015)&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20How%20to%20test%20a%20driver%20at%20runtime%20using%20Visual%20Studio%20%20RELEASE:%20%289/30/2015%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default. "Send comments about this topic to Microsoft")
 
-© 2015 Microsoft. All rights reserved.
+

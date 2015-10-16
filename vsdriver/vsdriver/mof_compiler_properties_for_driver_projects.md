@@ -1,7 +1,7 @@
 MOF Compiler Properties for Driver Projects
 ==================================================================================================================
 
-The Managed Object Format (MOF) compiler (mofcomp.exe) parses MOF files and adds the classes and class instances defined in the files to the WMI repository. Use the Mofcomp property page to compile MOF files with your driver. For more information about Mofcomp.exe and WMI, see [**mofcomp**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Aa392389(v=vs.85).aspx), [Compiling MOF Files](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Aa389240(v=vs.85).aspx), and [Compiling a Driver's MOF File](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff542012(v=vs.85).aspx).
+The Managed Object Format (MOF) compiler (mofcomp.exe) parses MOF files and adds the classes and class instances defined in the files to the WMI repository. Use the Mofcomp property page to compile MOF files with your driver. For more information about Mofcomp.exe and WMI, see [**mofcomp**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Aa392389), [Compiling MOF Files](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Aa389240), and [Compiling a Driver's MOF File](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff542012).
 
 <span id="Setting_Managed_Object_Format__MOF__Compiler_properties_for_driver_projects"></span><span id="setting_managed_object_format__mof__compiler_properties_for_driver_projects"></span><span id="SETTING_MANAGED_OBJECT_FORMAT__MOF__COMPILER_PROPERTIES_FOR_DRIVER_PROJECTS"></span>Setting Managed Object Format (MOF) Compiler properties for driver projects
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -26,7 +26,7 @@ This property page is available if you add a Managed Object Format (MOF) file (.
 <tbody>
 <tr class="odd">
 <td align="left"><p><span id="Additional_Options"></span><span id="additional_options"></span><span id="ADDITIONAL_OPTIONS"></span><strong>Additional Options</strong></p></td>
-<td align="left"><p>Specifies additional options to pass to the <a href="https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Aa392389(v=vs.85).aspx"><strong>mofcomp</strong></a> tool.</p></td>
+<td align="left"><p>Specifies additional options to pass to the <a href="https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Aa392389"><strong>mofcomp</strong></a> tool.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Amendement"></span><span id="amendement"></span><span id="AMENDEMENT"></span><strong>Amendement</strong></p></td>
@@ -60,7 +60,7 @@ This property page is available if you add a Managed Object Format (MOF) file (.
 <p><strong>Safe Update (-class:safeupdate)</strong> Allows updates of classes even if there are child classes, as long as the change does not cause conflicts with child classes.</p>
 <p><strong>Update Only (-class:updateonly)</strong> Requests that the compiler not create any new classes.</p>
 <p></p>
-<p>See <a href="https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Aa392389(v=vs.85).aspx"><strong>mofcomp</strong></a> for more information.</p></td>
+<p>See <a href="https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Aa392389"><strong>mofcomp</strong></a> for more information.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><span id="NamespacePath"></span><span id="namespacepath"></span><span id="NAMESPACEPATH"></span><strong>NamespacePath</strong></p></td>
@@ -90,13 +90,13 @@ This property page is available if you add a Managed Object Format (MOF) file (.
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-* [Compiling MOF Files](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Aa389240(v=vs.85).aspx)
-* [Compiling a Driver's MOF File](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff542012(v=vs.85).aspx)
-* [**mofcomp**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Aa392389(v=vs.85).aspx)
+* [Compiling MOF Files](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Aa389240)
+* [Compiling a Driver's MOF File](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff542012)
+* [**mofcomp**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Aa392389)
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20MOF%20Compiler%20Properties%20for%20Driver%20Projects%20%20RELEASE:%20(9/30/2015)&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20MOF%20Compiler%20Properties%20for%20Driver%20Projects%20%20RELEASE:%20%289/30/2015%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default. "Send comments about this topic to Microsoft")
 
-© 2015 Microsoft. All rights reserved.
+

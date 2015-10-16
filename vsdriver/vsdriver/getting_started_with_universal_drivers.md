@@ -31,9 +31,9 @@ To determine if your existing driver calls any interfaces outside of UWP, recomp
 
 In other cases, you may have to code a workaround if there is not a suitable replacement. If you need to, write a new Universal Windows driver starting from the driver templates in the unified WDK.
 
-The compiler might also display [INF validation errors](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn929320(v=vs.85).aspx) if you are not [using a universal INF file](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn941087(v=vs.85).aspx).
+The compiler might also display [INF validation errors](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn929320) if you are not [using a universal INF file](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn941087).
 
-A Universal Windows driver can use [KMDF](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff557565(v=vs.85).aspx), [UMDF 2](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn384105(v=vs.85).aspx) or the Windows Driver Model (WDM).
+A Universal Windows driver can use [KMDF](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff557565), [UMDF 2](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn384105) or the Windows Driver Model (WDM).
 
 <span id="Building_a_Universal_Windows_driver"></span><span id="building_a_universal_windows_driver"></span><span id="BUILDING_A_UNIVERSAL_WINDOWS_DRIVER"></span>Building a Universal Windows driver
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -62,10 +62,7 @@ In contrast, existing user-mode drivers may require modification to compile as U
     To change driver model manually, right-click the driver project and choose Properties. Under **Configuration Properties-&gt;Driver Settings-&gt;General**, find the **Target Platform** entry. Choose **Universal**, **Desktop**, or **Mobile**. Microsoft Visual Studio uses this setting to determine what libraries to link against.
 
     **Note**  You cannot build a Universal Windows driver for Windows versions earlier than Windows 10.
-
-     
-
-3.  You might need to modify the .inf file to specify the provider, specified as an **%***ManufacturerName***%** token that is expanded later in the INF file's [**Strings**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff547485(v=vs.85).aspx) section. For example:
+3.  You might need to modify the .inf file to specify the provider, specified as an **%***ManufacturerName***%** token that is expanded later in the INF file's [**Strings**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff547485) section. For example:
 
     ``` syntax
     Provider="Contoso"
@@ -89,7 +86,7 @@ If you want to install a Universal Windows driver on a device that is running Wi
 -   RegisterDLL, DelFile, or DelReg directives
 -   Non-HKR AddReg directives
 
-For more information, see [Using a Universal INF File](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn941087(v=vs.85).aspx).
+For more information, see [Using a Universal INF File](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn941087).
 
 If you want to install your Universal Windows driver on Windows 10 Mobile, you can use an .spkg file. An .spkg ("*package file*") is a standalone module that contains your driver package. If you are not deploying to Windows 10 Mobile, you do not need to generate a package file. You can still compile a Universal Windows driver (as defined by the driver source code) without a package file.
 
@@ -105,7 +102,7 @@ WDK 10 includes PkgGen, a tool that generates package files. You run PkgGen in 
 
 To view the contents of the package file, append a .cab suffix to the file name and then open the cab file in Windows Explorer.
 
-To learn about running PkgGen outside of Visual Studio, see [Creating packages](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn756642(v=vs.85).aspx).
+To learn about running PkgGen outside of Visual Studio, see [Creating packages](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn756642).
 
 To install a mobile driver package (.spkg file), you have two options.
 
@@ -130,7 +127,7 @@ To install a mobile driver package (.spkg file), you have two options.
     </tbody>
     </table>
 
-2.  For more information, see [IUTool.exe: Update packages on a phone](http://go.microsoft.com/fwlink/p/?linkid=617385) and [Adding a driver to a test image](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Mt131832(v=vs.85).aspx).
+2.  For more information, see [IUTool.exe: Update packages on a phone](http://go.microsoft.com/fwlink/p/?linkid=617385) and [Adding a driver to a test image](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Mt131832).
 
 ![](../common/wedge.gif)**Using ImgGen to add a driver package (.spkg) to a mobile OS image (.ffu)**
 
@@ -145,7 +142,7 @@ To flash the image to the device, either use the Microsoft-supplied FFUTool, or 
 <span id="Debugging_a_Universal_Windows_driver"></span><span id="debugging_a_universal_windows_driver"></span><span id="DEBUGGING_A_UNIVERSAL_WINDOWS_DRIVER"></span>Debugging a Universal Windows driver
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Starting in Windows 10, you can build your KMDF or UMDF driver so that it gets additional driver debugging information through the [Inflight Trace Recorder](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn914610(v=vs.85).aspx). Universal Windows drivers can take advantage of this feature.
+Starting in Windows 10, you can build your KMDF or UMDF driver so that it gets additional driver debugging information through the [Inflight Trace Recorder](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn914610). Universal Windows drivers can take advantage of this feature.
 
 In addition, if you used the Visual Studio KMDF template, your driver uses Windows software trace preprocessor (WPP) to write trace messages. Your driver is an ETW provider with a provider GUID.
 
@@ -163,7 +160,7 @@ To send a trace message from your driver, use this code:
 </tbody>
 </table>
 
-You can access the ETW logs either using Tracelog via the [TShell tool](http://go.microsoft.com/fwlink/p/?linkid=617388) on a phone, or by using [!wmitrace](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff561362(v=vs.85).aspx) in a debugger session.
+You can access the ETW logs either using Tracelog via the [TShell tool](http://go.microsoft.com/fwlink/p/?linkid=617388) on a phone, or by using [!wmitrace](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff561362) in a debugger session.
 
 To use Tracelog on a phone:
 
@@ -184,22 +181,22 @@ To use Tracelog on a phone:
 
 3.  Reboot the phone, and watch for trace messages in the debugger.
 
-All existing kernel mode debug transports continue to work on Windows 10 for desktop editions. However, for both user-mode and kernel-mode drivers, you must use a remote debugger session over KDNET to test Windows 10 Mobile. For more info, see [Setting Up Kernel-Mode Debugging over a Network Cable Manually](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439346(v=vs.85).aspx) in Visual Studio.
+All existing kernel mode debug transports continue to work on Windows 10 for desktop editions. However, for both user-mode and kernel-mode drivers, you must use a remote debugger session over KDNET to test Windows 10 Mobile. For more info, see [Setting Up Kernel-Mode Debugging over a Network Cable Manually](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439346) in Visual Studio.
 
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
 * [Building a Driver with the WDK](building_a_driver.md)
 * [Windows 10 Editions for Universal Windows drivers](windows_10_editions_for_universal_drivers.md)
-* [Write a Universal Windows driver (UMDF 2) based on a template](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439659(v=vs.85).aspx)
-* [Write a universal Hello World driver (KMDF)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439665(v=vs.85).aspx)
-* [Write a Universal Windows driver (KMDF) based on a template](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439654(v=vs.85).aspx)
-* [Provision a computer for driver deployment and testing (WDK 10)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909(v=vs.85).aspx)
-* [What's new in driver development](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn927349(v=vs.85).aspx)
+* [Write a Universal Windows driver (UMDF 2) based on a template](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439659)
+* [Write a universal Hello World driver (KMDF)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439665)
+* [Write a Universal Windows driver (KMDF) based on a template](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439654)
+* [Provision a computer for driver deployment and testing (WDK 10)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909)
+* [What's new in driver development](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn927349)
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20Getting%20Started%20with%20Universal%20Windows%20drivers%20%20RELEASE:%20(9/30/2015)&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20Getting%20Started%20with%20Universal%20Windows%20drivers%20%20RELEASE:%20%289/30/2015%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default. "Send comments about this topic to Microsoft")
 
-© 2015 Microsoft. All rights reserved.
+
