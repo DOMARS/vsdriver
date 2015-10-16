@@ -127,7 +127,7 @@ There are four options that require you to first enable [I/O Verification](https
 
 * [Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545448)
 * [How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.md)
-* [Setting Up Kernel-Mode Debugging in Visual Studio](https://msdn.microsoft.com/en-us/windows/hardware/hh439376
+* [Setting Up Kernel-Mode Debugging in Visual Studio](https://msdn.microsoft.com/en-us/windows/hardware/hh439376)
 * [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
  
 
