@@ -52,7 +52,7 @@ You can use the **Additional Files** box to specify custom installation scripts 
 
 * [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
 * [How to test a driver at runtime using Visual Studio](testing_a_driver_at_runtime.md)
-* [Setting Up Kernel-Mode Debugging in Visual Studio](https://msdn.microsoft.com/en-us/windows/hardware/hh439376
+* [Setting Up Kernel-Mode Debugging in Visual Studio](https://msdn.microsoft.com/en-us/windows/hardware/hh439376)
  
 
  
