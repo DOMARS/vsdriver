@@ -21,9 +21,6 @@ Next, determine which of the following cases describes your driver model recomme
 3.  In the middle pane, select **User Mode Driver (UMDF)**.
 4.  Fill in the **Name** and **Location** boxes, and click **OK**. For more information, see [Writing a UMDF Driver Based on a Template](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439659).
     **Note**  When you create a new UMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h.
-
-     
-
 5.  At this point, you have a driver project that implements the general code required by most UMDF drivers. Now you can supply the code that is specific to your filter.
 
 <span id="Case_2__The_documentation_for_your_technology_recommends_KMDF."></span><span id="case_2__the_documentation_for_your_technology_recommends_kmdf."></span><span id="CASE_2__THE_DOCUMENTATION_FOR_YOUR_TECHNOLOGY_RECOMMENDS_KMDF."></span>Case 2: The documentation for your technology recommends KMDF.
@@ -34,9 +31,6 @@ Next, determine which of the following cases describes your driver model recomme
 3.  In the middle pane, select **Kernel Mode Driver (KMDF)**.
 4.  Fill in the **Name** and **Location** boxes, and click **OK**. For more information, see [Writing a KMDF Driver Based on a Template](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439654).
     **Note**  When you create a new KMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h.
-
-     
-
 5.  At this point, you have a driver project that implements the general code required by most KMDF drivers. Now you can supply the code that is specific to your filter.
 
 <span id="Case_3__The_documentation_for_your_technology_describes_a_specific_filter_or_mini_filter_model."></span><span id="case_3__the_documentation_for_your_technology_describes_a_specific_filter_or_mini_filter_model."></span><span id="CASE_3__THE_DOCUMENTATION_FOR_YOUR_TECHNOLOGY_DESCRIBES_A_SPECIFIC_FILTER_OR_MINI_FILTER_MODEL."></span>Case 3: The documentation for your technology describes a specific filter or mini filter model.
@@ -63,9 +57,6 @@ If your device technology has a specific filter model or a minifilter model, and
 5.  In the Add New Item dialog box, select **C++ File (.cpp)**, enter a name for your file, and click **OK**.
 
     **Note**  If you want to create a .c file instead of a .cpp file, enter a name that has the **.c** extension.
-
-     
-
 6.  Implement the functions required by your filter. As you implement and organize your functions, you might decide to add additional .cpp or .c files.
 
 <span id="Case_5__The_documentation_for_your_technology_does_not_have_a_recommendation_for_a_filter_driver_model."></span><span id="case_5__the_documentation_for_your_technology_does_not_have_a_recommendation_for_a_filter_driver_model."></span><span id="CASE_5__THE_DOCUMENTATION_FOR_YOUR_TECHNOLOGY_DOES_NOT_HAVE_A_RECOMMENDATION_FOR_A_FILTER_DRIVER_MODEL."></span>Case 5: The documentation for your technology does not have a recommendation for a filter driver model.
@@ -91,6 +82,4 @@ If you are not sure which template to use, consider reading or posting to the [W
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20Creating%20a%20New%20Filter%20Driver%20%20RELEASE:%20%289/30/2015%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default. "Send comments about this topic to Microsoft")
-
-
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20Creating%20a%20New%20Filter%20Driver%20%20RELEASE:%20%289/30/2015%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")

@@ -25,17 +25,11 @@ To begin, first determine which driver model is appropriate for your software dr
 2.  In Visual Studio, in the New Project dialog box, under **Windows Driver**, select **WDM | Empty WDM Driver.**
 
     **Note**  You are not going to write a WDM driver, but you need the **Empty WDM Driver** template.
-
-     
-
 3.  Fill in the **Name** and **Location** boxes, and click **OK**.
 4.  At this point, you have an empty WDM driver project. In the Solution Explorer window, right-click your driver project, and choose **Add | New Item**.
 5.  In the Add New Item dialog box, select **C++ File (.cpp)**, enter a name for your file, and click **OK**.
 
     **Note**  If you want to create a .c file instead of a .cpp file, enter a name that has the **.c** extension.
-
-     
-
 6.  Include ntddk.h.
 7.  Implement the functions required by your software driver. As you implement and organize your functions, you might decide to add header files and additional .cpp or .c files.
 
@@ -51,9 +45,6 @@ It is extremely unlikely that you'll want to use WDM for a software driver. But 
 5.  In the Add New Item dialog box, select **C++ File (.cpp)**, enter a name for your file, and click **OK**.
 
     **Note**  If you want to create a .c file instead of a .cpp file, enter a name that has the **.c** extension.
-
-     
-
 6.  Include wdm.h.
 7.  Implement the functions required by your software driver. As you implement and organize your functions, you might decide to add header files and additional .cpp or .c files.
 
