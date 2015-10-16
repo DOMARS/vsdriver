@@ -9,10 +9,10 @@ You might find this feature useful if you need to integrate the WDK with your bu
 
  
 
-* [1. Download the Visual Studio and WDK and SDK setup files](#download_vs_kits)
-* [2. Download the BuildLabSupport files](#download_script)
-* [3. Install the WDK 8.1 build environment](#install_script)
-* [4. Build Windows driver projects and solutions](#build_step)
+* [Download the Visual Studio and WDK and SDK setup files](#download_vs_kits)
+* [Download the BuildLabSupport files](#download_script)
+* [Install the WDK 8.1 build environment](#install_script)
+* [Build Windows driver projects and solutions](#build_step)
 <span id="download_vs_kits"></span><span id="DOWNLOAD_VS_KITS"></span>1. Download the Visual Studio and WDK and SDK setup files
 -------------------------------------------------------------------------------------------------------------------------------
 
