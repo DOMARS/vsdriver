@@ -8,9 +8,6 @@ Suppose you have obtained a pair of files from Verisign: a private key file (PVK
 1.  Use the [**Pvk2Pfx**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff550672) tool to create a Personal Information Exchange (PFX) certificate. The **Pvk2Pfx** tool takes your PVK and SPC files as input and creates a single PFX file. For this exercise, assume that your PFX file is named MyCert.pfx.
 
     **Note**  Once you have created your PFX file, you can reuse it for other driver projects and on other driver development computers.
-
-     
-
 2.  To determine which cross certificate you need, see [Cross-Certificates for Kernel Mode Code Signing](http://go.microsoft.com/fwlink/p/?LinkID=248296). Verify that the required cross certificate is in $(BASEDIR)\\CrossCertificates, where $(BASEDIR) is the base directory of the Windows kits (for example c:\\Program Files (x86)\\Windows Kits\\8.0\\CrossCertificates). If the required cross certificate is not there, download the cross certificate from Microsoft, and copy it to $(BASEDIR)\\CrossCertificates.
 3.  In Visual Studio, open the solution that contains the MyDriver and MyDriver Package projects. If the Solution Explorer window is not already open, choose **Solution Explorer** from the **View** menu. In the Solution Explorer window, right-click the package project, **MyDriver Package**, and choose **Properties**.
 
@@ -22,18 +19,10 @@ Suppose you have obtained a pair of files from Verisign: a private key file (PVK
 
         **Note**  To import a certificate into a store, right-click the certificate file (PFX file), and choose **Install PFX**. Follow the instructions in the Certificate Import Wizard.
 
-         
-
         **Note**  If you decide to use a different certificate at a later time, be sure that your new certificate gets imported into the certificate store. If you choose **Select From File** and browse to your new certificate, the new certificate will be automatically imported into the certificate store. However, if you manually enter the path to your new certificate, it will not be automatically imported into the certificate store. In that case, you must right-click your new certificate file and choose **Install PFX**.
-
-         
-
 5.  On the **Driver Signing &gt; General** property page, for **TimeStampServer**, select one of the time stamp servers in the drop-down list.
 
     **Note**  Using one of the time stamp servers in the drop-down list requires that you be connected to the Internet when you build your driver package. If you need to be disconnected from the Internet when you build your driver package, clear the **TimeStampServer** field.
-
-     
-
 6.  In the property pages for the package, navigate to **Configuration Properties &gt; Inf2Cat &gt; General**. In the **Run Inf2Cat** drop-down list, select **Yes**.
 
 7.  Close the property pages for the package.

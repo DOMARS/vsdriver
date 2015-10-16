@@ -13,9 +13,6 @@ To begin, first determine which driver model is appropriate for your software dr
 3.  In the middle pane, select **Kernel Mode Driver (KMDF)**.
 4.  Fill in the **Name** and **Location** boxes, and click **OK**. For more details, see [Writing a KMDF Driver Based on a Template](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439654).
     **Note**  When you create a new KMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h.
-
-     
-
 5.  At this point, you have a driver project that implements the general code required by most KMDF drivers. Now you can supply the code that is specific to your software driver.
 
 <span id="Case_2__You_want_to_use_the_legacy_NT_model."></span><span id="case_2__you_want_to_use_the_legacy_nt_model."></span><span id="CASE_2__YOU_WANT_TO_USE_THE_LEGACY_NT_MODEL."></span>Case 2: You want to use the legacy NT model.
@@ -25,17 +22,11 @@ To begin, first determine which driver model is appropriate for your software dr
 2.  In Visual Studio, in the New Project dialog box, under **Windows Driver**, select **WDM | Empty WDM Driver.**
 
     **Note**  You are not going to write a WDM driver, but you need the **Empty WDM Driver** template.
-
-     
-
 3.  Fill in the **Name** and **Location** boxes, and click **OK**.
 4.  At this point, you have an empty WDM driver project. In the Solution Explorer window, right-click your driver project, and choose **Add | New Item**.
 5.  In the Add New Item dialog box, select **C++ File (.cpp)**, enter a name for your file, and click **OK**.
 
     **Note**  If you want to create a .c file instead of a .cpp file, enter a name that has the **.c** extension.
-
-     
-
 6.  Include ntddk.h.
 7.  Implement the functions required by your software driver. As you implement and organize your functions, you might decide to add header files and additional .cpp or .c files.
 
@@ -51,9 +42,6 @@ It is extremely unlikely that you'll want to use WDM for a software driver. But 
 5.  In the Add New Item dialog box, select **C++ File (.cpp)**, enter a name for your file, and click **OK**.
 
     **Note**  If you want to create a .c file instead of a .cpp file, enter a name that has the **.c** extension.
-
-     
-
 6.  Include wdm.h.
 7.  Implement the functions required by your software driver. As you implement and organize your functions, you might decide to add header files and additional .cpp or .c files.
 
