@@ -1,7 +1,7 @@
 Counters Manifest Preprocessor Properties for Driver Projects
 ======================================================================================================================================================
 
-Sets the properties for the [**CTRPP**](https://msdn.microsoft.com/en-us/Library/Windows/Desktop/aa372128(v=vs.85).aspx) tool that parses and validates your counters manifest. For information about working with performance counters, see [Performance Counters](https://msdn.microsoft.com/en-us/Library/Windows/Desktop/aa373083(v=vs.85).aspx). For information about using performance counters in a kernel-mode Windows driver, see [Kernel Mode Performance Monitoring](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff548159(v=vs.85).aspx).
+Sets the properties for the [**CTRPP**](https://msdn.microsoft.com/en-us/Library/Windows/Desktop/aa372128) tool that parses and validates your counters manifest. For information about working with performance counters, see [Performance Counters](https://msdn.microsoft.com/en-us/Library/Windows/Desktop/aa373083). For information about using performance counters in a kernel-mode Windows driver, see [Kernel Mode Performance Monitoring](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff548159).
 
 <span id="Setting_the_Counters_Manifest_Preprocessor_properties_for_driver_projects"></span><span id="setting_the_counters_manifest_preprocessor_properties_for_driver_projects"></span><span id="SETTING_THE_COUNTERS_MANIFEST_PREPROCESSOR_PROPERTIES_FOR_DRIVER_PROJECTS"></span>Setting the Counters Manifest Preprocessor properties for driver projects
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -10,7 +10,7 @@ Sets the properties for the [**CTRPP**](https://msdn.microsoft.com/en-us/Library
 2.  In the property pages for the driver project, click **Configuration Properties** and then click **Counters Manifest Preprocessor Properties**.
 3.  Set the properties for the project.
 
-If you want to add this property page to your project so that you can run the CTRPP tool during the build process, see the [WDK and Visual Studio build environment](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454286(v=vs.85).aspx) and the [Ctrpp task](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454206(v=vs.85).aspx).
+If you want to add this property page to your project so that you can run the CTRPP tool during the build process, see the [WDK and Visual Studio build environment](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454286) and the [Ctrpp task](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454206).
 
 <table>
 <colgroup>
@@ -30,7 +30,7 @@ If you want to add this property page to your project so that you can run the CT
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Additional_Options"></span><span id="additional_options"></span><span id="ADDITIONAL_OPTIONS"></span>Additional Options</p></td>
-<td align="left"><p>Specifies additional options to the <a href="https://msdn.microsoft.com/en-us/Library/Windows/Desktop/aa372128(v=vs.85).aspx"><strong>CTRPP</strong></a> tool.</p></td>
+<td align="left"><p>Specifies additional options to the <a href="https://msdn.microsoft.com/en-us/Library/Windows/Desktop/aa372128"><strong>CTRPP</strong></a> tool.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><span id="Backward_Compatibility"></span><span id="backward_compatibility"></span><span id="BACKWARD_COMPATIBILITY"></span>Backward Compatibility</p></td>
@@ -38,7 +38,7 @@ If you want to add this property page to your project so that you can run the CT
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Enable_Legacy"></span><span id="enable_legacy"></span><span id="ENABLE_LEGACY"></span>Enable Legacy</p></td>
-<td align="left"><p>Reverts to generating code using Windows Vista code templates. This option causes <a href="https://msdn.microsoft.com/en-us/Library/Windows/Desktop/aa372128(v=vs.85).aspx"><strong>CTRPP</strong></a> to generate four output files: two header files (.h, _r.h), a resource file (.rc), and a source code file (c). (<strong>-legacy</strong>)</p></td>
+<td align="left"><p>Reverts to generating code using Windows Vista code templates. This option causes <a href="https://msdn.microsoft.com/en-us/Library/Windows/Desktop/aa372128"><strong>CTRPP</strong></a> to generate four output files: two header files (.h, _r.h), a resource file (.rc), and a source code file (c). (<strong>-legacy</strong>)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><span id="Generate_header_file_for_containing_counter_names_and_GUIDs"></span><span id="generate_header_file_for_containing_counter_names_and_guids"></span><span id="GENERATE_HEADER_FILE_FOR_CONTAINING_COUNTER_NAMES_AND_GUIDS"></span>Generate header file for containing counter names and GUIDs</p></td>
@@ -90,18 +90,18 @@ If you want to add this property page to your project so that you can run the CT
 <span id="Comment"></span><span id="comment"></span><span id="COMMENT"></span>Comment
 -------------------------------------------------------------------------------------
 
-The default names of the files that the tool generates are based on the name of the manifest file that you pass to the [**CTRPP**](https://msdn.microsoft.com/en-us/Library/Windows/Desktop/aa372128(v=vs.85).aspx) tool.
+The default names of the files that the tool generates are based on the name of the manifest file that you pass to the [**CTRPP**](https://msdn.microsoft.com/en-us/Library/Windows/Desktop/aa372128) tool.
 
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-* [**CTRPP**](https://msdn.microsoft.com/en-us/Library/Windows/Desktop/aa372128(v=vs.85).aspx)
-* [Performance Counters](https://msdn.microsoft.com/en-us/Library/Windows/Desktop/aa373083(v=vs.85).aspx)
-* [Kernel Mode Performance Monitoring](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff548159(v=vs.85).aspx)
+* [**CTRPP**](https://msdn.microsoft.com/en-us/Library/Windows/Desktop/aa372128)
+* [Performance Counters](https://msdn.microsoft.com/en-us/Library/Windows/Desktop/aa373083)
+* [Kernel Mode Performance Monitoring](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff548159)
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20Counters%20Manifest%20Preprocessor%20Properties%20for%20Driver%20Projects%20%20RELEASE:%20%289/30/2015%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20Counters%20Manifest%20Preprocessor%20Properties%20for%20Driver%20Projects%20%20RELEASE:%20%289/30/2015%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default. "Send comments about this topic to Microsoft")
 
 © 2015 Microsoft. All rights reserved.

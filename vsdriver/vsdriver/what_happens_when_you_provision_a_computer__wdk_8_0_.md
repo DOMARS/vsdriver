@@ -1,9 +1,9 @@
 What happens when you provision a computer (WDK 8.0)
 ====================================================================================================================================
 
-Using Microsoft Visual Studio to configure and set up driver deployment and driver testing is called *provisioning a target computer* or *provisioning a test computer*. For information about provisioning with Windows Driver Kit (WDK) 8 , see [Provision a computer for driver deployment and testing (WDK 8)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh698272(v=vs.85).aspx). Here we show what happens when you use version 8.0 of the Windows Driver Kit (WDK) to provision a target computer.
+Using Microsoft Visual Studio to configure and set up driver deployment and driver testing is called *provisioning a target computer* or *provisioning a test computer*. For information about provisioning with Windows Driver Kit (WDK) 8 , see [Provision a computer for driver deployment and testing (WDK 8)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh698272). Here we show what happens when you use version 8.0 of the Windows Driver Kit (WDK) to provision a target computer.
 
-**Note**  WDK 8 is not the most current version of the WDK. We recommend that you get the current version of the WDK and provision your target computer according to the [provisioning instructions here](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh698272(v=vs.85).aspx_1).
+**Note**  WDK 8 is not the most current version of the WDK. We recommend that you get the current version of the WDK and provision your target computer according to the [provisioning instructions here](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh698272_1).
 
  
 
@@ -16,9 +16,9 @@ Provisioning a computer performs the following tasks:
 -   Creates a user named WDKRemoteUser and switches to that user
 -   Installs .NET 4.0 if it is not already installed
 -   Installs Microsoft Visual C++ Redistributable
--   Installs [Test Authoring and Execution Framework (TAEF)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439725(v=vs.85).aspx) (WDK Client)
+-   Installs [Test Authoring and Execution Framework (TAEF)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439725) (WDK Client)
 -   Installs debuggers
--   Installs [Windows Device Testing Framework](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff539547(v=vs.85).aspx) (WDTF)
+-   Installs [Windows Device Testing Framework](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff539547) (WDTF)
 -   Turns off AutoReboot
 -   Enables kernel memory crash dumps
 -   Disables Screen Saver
@@ -69,6 +69,6 @@ Removing provisioning does not change these items:
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20What%20happens%20when%20you%20provision%20a%20computer%20(WDK%208.0)%20%20RELEASE:%20%289/30/2015%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20What%20happens%20when%20you%20provision%20a%20computer%20(WDK%208.0)%20%20RELEASE:%20%289/30/2015%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default. "Send comments about this topic to Microsoft")
 
 © 2015 Microsoft. All rights reserved.

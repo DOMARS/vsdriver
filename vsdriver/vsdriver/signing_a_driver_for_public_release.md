@@ -5,7 +5,7 @@ Before you release a driver package to the public, we recommend that you submit 
 
 Suppose you have obtained a pair of files from Verisign: a private key file (PVK) and a software publishing certificate (SPC). Also suppose you have a Microsoft Visual Studio solution that contains a driver project named MyDriver and a driver package project named MyDriver Package. To sign your driver package, follow these steps.
 
-1.  Use the [**Pvk2Pfx**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff550672(v=vs.85).aspx) tool to create a Personal Information Exchange (PFX) certificate. The **Pvk2Pfx** tool takes your PVK and SPC files as input and creates a single PFX file. For this exercise, assume that your PFX file is named MyCert.pfx.
+1.  Use the [**Pvk2Pfx**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff550672) tool to create a Personal Information Exchange (PFX) certificate. The **Pvk2Pfx** tool takes your PVK and SPC files as input and creates a single PFX file. For this exercise, assume that your PFX file is named MyCert.pfx.
 
     **Note**  Once you have created your PFX file, you can reuse it for other driver projects and on other driver development computers.
 
@@ -40,12 +40,12 @@ Suppose you have obtained a pair of files from Verisign: a private key file (PVK
 8.  Right-click the driver project, **MyDriver**, and choose **Properties**
 9.  In the property pages for the driver, navigate to **Configuration Properties &gt; Driver Signing &gt; General**. Set **TimeStampServer** to the same value that you used in the driver package properties. Set **Sign Mode** to **Production Sign**, and set **Production Certificate** to the same value that you used in the driver package properties.
 
-10. When you are ready to build your driver package, press **F5**. Visual Studio will automatically sign your package and your driver file. If you have configured deployment, Visual Studio will also deploy your signed driver package to a test computer. For more information, see [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909(v=vs.85).aspx).
+10. When you are ready to build your driver package, press **F5**. Visual Studio will automatically sign your package and your driver file. If you have configured deployment, Visual Studio will also deploy your signed driver package to a test computer. For more information, see [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909).
 
 <span id="Viewing_the_driver_package_files"></span><span id="viewing_the_driver_package_files"></span><span id="VIEWING_THE_DRIVER_PACKAGE_FILES"></span>Viewing the driver package files
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-After you build your solution, navigate in File Explorer to the folder that contains your driver package. One of the files in the package is a catalog file. The catalog file contains the digital signature for the package. For an example of viewing the files in a signed package, see [Writing a KMDF driver based on a template](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439654(v=vs.85).aspx).
+After you build your solution, navigate in File Explorer to the folder that contains your driver package. One of the files in the package is a catalog file. The catalog file contains the digital signature for the package. For an example of viewing the files in a signed package, see [Writing a KMDF driver based on a template](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439654).
 
 <span id="Getting_a_WHQL_release_signature"></span><span id="getting_a_whql_release_signature"></span><span id="GETTING_A_WHQL_RELEASE_SIGNATURE"></span>Getting a WHQL release signature
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -91,13 +91,13 @@ Suppose you want to build and sign a driver package that will run on Windows 7 
 * [Driver Signing Requirements for Windows](http://go.microsoft.com/fwlink/p/?linkid=617515)
 * [Cross-Certificates for Kernel Mode Code Signing](http://go.microsoft.com/fwlink/p/?LinkID=248296)
 * [Kernel-Mode Code Signing Walkthrough](http://go.microsoft.com/fwlink/p/?linkid=617516)
-* [Driver Signing](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff544865(v=vs.85).aspx)
-* [Installing a Boot-Start Driver](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff547570(v=vs.85).aspx)
-* [Tools for Signing Drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff552958(v=vs.85).aspx)
+* [Driver Signing](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff544865)
+* [Installing a Boot-Start Driver](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff547570)
+* [Tools for Signing Drivers](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff552958)
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20Signing%20a%20Driver%20for%20Public%20Release%20%20RELEASE:%20%289/30/2015%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20Signing%20a%20Driver%20for%20Public%20Release%20%20RELEASE:%20%289/30/2015%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default. "Send comments about this topic to Microsoft")
 
 © 2015 Microsoft. All rights reserved.

@@ -1,7 +1,7 @@
 Troubleshooting Configuration of Driver Deployment, Testing and Debugging
 ==============================================================================================================================================================================
 
-Provisioning a target computer is described in [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909(v=vs.85).aspx). Here we give some troubleshooting tips for the provisioning process.
+Provisioning a target computer is described in [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909). Here we give some troubleshooting tips for the provisioning process.
 
 <span id="General_tips"></span><span id="general_tips"></span><span id="GENERAL_TIPS"></span>General tips
 ---------------------------------------------------------------------------------------------------------
@@ -46,7 +46,7 @@ Driver Test Computer Configuration 20121115130459167.log
 
 When you start to provision a target computer, you might see a message that says **The network path was not found**.
 
-On the target computer, make sure that you have turned on **Network Discovery** and that you have turned on **File and Printer Sharing** for the appropriate network profile. For example, if the host and target computers are joined to a network domain, you must turn on network discovery and file and printer sharing for the **Domain** network profile. For more information, see [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909(v=vs.85).aspx).
+On the target computer, make sure that you have turned on **Network Discovery** and that you have turned on **File and Printer Sharing** for the appropriate network profile. For example, if the host and target computers are joined to a network domain, you must turn on network discovery and file and printer sharing for the **Domain** network profile. For more information, see [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909).
 
 Make sure you can ping the target computer from the host computer. On the host computer, open a Command Prompt window, and enter **ping** *targetComputerName*, where *targetComputerName* is the name of the target computer.
 
@@ -104,7 +104,7 @@ Enter your password to connect to: NonExistentComputer
 <span id="domain_could_not_access_remote_machine"></span><span id="DOMAIN_COULD_NOT_ACCESS_REMOTE_MACHINE"></span>Provisioning fails: Could not access remote machine
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-When you start to provision a target computer, you might see a message that says **Could not access the remote machine** "*computerName*" **over the network**. This message can be displayed for several reasons. Verify that your host and target computers are both joined to the same domain or the same workgroup. For more information, see [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909(v=vs.85).aspx). Verify that you entered the correct name for the target computer. Verify that you have enabled network discovery and file and print sharing on the target computer.
+When you start to provision a target computer, you might see a message that says **Could not access the remote machine** "*computerName*" **over the network**. This message can be displayed for several reasons. Verify that your host and target computers are both joined to the same domain or the same workgroup. For more information, see [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909). Verify that you entered the correct name for the target computer. Verify that you have enabled network discovery and file and print sharing on the target computer.
 
 <span id="debugger_wont_connect_network"></span><span id="DEBUGGER_WONT_CONNECT_NETWORK"></span>Debugger won't connect or break in: Network connection
 ------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -115,22 +115,22 @@ Check with network administrator about ports that allow network debugging.
 
 If the target computer has more than one network adapter, you must specify the bus parameters of the network adapter that you intend to use for debugging.
 
-For more information, see [Troubleshooting Tips for Debugging over a Network Cable](https://msdn.microsoft.com/en-us/library/windows/hardware/hh439346(v=vs.85).aspx)
+For more information, see [Troubleshooting Tips for Debugging over a Network Cable](https://msdn.microsoft.com/en-us/library/windows/hardware/hh439346)
 
 <span id="debugger_wont_connect_1394"></span><span id="DEBUGGER_WONT_CONNECT_1394"></span>Debugger won't connect or break in: 1394 connection
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
-If the target computer has more than one 1394 controller, you must specify the bus parameters of the 1394 controller that you intend to use for debugging. For more information, see [Troubleshooting Tips for Debugging over a 1394 Cable](https://msdn.microsoft.com/en-us/library/windows/hardware/ff556866(v=vs.85).aspx).
+If the target computer has more than one 1394 controller, you must specify the bus parameters of the 1394 controller that you intend to use for debugging. For more information, see [Troubleshooting Tips for Debugging over a 1394 Cable](https://msdn.microsoft.com/en-us/library/windows/hardware/ff556866).
 
 <span id="debugger_wont_connect_serial"></span><span id="DEBUGGER_WONT_CONNECT_SERIAL"></span>Debugger won't connect or break in : Serial connection
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
-Check the COM port numbers on the host and target computer. Verify that you have configured the same baud rate for debugging on both the host and target computers. For more information, see [Troubleshooting Tips for Debugging over a Serial Cable](https://msdn.microsoft.com/en-us/windows/hardware/hh439359(v=vs.85).aspx)
+Check the COM port numbers on the host and target computer. Verify that you have configured the same baud rate for debugging on both the host and target computers. For more information, see [Troubleshooting Tips for Debugging over a Serial Cable](https://msdn.microsoft.com/en-us/windows/hardware/hh439359)
 
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20Troubleshooting%20Configuration%20of%20Driver%20Deployment,%20Testing%20and%20Debugging%20%20RELEASE:%20%289/30/2015%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20Troubleshooting%20Configuration%20of%20Driver%20Deployment,%20Testing%20and%20Debugging%20%20RELEASE:%20%289/30/2015%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default. "Send comments about this topic to Microsoft")
 
 © 2015 Microsoft. All rights reserved.
