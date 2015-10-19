@@ -33,7 +33,7 @@ In other cases, you may have to code a workaround if there is not a suitable rep
 
 The compiler might also display [INF validation errors](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn929320) if you are not [using a universal INF file](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn941087).
 
-A Universal Windows driver can use [KMDF](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff557565), [UMDF 2](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn384105) or the Windows Driver Model (WDM).
+A Universal Windows driver can use [KMDF](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff557565), [UMDF 2](https://msdn.microsoft.com/en-us/library/windows/hardware/dn384105(v=vs.85).aspx) or the Windows Driver Model (WDM).
 
 <span id="Building_a_Universal_Windows_driver"></span><span id="building_a_universal_windows_driver"></span><span id="BUILDING_A_UNIVERSAL_WINDOWS_DRIVER"></span>Building a Universal Windows driver
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
