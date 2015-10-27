@@ -29,6 +29,7 @@
 ## [Signing a Driver](vsdriver/signing_a_driver.md)
 ### [Signing a Driver During Development and Testing](vsdriver/signing_a_driver_during_development_and_testing.md)
 ### [Signing a Driver for Public Release](vsdriver/signing_a_driver_for_public_release.md)
+### [Attestation Signing a Kernel Driver for Public Release](vsdriver/attestation_signing_a_kernel_driver_for_public_release.md)
 ### [Driver Signing Properties](vsdriver/driver_signing_properties.md)
 ## [Deploying a Driver to a Test Computer](vsdriver/deploying_a_driver_to_a_test_computer.md)
 ### [Deployment Properties for Driver Package Projects](vsdriver/deployment_properties_for_driver_projects.md)
