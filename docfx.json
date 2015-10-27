@@ -1,0 +1,23 @@
+﻿{
+  "build": {
+    "content":
+      [
+        {
+          "files": ["**/**.md"],
+          "cwd": "vsdriver"
+        }
+      ],
+    "resource": [
+        {
+          "files": ["**/images/**"],
+          "cwd": "vsdriver"
+        }
+    ],
+    "externalReference": [
+    ],
+    "globalMetadata": {
+      "Ms.Locale": "en-us"
+    },
+    "template": "op.html"
+  }
+}
