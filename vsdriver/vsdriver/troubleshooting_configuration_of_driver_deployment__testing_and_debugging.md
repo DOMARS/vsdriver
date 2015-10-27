@@ -106,6 +106,18 @@ Enter your password to connect to: NonExistentComputer
 
 When you start to provision a target computer, you might see a message that says **Could not access the remote machine** "*computerName*" **over the network**. This message can be displayed for several reasons. Verify that your host and target computers are both joined to the same domain or the same workgroup. For more information, see [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909). Verify that you entered the correct name for the target computer. Verify that you have enabled network discovery and file and print sharing on the target computer.
 
+Debugger breakpoints are not triggered for kernel-mode driver
+----------------------------------------------------------------
+
+1.  Deploy the driver with breakpoints disabled. 
+2.  Manually break into the kernel-mode debugger. 
+3.  Set an exception on load of the module:
+``` syntax
+sxe ld <DriverName>
+``` 
+4.  Enable the breakpoint and resume execution. 
+5.  On the target computer, disable the device node and then re-enable it. 
+
 <span id="debugger_wont_connect_network"></span><span id="DEBUGGER_WONT_CONNECT_NETWORK"></span>Debugger won't connect or break in: Network connection
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 

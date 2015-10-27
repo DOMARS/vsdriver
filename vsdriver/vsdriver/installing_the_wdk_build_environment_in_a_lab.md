@@ -7,13 +7,8 @@ You might find this feature useful if you need to integrate the WDK with your bu
 
 **Note**  You can only use this feature for building drivers and applications that use C and C++. This feature cannot be used for managed code or Windows Store apps.
 
- 
 
-* [Download the Visual Studio and WDK and SDK setup files](#download_vs_kits)
-* [Download the BuildLabSupport files](#download_script)
-* [Install the WDK 8.1 build environment](#install_script)
-* [Build Windows driver projects and solutions](#build_step)
-<span id="download_vs_kits"></span><span id="DOWNLOAD_VS_KITS"></span>1. Download the Visual Studio and WDK and SDK setup files
+1. Download the Visual Studio and WDK and SDK setup files
 -------------------------------------------------------------------------------------------------------------------------------
 
 To run the set up script that enables this feature, you need to provide the paths to the Visual Studio and WDK setup files. Be sure to save these files (rather than install them).

@@ -49,6 +49,17 @@ When you deploy a driver, the driver files are copied to the %Systemdrive%\\driv
 
 Here are some tips for troubleshooting driver deployment to a test computer when you use Visual Studio and the WDK.
 
+**Deployment fails due to Error code: 2**
+
+Add the following registry key:
+
+**HKLM\Software\Microsoft\DriverTest\Service**
+
+Under this key, create a DWORD value **DebugSession**, and set it to 0.
+
+You only need to set this value once, and it persists for future deployments.
+
+
 <span id="Can_t_find_the_deployment_properties_for_the_driver_project"></span><span id="can_t_find_the_deployment_properties_for_the_driver_project"></span><span id="CAN_T_FIND_THE_DEPLOYMENT_PROPERTIES_FOR_THE_DRIVER_PROJECT"></span>**Can't find the deployment properties for the driver project**  
 The deployment properties are only available if you have a driver package. If your driver solution does not have a driver package project, you need to add one. The driver package contains components, such as the INF file that are needed for installation. For more information, see [Driver Packages](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff544840) and [Creating a Driver Package](creating_a_driver_package.md).
 
