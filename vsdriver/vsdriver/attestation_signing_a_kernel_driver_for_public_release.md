@@ -1,4 +1,4 @@
-<span id="vsdriver.attestation_signing_a_kernel_driver_for_public_release"></span>Attestation Signing a Kernel Driver for Public Release
+Attestation Signing a Kernel Driver for Public Release
 ========================================================================================================================================
 
 This topic describes how to sign a driver using attestation signing via the Windows Hardware Developer Center Dashboard web portal.
@@ -124,8 +124,6 @@ C:\Echo\Echo.Sys</code></pre></td>
 
 **Note**  Driver Signing supports only one architecture per submission. All driver folders in your cab must support the same set of architectures, for example, all drivers must be x86 or all drivers must be x64, or all drivers must support both x86 and x64.
 
- 
-
 4. Call the makecab utility and provide the ddf file as input using the /f option.
 
 <span codelanguage=""></span>
@@ -189,7 +187,7 @@ Throughput:              86.77 Kb/second</code></pre></td>
 <span id="Submit_the_EV_signed_Cab_file_using_the__Windows_Hardware_Developer_Center_Dashboard"></span><span id="submit_the_ev_signed_cab_file_using_the__windows_hardware_developer_center_dashboard"></span><span id="SUBMIT_THE_EV_SIGNED_CAB_FILE_USING_THE__WINDOWS_HARDWARE_DEVELOPER_CENTER_DASHBOARD"></span>Submit the EV signed Cab file using the Windows Hardware Developer Center Dashboard
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-1. Submit the EV signed Cab file using the Windows Hardware Developer Center Dashboard. For more information see [Driver Signing Properties](driver_signing_properties.md) and [File Signing Services](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn771767(v=vs.85).aspx).
+1. Submit the EV signed Cab file using the Windows Hardware Developer Center Dashboard. For more information see [Driver Signing Properties](driver_signing_properties.md) and [File Signing Services](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn771767.aspx).
 
 As part of the submission process you will indicate what architectures all of the drivers in the submission support. Three options are available using the check boxes.
 
@@ -203,7 +201,7 @@ You will also indicate if you are submitting universal drivers. For more informa
 
 The following screen shot shows the options for submitting the echo driver for signing.
 
-![](Images/attestation_driver_signing_submission_dashboard.png)
+![](images/attestation_driver_signing_submission_dashboard.png)
 2. When the signing process is complete, download your signed driver from the Windows Hardware Developer Center Dashboard.
 <span id="Validate_that_the_driver_was_properly_signed"></span><span id="validate_that_the_driver_was_properly_signed"></span><span id="VALIDATE_THAT_THE_DRIVER_WAS_PROPERLY_SIGNED"></span>Validate that the driver was properly signed
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -279,7 +277,7 @@ Use the following instructions to install the sample driver.
 
 To submit multiple drivers at the same time create a sub directory for each driver as shown below.
 
-![](Images/B_WES_DriverSigning.png)
+![](images/B_WES_DriverSigning.png)
 
 Prepare a cab file DDF input file that references the subdirectories. It might look something like this.
 
@@ -337,11 +335,10 @@ The following EKUs are used by Microsoft in the signing process. Use the process
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Signing a Driver](signing_a_driver.md)
+* [Signing a Driver](signing_a_driver.md)
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20Attestation%20Signing%20a%20Kernel%20Driver%20for%20Public%20Release%20%20RELEASE:%20(10/28/2015)&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20Attestation%20Signing%20a%20Kernel%20Driver%20for%20Public%20Release%20%20RELEASE:%20%2810/28/2015%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
 
-© 2015 Microsoft. All rights reserved.
