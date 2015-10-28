@@ -189,7 +189,7 @@ Throughput:              86.77 Kb/second</code></pre></td>
 <span id="Submit_the_EV_signed_Cab_file_using_the__Windows_Hardware_Developer_Center_Dashboard"></span><span id="submit_the_ev_signed_cab_file_using_the__windows_hardware_developer_center_dashboard"></span><span id="SUBMIT_THE_EV_SIGNED_CAB_FILE_USING_THE__WINDOWS_HARDWARE_DEVELOPER_CENTER_DASHBOARD"></span>Submit the EV signed Cab file using the Windows Hardware Developer Center Dashboard
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-1. Submit the EV signed Cab file using the Windows Hardware Developer Center Dashboard. For more information see [Driver Signing Properties](driver_signing_properties.htm) and [File Signing Services](p_dashboard.file_signing_services).
+1. Submit the EV signed Cab file using the Windows Hardware Developer Center Dashboard. For more information see [Driver Signing Properties](driver_signing_properties.md) and [File Signing Services](p_dashboard.file_signing_services).
 
 As part of the submission process you will indicate what architectures all of the drivers in the submission support. Three options are available using the check boxes.
 
@@ -199,7 +199,7 @@ As part of the submission process you will indicate what architectures all of th
 
 All driver folders in your cab must support the same set of architectures, for example, all drivers must be x86 or all drivers must be x64 or support both x86 and x64. If you have drivers that support different combinations of architectures, create separate submissions.
 
-You will also indicate if you are submitting universal drivers. For more information see, [Getting Started with Universal Windows drivers](getting_started_with_universal_drivers.htm).
+You will also indicate if you are submitting universal drivers. For more information see, [Getting Started with Universal Windows drivers](getting_started_with_universal_drivers.md).
 
 The following screen shot shows the options for submitting the echo driver for signing.
 
@@ -337,7 +337,7 @@ The following EKUs are used by Microsoft in the signing process. Use the process
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
-[Signing a Driver](signing_a_driver.htm)
+[Signing a Driver](signing_a_driver.md)
  
 
  
