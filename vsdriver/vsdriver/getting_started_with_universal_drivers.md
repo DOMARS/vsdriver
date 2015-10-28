@@ -1,9 +1,3 @@
----
-title: Getting Started with Universal Windows drivers
-ROBOTS: NOINDEX, NOFOLLOW
-ms.assetid: 2E54C091-535A-4185-935A-61CEA6E1B707
----
-
 Getting Started with Universal Windows drivers
 ================================================================================================================
 
