@@ -3,21 +3,19 @@
     "content":
       [
         {
-          "files": ["**/**.md"],
-          "cwd": "vsdriver"
+          "files": ["**/**.md"]
         }
       ],
     "resource": [
         {
-          "files": ["**/images/**", "**/**.gif"],
-          "cwd": "vsdriver"
+          "files": ["**/images/**", "**/**.gif"]
         }
     ],
     "externalReference": [
     ],
     "globalMetadata": {
-      "Ms.Locale": "en-us"
     },
+    "dest": "vsdriver",
     "template": "op.html"
   }
 }
