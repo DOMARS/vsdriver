@@ -13,15 +13,15 @@
 
   <!-- nuget Restore Target-->
   <Target Name="RestorePackages">
-    <!-- There are three files manually needed to publish a content repository. This -->
+    <!-- There are three files manually needed to publish a content repsoitory. This -->
     <!-- file, packages.config, and nuget.exe. The rest can be boot strapped by the build process. -->
     <Error Condition="EXISTS('$(MSBuildThisFileDirectory)packages.config') != 'True'" Text="packages.config was not found at the expected location: $(MSBuildThisFileDirectory)."/>
     <Error Condition="EXISTS('$(ToolsFolder)NuGet\NuGet.exe') != 'True'" Text="Nuget.exe was not found at the expected location: $(ToolsFolder)NuGet."/>
     <!-- Get package version from packages.config -->
     <XmlPeek Query="//package[@id='$(BuildTaskPackage)']/@version" XmlInputPath=".\packages.config">
-      <Output PropertyName="BuildPackageVersion" TaskParameter="Result"/>
+      <Output PropertyName="PackageVersion" TaskParameter="Result"/>
     </XmlPeek>
-    <Message Text="Original Build PackageVersion=$(BuildPackageVersion)"/>
+    <Message Text="Original Build PackageVersion=$(PackageVersion)"/>
     <!-- Check whether need latest package version -->
     <PropertyGroup>
       <UseLatestPackage>false</UseLatestPackage>
@@ -48,7 +48,7 @@
     <XmlPoke Condition="$(UseLatestPackage)" Query="//packages/package[@id='$(BuildTaskPackage)']/@version" Value="$(LatestPackageVersion)" XmlInputPath=".\packages.config"/>
 
     <PropertyGroup>
-      <BuildTaskNugetPackageFolderName>$(BuildTaskPackage).$(BuildPackageVersion)</BuildTaskNugetPackageFolderName>
+      <BuildTaskNugetPackageFolderName>$(BuildTaskPackage).$(PackageVersion)</BuildTaskNugetPackageFolderName>
       <BuildTaskNugetPackageFolderName Condition="$(UseLatestPackage)">$(BuildTaskPackage).$(LatestPackageVersion)</BuildTaskNugetPackageFolderName>
       <PackageRootFolder>$(MSBuildThisFileDirectory)packages\$(BuildTaskNugetPackageFolderName)\</PackageRootFolder>
       <PackageInstalled>True</PackageInstalled>
