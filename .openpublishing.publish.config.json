@@ -6,8 +6,11 @@
             "build_output_subfolder": "vsdriver",
             "locale": "en-us",
             "version": 0,
-            "open_to_public_contributors": "true"
+            "open_to_public_contributors": "true",
+            "type_mapping": {
+                "Conceptual": "Content"
+            }
         }
     ],
-    "notification_subscribers": ["Ted.Hudek@microsoft.com"]
+    "notification_subscribers": ["lianwei@microsoft.com", "fenxu@microsoft.com"]
 }
