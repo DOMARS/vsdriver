@@ -304,11 +304,9 @@ Prepare a cab file DDF input file that references the subdirectories. It might l
 .Set CabinetNameTemplate=Echo.cab
 ;Specify files to be included in cab file
 ; First Driver
-C:\DriverFiles\DriverPackage1\Driver1.cat
 C:\DriverFiles\DriverPackage1\Driver1.sys
 C:\DriverFiles\DriverPackage1\Driver1.inf
 ; Second driver
-C:\DriverFiles\DriverPackage2\Driver2.cat
 C:\DriverFiles\DriverPackage2\Driver2.sys
 C:\DriverFiles\DriverPackage2\Driver2.inf
 ; Optional Symbols
@@ -323,13 +321,6 @@ Follow the steps previously described to sign, submit and test the driver files.
 <span id="EKUs_Used_in_Signing_Process"></span><span id="ekus_used_in_signing_process"></span><span id="EKUS_USED_IN_SIGNING_PROCESS"></span>EKUs Used in Signing Process
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-&lt;TBD&gt; May document this later &lt;/TBD&gt;
-
-Extended Key TBDs, (EKUs) are determine which code is properly signed and can run. For more information, see TBD.
-
-The following EKUs are used by Microsoft in the signing process. Use the process described above, in Validate that the driver was properly signed to view the EKUs. Validating the EKUs can be useful when troubleshooting issues with signed binary files.
-
--   TBD - Table or List?
 -   
 
 <span id="related_topics"></span>Related topics
