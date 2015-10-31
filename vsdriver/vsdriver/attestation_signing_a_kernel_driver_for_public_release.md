@@ -318,9 +318,8 @@ C:\DriverFiles\Symbols\Driver2.pdb</code></pre></td>
 
 Follow the steps previously described to sign, submit and test the driver files.
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------
 
--   
 
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
