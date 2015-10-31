@@ -50,7 +50,7 @@ Follow the process described in [Download kits and tools for Windows 10](https:/
 
 To create a CAB files submission for the dashboard complete the following steps.
 
-1. Gather the binaries that you will submit to be signed in a single directory. In this example, we will use C:\\Echo. The steps described here, will reference the echo driver available in GitHub at this location
+1. Gather the binaries that you will submit to be signed in a single directory. In this example, we will use C:\\Echo. The steps described here, will reference the echo driver available in GitHub at this location.
 
 <https://github.com/Microsoft/Windows-driver-samples/tree/master/general/echo/kmdf/driver/AutoSync>
 
@@ -58,7 +58,7 @@ Typical cab file submissions contain the following.
 
 -   The driver itself, for example Echo.sys
 -   The driver INF file that is used by the dashboard to facilitate the signing process.
--   Catalog .CAT files are not required. Microsoft regenerates catalog files and replaces any catalog files that were submitted.
+-   Catalog .CAT files are not required. Microsoft regenerates catalog files and replaces any catalog files that were submitted. The Microsoft provided replacement catalog is also signed. 
 
 2. Use MakeCab.exe to process the DDF file and create a cab file.
 
@@ -122,7 +122,7 @@ C:\Echo\Echo.Sys</code></pre></td>
 </tbody>
 </table>
 
-**Note**  Driver Signing supports only one architecture per submission. All driver folders in your cab must support the same set of architectures, for example, all drivers must be x86 or all drivers must be x64, or all drivers must support both x86 and x64.
+**Note**  All driver folders in your cab must support the same set of architectures, for example, all drivers must be x86 or all drivers must be x64, or all drivers must support both x86 and x64.
 
 4. Call the makecab utility and provide the ddf file as input using the /f option.
 
@@ -275,9 +275,11 @@ Use the following instructions to install the sample driver.
 <span id="Create_a_Multiple_Driver_Submission"></span><span id="create_a_multiple_driver_submission"></span><span id="CREATE_A_MULTIPLE_DRIVER_SUBMISSION"></span>Create a Multiple Driver Submission
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-To submit multiple drivers at the same time create a sub directory for each driver as shown below.
+To submit multiple drivers at the same time, create a sub directory for each driver as shown below.
 
 ![](images/B_WES_DriverSigning.png)
+
+Submitting debug pdb symbol files for signing is optional. 
 
 Prepare a cab file DDF input file that references the subdirectories. It might look something like this.
 
