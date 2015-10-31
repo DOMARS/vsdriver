@@ -318,7 +318,6 @@ C:\DriverFiles\Symbols\Driver2.pdb</code></pre></td>
 
 Follow the steps previously described to sign, submit and test the driver files.
 
-<span id="EKUs_Used_in_Signing_Process"></span><span id="ekus_used_in_signing_process"></span><span id="EKUS_USED_IN_SIGNING_PROCESS"></span>EKUs Used in Signing Process
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -   
