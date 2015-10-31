@@ -25,7 +25,7 @@ To attestation sign a kernel mode driver complete the following steps
 7. Validate that the driver was properly signed
 8. Test your driver on Windows 10 for Desktop
 <span id="Acquire_an__EV_Code_Signing_Certificate"></span><span id="acquire_an__ev_code_signing_certificate"></span><span id="ACQUIRE_AN__EV_CODE_SIGNING_CERTIFICATE"></span>Acquire an EV Code Signing Certificate
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 Before you can submit binaries files using the dashboard to be signed, you need to acquire an extended validation (EV) code signing certificate to secure your digital information. This certificate is the accepted standard for establishing your company’s ownership of the code you submit. It allows you to digitally sign PE binaries, such as .exe, .cab, .dll, .ocx, .msi, .xpi and .xap files.
 
