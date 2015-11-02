@@ -163,7 +163,7 @@ To create a CAB files submission for the dashboard complete the following steps.
 
 5. Locate the cab file in the Disk1 subdirectory. You can click on the cab file in Windows explorer, to verify that it contains the expected files.
 
-    <span id="Sign_the_Submission_Cab_File__with_your_EV_Cert"></span><span id="sign_the_submission_cab_file__with_your_ev_cert"></span><span id="SIGN_THE_SUBMISSION_CAB_FILE__WITH_YOUR_EV_CERT"></span>Sign the Submission Cab File with your EV Cert
+<span id="Sign_the_Submission_Cab_File__with_your_EV_Cert"></span><span id="sign_the_submission_cab_file__with_your_ev_cert"></span><span id="SIGN_THE_SUBMISSION_CAB_FILE__WITH_YOUR_EV_CERT"></span>Sign the Submission Cab File with your EV Cert
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 1. Use the process recommended by the EV cert provider to sign the cab file with your EV cert. For example you might use the signtool and if you are using Verisign, you might specify their timestamp server.
@@ -212,31 +212,31 @@ Complete the following steps to validate that the driver was properly signed.
 
 2. Open a Command Prompt window as Administrator. Then enter the following command to verify that the driver was signed as expected.
 
-<span codelanguage=""></span>
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><pre><code>C:\Echo&gt; SignTool verify Echo.Sys</code></pre></td>
-</tr>
-</tbody>
-</table>
+  <span codelanguage=""></span>
+  <table>
+  <colgroup>
+  <col width="100%" />
+  </colgroup>
+  <tbody>
+  <tr class="odd">
+  <td align="left"><pre><code>C:\Echo&gt; SignTool verify Echo.Sys</code></pre></td>
+  </tr>
+  </tbody>
+  </table>
 
 3.To list additional information and have signtool verify all signatures in a file with multiple signatures, type the following.
 
-<span codelanguage=""></span>
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><pre><code>C:\Echo&gt; SignTool verify /pa /ph /v /d Echo.Sys</code></pre></td>
-</tr>
-</tbody>
-</table>
+  <span codelanguage=""></span>
+  <table>
+  <colgroup>
+  <col width="100%" />
+  </colgroup>
+  <tbody>
+  <tr class="odd">
+  <td align="left"><pre><code>C:\Echo&gt; SignTool verify /pa /ph /v /d Echo.Sys</code></pre></td>
+  </tr>
+  </tbody>
+  </table>
 
 4. To confirm the EKUs of the driver complete the following steps.
 
@@ -259,23 +259,23 @@ When the driver is resigned by the dashboard the following process is used.
 
 Use the following instructions to install the sample driver.
 
-1. Open Device Manager, right click on the computer icon and select "Add legacy Hardware". Follow the prompts to complete the install of the driver.
+  1. Open Device Manager, right click on the computer icon and select "Add legacy Hardware". Follow the prompts to complete the install of the driver.
+  
+  2. Alternatively, open a Command Prompt window as Administrator and use devcon to install the driver. Navigate to your driver package folder, and enter the following command.
+  
+  <span codelanguage=""></span>
+  <table>
+  <colgroup>
+  <col width="100%" />
+  </colgroup>
+  <tbody>
+  <tr class="odd">
+  <td align="left"><pre><code>C:\Echo&gt; devcon install echo.inf root\ECHO</code></pre></td>
+  </tr>
+  </tbody>
+  </table>
 
-2. Alternatively, open a Command Prompt window as Administrator and use devcon to install the driver. Navigate to your driver package folder, and enter the following command.
-
-<span codelanguage=""></span>
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><pre><code>C:\Echo&gt; devcon install echo.inf root\ECHO</code></pre></td>
-</tr>
-</tbody>
-</table>
-
-3. Confirm that the driver install process does not display the "Windows can't verify the publisher of this driver software." Windows security dialog box.
+  3. Confirm that the driver install process does not display the "Windows can't verify the publisher of this driver software." Windows security dialog box.
 
 <span id="Create_a_Multiple_Driver_Submission"></span><span id="create_a_multiple_driver_submission"></span><span id="CREATE_A_MULTIPLE_DRIVER_SUBMISSION"></span>Create a Multiple Driver Submission
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
