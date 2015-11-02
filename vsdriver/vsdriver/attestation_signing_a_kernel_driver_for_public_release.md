@@ -211,7 +211,7 @@ Complete the following steps to validate that the driver was properly signed.
 1. After you have downloaded the submission file, extract the driver file.
 
 2. Open a Command Prompt window as Administrator. Then enter the following command to verify that the driver was signed as expected.
-
+    
   <span codelanguage=""></span>
   <table>
   <colgroup>
@@ -223,9 +223,9 @@ Complete the following steps to validate that the driver was properly signed.
   </tr>
   </tbody>
   </table>
-
-3.To list additional information and have signtool verify all signatures in a file with multiple signatures, type the following.
-
+  
+3. To list additional information and have signtool verify all signatures in a file with multiple signatures, type the following.
+    
   <span codelanguage=""></span>
   <table>
   <colgroup>
@@ -237,6 +237,7 @@ Complete the following steps to validate that the driver was properly signed.
   </tr>
   </tbody>
   </table>
+    
 
 4. To confirm the EKUs of the driver complete the following steps.
 
