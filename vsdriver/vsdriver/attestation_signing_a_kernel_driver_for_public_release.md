@@ -52,137 +52,137 @@ To create a CAB files submission for the dashboard complete the following steps.
 
 1. Gather the binaries that you will submit to be signed in a single directory. In this example, we will use C:\\Echo. The steps described here, will reference the echo driver available in GitHub at this location.
 
-<https://github.com/Microsoft/Windows-driver-samples/tree/master/general/echo/kmdf/driver/AutoSync>
+  <https://github.com/Microsoft/Windows-driver-samples/tree/master/general/echo/kmdf/driver/AutoSync>
 
-Typical cab file submissions contain the following.
+  Typical cab file submissions contain the following.
 
--   The driver itself, for example Echo.sys
--   The driver INF file that is used by the dashboard to facilitate the signing process.
--   Catalog .CAT files are not required. Microsoft regenerates catalog files and replaces any catalog files that were submitted. The Microsoft provided replacement catalog is also signed. 
+  -   The driver itself, for example Echo.sys
+  -   The driver INF file that is used by the dashboard to facilitate the signing process.
+  -   Catalog .CAT files are not required. Microsoft regenerates catalog files and replaces any catalog files that were   submitted. The Microsoft provided replacement catalog is also signed. 
 
 2. Use MakeCab.exe to process the DDF file and create a cab file.
 
-Open a Command Prompt window as Administrator. Then enter the following command to view the MakeCab options:
+  Open a Command Prompt window as Administrator. Then enter the following command to view the MakeCab options:
 
-MakeCab /?
+  MakeCab /?
 
-<span codelanguage=""></span>
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><pre><code>C:\Echo&gt; MakeCab /?
-Cabinet Maker - Lossless Data Compression Tool
+  <span codelanguage=""></span>
+  <table>
+  <colgroup>
+  <col width="100%" />
+  </colgroup>
+  <tbody>
+  <tr class="odd">
+  <td align="left"><pre><code>C:\Echo&gt; MakeCab /?
+  Cabinet Maker - Lossless Data Compression Tool
+  
+  MAKECAB [/V[n]] [/D var=value ...] [/L dir] source [destination]
+  MAKECAB [/V[n]] [/D var=value ...] /F directive_file [...]
 
-MAKECAB [/V[n]] [/D var=value ...] [/L dir] source [destination]
-MAKECAB [/V[n]] [/D var=value ...] /F directive_file [...]
-
-  source         File to compress.
-  destination    File name to give compressed file.  If omitted, the
-                 last character of the source file name is replaced
-                 with an underscore (_) and used as the destination.
-  /F directives  A file with MakeCAB directives (may be repeated). Refer to
-                 Microsoft Cabinet SDK for information on directive_file.
-  /D var=value   Defines variable with specified value.
-  /L dir         Location to place destination (default is current directory).
-  /V[n]          Verbosity level (1..3).</code></pre></td>
-</tr>
-</tbody>
-</table>
+    source         File to compress.
+    destination    File name to give compressed file.  If omitted, the
+                   last character of the source file name is replaced
+                   with an underscore (_) and used as the destination.
+    /F directives  A file with MakeCAB directives (may be repeated). Refer to
+                   Microsoft Cabinet SDK for information on directive_file.
+    /D var=value   Defines variable with specified value.
+    /L dir         Location to place destination (default is current directory).
+    /V[n]          Verbosity level (1..3).</code></pre></td>
+  </tr>
+  </tbody>
+  </table>
 
 3. Prepare a cab file DDF input file. For our Echo driver it might look something like this.
 
-<span codelanguage=""></span>
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><pre><code>;*** Echo.ddf example
-;
-.OPTION EXPLICIT     ; Generate errors 
-.Set CabinetFileCountThreshold=0
-.Set FolderFileCountThreshold=0
-.Set FolderSizeThreshold=0
-.Set MaxCabinetSize=0
-.Set MaxDiskFileCount=0
-.Set MaxDiskSize=0
-.Set CompressionType=MSZIP
-.Set Cabinet=on
-.Set Compress=on
-;Specify file name for new cab file
-.Set CabinetNameTemplate=Echo.cab
-;Specify files to be included in cab file
-C:\Echo\Echo.Inf
-C:\Echo\Echo.Sys</code></pre></td>
-</tr>
-</tbody>
-</table>
+  <span codelanguage=""></span>
+  <table>
+  <colgroup>
+  <col width="100%" />
+  </colgroup>
+  <tbody>
+  <tr class="odd">
+  <td align="left"><pre><code>;*** Echo.ddf example
+  ;
+  .OPTION EXPLICIT     ; Generate errors 
+  .Set CabinetFileCountThreshold=0
+  .Set FolderFileCountThreshold=0
+  .Set FolderSizeThreshold=0
+  .Set MaxCabinetSize=0
+  .Set MaxDiskFileCount=0
+  .Set MaxDiskSize=0
+  .Set CompressionType=MSZIP
+  .Set Cabinet=on
+  .Set Compress=on
+  ;Specify file name for new cab file
+  .Set CabinetNameTemplate=Echo.cab
+  ;Specify files to be included in cab file
+  C:\Echo\Echo.Inf
+  C:\Echo\Echo.Sys</code></pre></td>
+  </tr>
+  </tbody>
+  </table>
 
-**Note**  All driver folders in your cab must support the same set of architectures, for example, all drivers must be x86 or all drivers must be x64, or all drivers must support both x86 and x64.
+  **Note**  All driver folders in your cab must support the same set of architectures, for example, all drivers must be x86 or all drivers must be x64, or all drivers must support both x86 and x64.
 
 4. Call the makecab utility and provide the ddf file as input using the /f option.
 
-<span codelanguage=""></span>
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><pre><code>C:\Echo&gt; MakeCab /f &quot;C:\Echo\Echo.ddf</code></pre></td>
-</tr>
-</tbody>
-</table>
+  <span codelanguage=""></span>
+  <table>
+  <colgroup>
+  <col width="100%" />
+  </colgroup>
+  <tbody>
+  <tr class="odd">
+  <td align="left"><pre><code>C:\Echo&gt; MakeCab /f &quot;C:\Echo\Echo.ddf</code></pre></td>
+  </tr>
+  </tbody>
+  </table>
 
 The output of makecab should display the number of files in the created cabinet, in our example 2.
 
-<span codelanguage=""></span>
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><pre><code>C:\Echo&gt; MakeCab /f Echo.ddf
-Cabinet Maker - Lossless Data Compression Tool
-
-17,682 bytes in 2 files
-Total files:              2
-Bytes before:        17,682
-Bytes after:          7,374
-After/Before:            41.70% compression
-Time:                     0.20 seconds ( 0 hr  0 min  0.20 sec)
-Throughput:              86.77 Kb/second</code></pre></td>
-</tr>
-</tbody>
-</table>
+  <span codelanguage=""></span>
+  <table>
+  <colgroup>
+  <col width="100%" />
+  </colgroup>
+  <tbody>
+  <tr class="odd">
+  <td align="left"><pre><code>C:\Echo&gt; MakeCab /f Echo.ddf
+  Cabinet Maker - Lossless Data Compression Tool
+  
+  17,682 bytes in 2 files
+  Total files:              2
+  Bytes before:        17,682
+  Bytes after:          7,374
+  After/Before:            41.70% compression
+  Time:                     0.20 seconds ( 0 hr  0 min  0.20 sec)
+  Throughput:              86.77 Kb/second</code></pre></td>
+  </tr>
+  </tbody>
+  </table>
 
 5. Locate the cab file in the Disk1 subdirectory. You can click on the cab file in Windows explorer, to verify that it contains the expected files.
 
-<span id="Sign_the_Submission_Cab_File__with_your_EV_Cert"></span><span id="sign_the_submission_cab_file__with_your_ev_cert"></span><span id="SIGN_THE_SUBMISSION_CAB_FILE__WITH_YOUR_EV_CERT"></span>Sign the Submission Cab File with your EV Cert
+  <span id="Sign_the_Submission_Cab_File__with_your_EV_Cert"></span><span id="sign_the_submission_cab_file__with_your_ev_cert"></span><span id="SIGN_THE_SUBMISSION_CAB_FILE__WITH_YOUR_EV_CERT"></span>Sign the Submission Cab File with your EV Cert
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 1. Use the process recommended by the EV cert provider to sign the cab file with your EV cert. For example you might use the signtool and if you are using Verisign, you might specify their timestamp server.
 
-<span codelanguage=""></span>
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><pre><code>C:\Echo&gt; SignTool sign /v /ac &quot;C:\MyEVCert.cer&quot; /s MY /n &quot;Company Name&quot; /t http://timestamp.verisign.com/scripts/timstamp.dll &quot;C:\Echo\Disk1\Echo.cab&quot;</code></pre></td>
-</tr>
-</tbody>
-</table>
+  <span codelanguage=""></span>
+  <table>
+  <colgroup>
+  <col width="100%" />
+  </colgroup>
+  <tbody>
+  <tr class="odd">
+  <td align="left"><pre><code>C:\Echo&gt; SignTool sign /v /ac &quot;C:\MyEVCert.cer&quot; /s MY /n &quot;Company Name&quot; /t http://timestamp.verisign.com/scripts/timstamp.dll &quot;C:\Echo\Disk1\Echo.cab&quot;</code></pre></td>
+  </tr>
+  </tbody>
+  </table>
 
-**Note**  Use industry best practices to mange the security of the EV cert signing process.
+  **Note**  Use industry best practices to mange the security of the EV cert signing process.
 
- 
+   
 
 <span id="Submit_the_EV_signed_Cab_file_using_the__Windows_Hardware_Developer_Center_Dashboard"></span><span id="submit_the_ev_signed_cab_file_using_the__windows_hardware_developer_center_dashboard"></span><span id="SUBMIT_THE_EV_SIGNED_CAB_FILE_USING_THE__WINDOWS_HARDWARE_DEVELOPER_CENTER_DASHBOARD"></span>Submit the EV signed Cab file using the Windows Hardware Developer Center Dashboard
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
