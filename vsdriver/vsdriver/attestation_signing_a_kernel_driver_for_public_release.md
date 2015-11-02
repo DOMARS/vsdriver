@@ -239,10 +239,15 @@ Complete the following steps to validate that the driver was properly signed.
 </table>
 
 4. To confirm the EKUs of the driver complete the following steps.
-a. Open Windows Explorer and locate the binary file. Right-click the file and select **Properties**.
-b. On the **Digital Signatures** tab, select the listed item in the Signature list.
-c. Select the **Details** button, and then select **View Certificate**.
-d. On the **Details** tab, select the **Enhanced Key Usage** field.
+
+  a. Open Windows Explorer and locate the binary file. Right-click the file and select **Properties**.
+
+  b. On the **Digital Signatures** tab, select the listed item in the Signature list.
+
+  c. Select the **Details** button, and then select **View Certificate**.
+
+  d. On the **Details** tab, select the **Enhanced Key Usage** field.
+
 When the driver is resigned by the dashboard the following process is used.
 
 -   Appends a Microsoft SHA2 embedded signature.
