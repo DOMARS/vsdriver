@@ -138,7 +138,7 @@ To create a CAB files submission for the dashboard complete the following steps.
   </tbody>
   </table>
 
-The output of makecab should display the number of files in the created cabinet, in our example 2.
+  The output of makecab should display the number of files in the created cabinet, in our example 2.
 
   <span codelanguage=""></span>
   <table>
@@ -163,7 +163,7 @@ The output of makecab should display the number of files in the created cabinet,
 
 5. Locate the cab file in the Disk1 subdirectory. You can click on the cab file in Windows explorer, to verify that it contains the expected files.
 
-  <span id="Sign_the_Submission_Cab_File__with_your_EV_Cert"></span><span id="sign_the_submission_cab_file__with_your_ev_cert"></span><span id="SIGN_THE_SUBMISSION_CAB_FILE__WITH_YOUR_EV_CERT"></span>Sign the Submission Cab File with your EV Cert
+    <span id="Sign_the_Submission_Cab_File__with_your_EV_Cert"></span><span id="sign_the_submission_cab_file__with_your_ev_cert"></span><span id="SIGN_THE_SUBMISSION_CAB_FILE__WITH_YOUR_EV_CERT"></span>Sign the Submission Cab File with your EV Cert
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 1. Use the process recommended by the EV cert provider to sign the cab file with your EV cert. For example you might use the signtool and if you are using Verisign, you might specify their timestamp server.
@@ -182,7 +182,7 @@ The output of makecab should display the number of files in the created cabinet,
 
   **Note**  Use industry best practices to mange the security of the EV cert signing process.
 
-   
+ 
 
 <span id="Submit_the_EV_signed_Cab_file_using_the__Windows_Hardware_Developer_Center_Dashboard"></span><span id="submit_the_ev_signed_cab_file_using_the__windows_hardware_developer_center_dashboard"></span><span id="SUBMIT_THE_EV_SIGNED_CAB_FILE_USING_THE__WINDOWS_HARDWARE_DEVELOPER_CENTER_DASHBOARD"></span>Submit the EV signed Cab file using the Windows Hardware Developer Center Dashboard
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
